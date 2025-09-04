@@ -13,9 +13,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Species
+  # Расы
 
-  Nanotrasen employs a variety of sapient species.
+  Нанотразен нанимает разнообразные разумные виды.
 
   <Box>
     <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>
