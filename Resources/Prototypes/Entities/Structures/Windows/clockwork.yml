@@ -34,9 +34,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/clockwork_window.rsi
+    sprite: _Maid/Structures/Windows/clockwork_window.rsi
   - type: Icon
-    sprite: Structures/Windows/clockwork_window.rsi
+    sprite: _Maid/Structures/Windows/clockwork_window.rsi
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -79,7 +79,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
 
@@ -94,10 +94,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi
     state: clock_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi
     state: clock_window
   - type: Construction
     graph: WindowDirectional
@@ -108,7 +108,7 @@
     damageDivisor: 1.5
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi
   - type: Damageable
     damageModifierSet: RGlass
   - type: Destructible
@@ -150,7 +150,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/clockwork_diagonal.rsi
+    sprite: _Maid/Structures/Windows/clockwork_diagonal.rsi
     state: state0
   - type: Tag
     tags:
@@ -160,7 +160,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/clockwork_diagonal.rsi
+    sprite: _Maid/Structures/Windows/clockwork_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
@@ -182,7 +182,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: clockworkWindowDiagonal
