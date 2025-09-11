@@ -27,9 +27,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _Maid/Structures/Windows/reinforced_uranium_window.rsi
   - type: Icon
-    sprite: Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _Maid/Structures/Windows/reinforced_uranium_window.rsi
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -69,7 +69,7 @@
     damageDivisor: 6
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 215
   - type: RadiationBlocker
@@ -88,10 +88,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi
     state: uranium_reinforced_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi
     state: uranium_reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -102,7 +102,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi
   - type: Damageable
     damageModifierSet: RGlass
   - type: Destructible
@@ -146,7 +146,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
+    sprite: _Maid/Structures/Windows/reinforced_uranium_diagonal.rsi
     state: state0
   - type: Tag
     tags:
@@ -156,7 +156,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
+    sprite: _Maid/Structures/Windows/reinforced_uranium_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
@@ -178,7 +178,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: reinforcedUraniumWindowDiagonal

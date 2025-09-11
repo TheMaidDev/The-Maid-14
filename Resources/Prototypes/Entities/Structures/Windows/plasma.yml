@@ -39,9 +39,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plasma_window.rsi
+    sprite: _Maid/Structures/Windows/plasma_window.rsi
   - type: Icon
-    sprite: Structures/Windows/plasma_window.rsi
+    sprite: _Maid/Structures/Windows/plasma_window.rsi
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass
@@ -81,7 +81,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 100
   - type: RadiationBlocker
@@ -103,10 +103,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi
     state: plasma_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi
     state: plasma_window
   - type: Construction
     graph: WindowDirectional
@@ -117,7 +117,7 @@
     damageDivisor: 1.5
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi
   - type: Destructible
     thresholds:
     - trigger:
@@ -162,7 +162,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plasma_diagonal.rsi
+    sprite: _Maid/Structures/Windows/plasma_diagonal.rsi
     state: state0
   - type: Tag
     tags:
@@ -172,7 +172,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/plasma_diagonal.rsi
+    sprite: _Maid/Structures/Windows/plasma_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
@@ -194,7 +194,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: plasmaWindowDiagonal

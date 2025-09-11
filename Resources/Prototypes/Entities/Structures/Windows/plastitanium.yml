@@ -118,9 +118,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plastitanium_window.rsi
+    sprite: _Maid/Structures/Windows/plastitanium_window.rsi
   - type: Icon
-    sprite: Structures/Windows/plastitanium_window.rsi
+    sprite: _Maid/Structures/Windows/plastitanium_window.rsi
     state: full
   - type: IconSmooth
     key: windows
@@ -177,7 +177,7 @@
     damageDivisor: 20
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
@@ -194,13 +194,13 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plastitanium_window_diagonal.rsi
+    sprite: _Maid/Structures/Windows/plastitanium_window_diagonal.rsi
     state: state0
   - type: Tag
     tags:
     - Diagonal
   - type: Icon
-    sprite: Structures/Windows/plastitanium_window_diagonal.rsi
+    sprite: _Maid/Structures/Windows/plastitanium_window_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
@@ -268,7 +268,7 @@
     damageDivisor: 20
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
