@@ -76,11 +76,9 @@
 using Content.Server.Administration.Logs;
 using Content.Shared.Containers;
 using Content.Shared.Database;
-using Content.Shared.Popups;
 using Content.Shared.Throwing;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
-using Robust.Shared.Random;
 
 namespace Content.Server.Containers;
 
@@ -89,8 +87,6 @@ public sealed class ThrowInsertContainerSystem : EntitySystem
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
 
     public override void Initialize()
     {
@@ -111,13 +107,6 @@ public sealed class ThrowInsertContainerSystem : EntitySystem
 
         if (beforeThrowArgs.Cancelled)
             return;
-
-        if (!_random.Prob(ent.Comp.Probability))
-        {
-            _audio.PlayPvs(ent.Comp.MissSound, ent);
-            _popup.PopupEntity(Loc.GetString(ent.Comp.MissLocString), ent);
-            return;
-        }
 
         if (!_containerSystem.Insert(args.Thrown, container))
             throw new InvalidOperationException("Container insertion failed but CanInsert returned true");
