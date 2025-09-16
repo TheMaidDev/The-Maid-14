@@ -22,39 +22,26 @@ SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://github.com/Goob-Station/Goob-Station/blob/master/Resources/Textures/Logo/logo.png" /></p>
+<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://github.com/TheMaidDev/The-Maid-14/blob/master/Resources/Textures/Logo/logo.png" /></p>
 
-This is a fork from the primary repo for Space Station 14 called Goob Station. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server this is the content pack for Goob Station.
+Это форк основного репозитория Space Station 14 (GoobStation) под названием Maid. Чтобы предотвратить создание форков RobustToolbox, клиентом и сервером загружается «контентный пакет» (content pack). Этот пакет содержит всё необходимое для игры на определённом сервере — это контентный пакет для Maid.
 
-If you want to host or create content for SS14, go to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14) as it contains both RobustToolbox and the content pack for development of new content packs and is the base for your fork.
+Если вы хотите размещать сервер или создавать контент для SS14, перейдите в репозиторий Space Station 14, так как он содержит как RobustToolbox, так и контентный пакет для разработки новых пакетов контента и является основой для вашего форка.
 
-## Links
+## Ссылки
 
-[Goob Station Discord Server](https://discord.gg/goobstation) | [Goob Station Development Discord Server](https://discord.gg/zXk2cyhzPN) | [Goob Station Forum](https://forums.goobstation.com/) | [Goob Station Website](https://goobstation.com)
+[Maid Discord Server](https://discord.gg/kNXKDvmB7H)
 
-## Documentation/Wiki
+## Билдинг
 
-The Goob Station [docs site](https://docs.goobstation.com/) has documentation on GS14's content, engine, game design, and more. It also has lots of resources for new contributors to the project.
+1. Клонируйте этот репозиторий.
+2. Запустите RUN_THIS.py, чтобы инициализировать подмодули и скачать движок.
+3. Скомпилируйте решение.
 
-## Contributing
+## Лицензия
 
-We are happy to accept contributions from anybody. Get in [Development Discord Server](https://discord.gg/zXk2cyhzPN) if you want to help. Feel free to check the [list of issues](https://github.com/Goob-Station/Goob-Station/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
-While following the [Space Station 14 contribution guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) is not mandatory for Goob Station, we recommend reviewing them for best practices.
+Кодовая база данного проекта распространяется под лицензией [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Каждый файл содержит заголовки в соответствии со спецификацией REUSE или отдельные файлы .license, указывающие на возможность двойного лицензирования. Это позволяет упростить процесс использования кода в проектах, не применяющих AGPL, предоставляя им возможность выбрать соответствующую часть кода под альтернативной лицензией. Полные тексты лицензий доступны в директории LICENSES/.
 
-We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language consider creating a fork or contributing to a fork.
+Большинство медиафайлов лицензированы по CC-BY-SA 3.0, если не указано иное. Информация о лицензии и авторских правах для ресурсов содержится в файлах метаданных. [Пример](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
-## Building
-
-1. Clone this repo.
-2. Run `RUN_THIS.py` to init submodules and download the engine.
-3. Compile the solution.
-
-[More detailed instructions on building the project.](https://docs.goobstation.com/en/general-development/setup.html)
-
-## License
-
-All code in this codebase is released under the AGPL-3.0-or-later license. Each file includes REUSE Specification headers or separate .license files that specify a dual license option. This dual licensing is provided to simplify the process for projects that are not using AGPL, allowing them to adopt the relevant portions of the code under an alternative license. You can review the complete texts of these licenses in the LICENSES/ directory.
-
-Most media assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
-
-Note that some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
+Обратите внимание, что некоторые ресурсы лицензированы по некоммерческой лицензии CC-BY-NC-SA 3.0 или аналогичным некоммерческим лицензиям. Их необходимо удалить, если вы планируете использовать проект в коммерческих целях.
