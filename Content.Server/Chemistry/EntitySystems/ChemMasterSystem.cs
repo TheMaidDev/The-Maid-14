@@ -252,6 +252,10 @@ namespace Content.Server.Chemistry.EntitySystems
                 return;
 
             var needed = message.Dosage * message.Number;
+
+            if (needed < message.Number) //Maid edit
+                return;
+
             if (!WithdrawFromBuffer(chemMaster, needed, user, out var withdrawal))
                 return;
 
