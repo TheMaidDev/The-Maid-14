@@ -50,6 +50,14 @@ public sealed partial class MiningVoucherMenu : RadialMenu
         _sprite = _entMan.System<SpriteSystem>();
     }
 
+    /// <summary>
+    /// Builds radial menu buttons for each kit on the MiningVendorComponent of the given entity.
+    /// </summary>
+    /// <param name="owner">Entity UID whose <see cref="MiningVendorComponent"/> kits will populate the menu. If the component is absent, the method does nothing.</param>
+    /// <remarks>
+    /// For each kit the method creates a 64×64 textured radial button (with a centered, scaled sprite and a localized tooltip),
+    /// adds it to this menu's <c>Main</c> container, and wires the button to invoke <c>OnSelected</c> with the kit's index when pressed.
+    /// </remarks>
     public void SetEntity(EntityUid owner)
     {
         if (!_entMan.TryGetComponent<MiningVendorComponent>(owner, out var comp))
@@ -59,9 +67,9 @@ public sealed partial class MiningVoucherMenu : RadialMenu
         {
             var index = i; // copy so the closure doesn't borrow it
             var kit = _proto.Index(comp.Kits[i]);
-            var button = new RadialMenuTextureButtonWithSector()
+            var button = new RadialMenuTextureButton()
             {
-                StyleClasses = { "RadialMenuTextureButtonWithSector" },
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64f, 64f),
                 ToolTip = Loc.GetString(kit.Description)
             };

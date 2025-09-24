@@ -46,6 +46,15 @@ public sealed class LivingHeartMenu : RadialMenu
         UpdateUI();
     }
 
+    /// <summary>
+    /// Rebuilds the radial menu contents for the current Entity based on the local player's HereticComponent.
+    /// </summary>
+    /// <remarks>
+    /// Finds the "Main" RadialContainer in the control, reads the local player's HereticComponent, and populates the container
+    /// with a button for each sacrifice target. For targets whose entity is missing, a profile-based entity is loaded.
+    /// Each button is configured with the target's NetEntity and a SpriteView representing the target. After populating the menu,
+    /// <see cref="AddAction(RadialContainer)"/> is called to wire up button activations.
+    /// </remarks>
     private void UpdateUI()
     {
         var main = FindControl<RadialContainer>("Main");
@@ -63,6 +72,7 @@ public sealed class LivingHeartMenu : RadialMenu
 
             var button = new EmbeddedEntityMenuButton
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = target.Profile.Name,
                 NetEntity = target.Entity,
@@ -83,6 +93,10 @@ public sealed class LivingHeartMenu : RadialMenu
         AddAction(main);
     }
 
+    /// <summary>
+    /// Subscribes each EmbeddedEntityMenuButton in the given radial container to activate its associated NetEntity when clicked and then close the menu.
+    /// </summary>
+    /// <param name="main">RadialContainer whose child buttons will receive the activation handlers. If null, no action is taken.</param>
     private void AddAction(RadialContainer main)
     {
         if (main == null)
@@ -102,7 +116,7 @@ public sealed class LivingHeartMenu : RadialMenu
         }
     }
 
-    public sealed class EmbeddedEntityMenuButton : RadialMenuTextureButtonWithSector
+    public sealed class EmbeddedEntityMenuButton : RadialMenuTextureButton
     {
         public NetEntity NetEntity;
     }

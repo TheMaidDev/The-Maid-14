@@ -41,6 +41,15 @@ public sealed class CarvingKnifeMenu : RadialMenu
         UpdateUI();
     }
 
+    /// <summary>
+    /// Rebuilds the radial menu contents to reflect the current carvings on the configured Entity.
+    /// </summary>
+    /// <remarks>
+    /// Clears the "Main" RadialContainer and, if the Entity has a CarvingKnifeComponent, creates a button for each
+    /// entry in its Carvings collection. Prototypes that cannot be resolved are skipped. Each button is populated
+    /// with the prototype's icon and tooltip and then wired for click actions via AddCarvingKnifeMenuButtonOnClickActions.
+    /// If the Entity does not have a CarvingKnifeComponent, the menu is left empty.
+    /// </remarks>
     private void UpdateUI()
     {
         var main = FindControl<RadialContainer>("Main");
@@ -56,6 +65,7 @@ public sealed class CarvingKnifeMenu : RadialMenu
 
             var button = new CarvingKnifeMenuButton
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = Loc.GetString(prototype.Desc),
                 ProtoId = prototype.ID
@@ -76,6 +86,14 @@ public sealed class CarvingKnifeMenu : RadialMenu
         AddCarvingKnifeMenuButtonOnClickActions(main);
     }
 
+    /// <summary>
+    /// Wires click handlers for all CarvingKnifeMenuButton children in the given radial container.
+    /// </summary>
+    /// <param name="control">The radial container whose CarvingKnifeMenuButton children will be wired.</param>
+    /// <remarks>
+    /// For each CarvingKnifeMenuButton found, subscribes to its <c>OnButtonUp</c> event so that when pressed
+    /// the menu invokes <c>SendCarvingKnifeSystemMessageAction</c> with the button's prototype ID and then closes the menu.
+    /// </remarks>
     private void AddCarvingKnifeMenuButtonOnClickActions(RadialContainer control)
     {
         foreach (var child in control.Children)
@@ -92,7 +110,7 @@ public sealed class CarvingKnifeMenu : RadialMenu
     }
 }
 
-public sealed class CarvingKnifeMenuButton : RadialMenuTextureButtonWithSector
+public sealed class CarvingKnifeMenuButton : RadialMenuTextureButton
 {
     public ProtoId<RuneCarvingPrototype> ProtoId { get; set; }
 }

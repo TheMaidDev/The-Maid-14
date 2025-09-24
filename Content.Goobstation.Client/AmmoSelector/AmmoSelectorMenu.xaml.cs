@@ -23,7 +23,6 @@ public sealed partial class AmmoSelectorMenu : RadialMenu
 {
     [Dependency] private readonly EntityManager _entManager = default!;
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
 
     private SpriteSystem _sprites;
 
@@ -44,6 +43,18 @@ public sealed partial class AmmoSelectorMenu : RadialMenu
         Refresh();
     }
 
+    /// <summary>
+    /// Rebuilds the radial ammo selection UI for the currently set entity.
+    /// </summary>
+    /// <remarks>
+    /// Clears the "Main" RadialContainer and, if the entity stored in <c>_item</c> has an
+    /// <see cref="AmmoSelectorComponent"/>, creates one button per prototype listed in
+    /// <c>AmmoSelectorComponent.Prototypes</c>. Prototypes that cannot be resolved are skipped.
+    /// Each button is configured with style, size, tooltip, the prototype ID, and an icon texture,
+    /// then added to the radial container. After creating buttons, click handlers are attached by
+    /// calling <see cref="AddAmmoSelectorMenuButtonOnClickActions(RadialContainer)"/>.
+    /// If the target entity lacks the component, the method returns without modifying the UI.
+    /// </remarks>
     public void Refresh()
     {
         var main = FindControl<RadialContainer>("Main");
@@ -59,6 +70,7 @@ public sealed partial class AmmoSelectorMenu : RadialMenu
 
             var button = new AmmoSelectorMenuButton
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = Loc.GetString(prototype.Desc),
                 ProtoId = prototype.ID
@@ -79,6 +91,13 @@ public sealed partial class AmmoSelectorMenu : RadialMenu
         AddAmmoSelectorMenuButtonOnClickActions(main);
     }
 
+    /// <summary>
+    /// Subscribes click handlers to every AmmoSelectorMenuButton child of the given radial container.
+    /// </summary>
+    /// <param name="control">The radial container whose AmmoSelectorMenuButton children will receive click handlers. Non-matching children are ignored.</param>
+    /// <remarks>
+    /// When a button is released the handler invokes <see cref="SendAmmoSelectorSystemMessageAction"/> with the button's <c>ProtoId</c> and closes the menu.
+    /// </remarks>
     private void AddAmmoSelectorMenuButtonOnClickActions(RadialContainer control)
     {
         foreach (var child in control.Children)
@@ -95,7 +114,7 @@ public sealed partial class AmmoSelectorMenu : RadialMenu
     }
 }
 
-public sealed class AmmoSelectorMenuButton : RadialMenuTextureButtonWithSector
+public sealed class AmmoSelectorMenuButton : RadialMenuTextureButton
 {
     public ProtoId<SelectableAmmoPrototype> ProtoId { get; set; }
 }

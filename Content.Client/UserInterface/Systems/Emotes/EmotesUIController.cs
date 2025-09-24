@@ -10,15 +10,13 @@ using Content.Client.UserInterface.Controls;
 using Content.Shared.Chat;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Input;
-using Content.Shared.Speech;
-using Content.Shared.Whitelist;
 using JetBrains.Annotations;
-using Robust.Client.Player;
+using Robust.Client.Graphics;
+using Robust.Client.Input;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility;
 
 namespace Content.Client.UserInterface.Systems.Emotes;
 
@@ -26,21 +24,16 @@ namespace Content.Client.UserInterface.Systems.Emotes;
 public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayState>
 {
     [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    
+    [Dependency] private readonly IClyde _displayManager = default!;
+    [Dependency] private readonly IInputManager _inputManager = default!;
+
     private MenuButton? EmotesButton => UIManager.GetActiveUIWidgetOrNull<MenuBar.Widgets.GameTopMenuBar>()?.EmotesButton;
-    private SimpleRadialMenu? _menu;
+    private EmotesMenu? _menu;
 
-    private static readonly Dictionary<EmoteCategory, (string Tooltip, SpriteSpecifier Sprite)> EmoteGroupingInfo
-        = new Dictionary<EmoteCategory, (string Tooltip, SpriteSpecifier Sprite)>
-    {
-        [EmoteCategory.General] = ("emote-menu-category-general", new SpriteSpecifier.Texture(new ResPath("/Textures/Clothing/Head/Soft/mimesoft.rsi/icon.png"))),
-        [EmoteCategory.Hands] = ("emote-menu-category-hands", new SpriteSpecifier.Texture(new ResPath("/Textures/Clothing/Hands/Gloves/latex.rsi/icon.png"))),
-        [EmoteCategory.Vocal] = ("emote-menu-category-vocal", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Emotes/vocal.png"))),
-        [EmoteCategory.Farts] = ("emote-menu-category-farts", new SpriteSpecifier.Texture(new ResPath("/Textures/_Goobstation/Interface/Emotes/fart.png"))), // Goobstation (obviously)
-    };
-
+    /// <summary>
+    /// Called when the gameplay state is entered; registers a key binding that opens the Emotes menu.
+    /// </summary>
+    /// <param name="state">The gameplay state being entered (not used by this method).</param>
     public void OnStateEntered(GameplayState state)
     {
         CommandBinds.Builder
@@ -54,21 +47,25 @@ public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayS
         CommandBinds.Unregister<EmotesUIController>();
     }
 
+    /// <summary>
+    /// Toggles the Emotes menu: opens it if closed, or closes it if open.
+    /// </summary>
+    /// <param name="centered">
+    /// If true, open the menu centered on the screen; if false, open the menu centered at the current mouse position.
+    /// </param>
+    /// <remarks>
+    /// When opening, this creates the EmotesMenu, subscribes to its open/close and play-emote events, and sets the top-bar Emotes button to a pressed state (if present).
+    /// When closing, this unsubscribes those events, clears the Emotes button pressed state, and disposes the menu.
+    /// </remarks>
     private void ToggleEmotesMenu(bool centered)
     {
         if (_menu == null)
         {
             // setup window
-            var prototypes = _prototypeManager.EnumeratePrototypes<EmotePrototype>();
-            var models = ConvertToButtons(prototypes);
-
-            _menu = new SimpleRadialMenu();
-            _menu.SetButtons(models);
-
-            _menu.Open();
-
+            _menu = UIManager.CreateWindow<EmotesMenu>();
             _menu.OnClose += OnWindowClosed;
             _menu.OnOpen += OnWindowOpen;
+            _menu.OnPlayEmote += OnPlayEmote;
 
             if (EmotesButton != null)
                 EmotesButton.SetClickPressed(true);
@@ -79,13 +76,16 @@ public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayS
             }
             else
             {
-                _menu.OpenOverMouseScreenPosition();
+                // Open the menu, centered on the mouse
+                var vpSize = _displayManager.ScreenSize;
+                _menu.OpenCenteredAt(_inputManager.MouseScreenPosition.Position / vpSize);
             }
         }
         else
         {
             _menu.OnClose -= OnWindowClosed;
             _menu.OnOpen -= OnWindowOpen;
+            _menu.OnPlayEmote -= OnPlayEmote;
 
             if (EmotesButton != null)
                 EmotesButton.SetClickPressed(false);
@@ -129,6 +129,12 @@ public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayS
             EmotesButton.Pressed = true;
     }
 
+    /// <summary>
+    /// Closes and disposes the currently open emotes menu, if any.
+    /// </summary>
+    /// <remarks>
+    /// If no menu is open, this method does nothing. After disposing, the internal menu reference is cleared.
+    /// </remarks>
     private void CloseMenu()
     {
         if (_menu == null)
@@ -138,62 +144,12 @@ public sealed class EmotesUIController : UIController, IOnStateChanged<GameplayS
         _menu = null;
     }
 
-    private IEnumerable<RadialMenuOption> ConvertToButtons(IEnumerable<EmotePrototype> emotePrototypes)
+    /// <summary>
+    /// Sends a predictive request to play the emote identified by <paramref name="protoId"/>.
+    /// </summary>
+    /// <param name="protoId">The prototype identifier of the emote to play.</param>
+    private void OnPlayEmote(ProtoId<EmotePrototype> protoId)
     {
-        var whitelistSystem = EntitySystemManager.GetEntitySystem<EntityWhitelistSystem>();
-        var player = _playerManager.LocalSession?.AttachedEntity;
-
-        Dictionary<EmoteCategory, List<RadialMenuOption>> emotesByCategory = new(); 
-        foreach (var emote in emotePrototypes)
-        {
-            if(emote.Category == EmoteCategory.Invalid)
-                continue;
-
-            // only valid emotes that have ways to be triggered by chat and player have access / no restriction on
-            if (emote.Category == EmoteCategory.Invalid
-                || emote.ChatTriggers.Count == 0
-                || !(player.HasValue && whitelistSystem.IsWhitelistPassOrNull(emote.Whitelist, player.Value))
-                || whitelistSystem.IsBlacklistPass(emote.Blacklist, player.Value))
-                continue;
-
-            if (!emote.Available
-                && EntityManager.TryGetComponent<SpeechComponent>(player.Value, out var speech)
-                && !speech.AllowedEmotes.Contains(emote.ID))
-                continue;
-
-            if (!emotesByCategory.TryGetValue(emote.Category, out var list))
-            {
-                list = new List<RadialMenuOption>();
-                emotesByCategory.Add(emote.Category, list);
-            }
-
-            var actionOption = new RadialMenuActionOption<EmotePrototype>(HandleRadialButtonClick, emote)
-            {
-                Sprite = emote.Icon,
-                ToolTip = Loc.GetString(emote.Name)
-            };
-            list.Add(actionOption);
-        }
-
-        var models = new RadialMenuOption[emotesByCategory.Count];
-        var i = 0;
-        foreach (var (key, list) in emotesByCategory)
-        {
-            var tuple = EmoteGroupingInfo[key];
-
-            models[i] = new RadialMenuNestedLayerOption(list)
-            {
-                Sprite = tuple.Sprite,
-                ToolTip = Loc.GetString(tuple.Tooltip)
-            };
-            i++;
-        }
-
-        return models;
-    }
-
-    private void HandleRadialButtonClick(EmotePrototype prototype)
-    {
-        _entityManager.RaisePredictiveEvent(new PlayEmoteMessage(prototype.ID));
+        _entityManager.RaisePredictiveEvent(new PlayEmoteMessage(protoId));
     }
 }

@@ -32,6 +32,19 @@ public sealed partial class CardHandMenu : RadialMenu
 
     private EntityUid _owner;
 
+    /// <summary>
+    /// Constructs the card-hand radial menu for the given owner entity, creating one radial button per card in the owner's CardStackComponent.
+    /// </summary>
+    /// <param name="owner">EntityUid of the card stack owner whose cards will be displayed.</param>
+    /// <param name="bui">The bound user interface used to forward selected-card draw messages.</param>
+    /// <remarks>
+    /// For each card in the owner's CardStackComponent this constructor:
+    /// - Determines a display name (uses metadata.EntityName when the card is flipped and metadata is present; otherwise localizes CardComponent.Name).
+    /// - Creates a 64×64 radial button with that tooltip and, if available, a scaled sprite icon child.
+    /// - Wires the button to emit a NetEntity for the selected card via CardHandDrawMessageAction and close the menu on release.
+    /// Finally, it subscribes CardHandDrawMessageAction to <paramref name="bui"/>.SendCardHandDrawMessage.
+    /// If required components (CardStackComponent, CardComponent) or a local session are missing, the constructor returns early and no UI is built.
+    /// </remarks>
     public CardHandMenu(EntityUid owner, CardHandMenuBoundUserInterface bui)
     {
         IoCManager.InjectDependencies(this);
@@ -66,6 +79,7 @@ public sealed partial class CardHandMenu : RadialMenu
 
             var button = new CardMenuButton()
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64f, 64f),
                 ToolTip = cardName,
             };
@@ -99,8 +113,18 @@ public sealed partial class CardHandMenu : RadialMenu
     }
 }
 
-public sealed class CardMenuButton : RadialMenuTextureButtonWithSector
+public sealed class CardMenuButton : RadialMenuTextureButton
 {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CardMenuButton"/> class.
+    /// </summary>
+    /// <remarks>
+    /// A simple specialized radial texture button used to represent a card in the card-hand radial menu.
+    /// No additional initialization logic is performed here; styling and content are configured by the caller.
+    /// </remarks>
+    public CardMenuButton()
+    {
+    }
     public CardMenuButton()
     {
 

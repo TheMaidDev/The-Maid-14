@@ -34,12 +34,28 @@ public abstract class BasedRadialSelectorMenuBUI : BoundUserInterface
         _spriteSystem = EntMan.System<SpriteSystem>();
     }
 
+    /// <summary>
+    /// Builds a hierarchical radial menu from a list of entries and attaches it to the given <see cref="RadialMenu"/>.
+    /// </summary>
+    /// <remarks>
+    /// Creates a new <see cref="RadialContainer"/> named after <paramref name="parentCategory"/> (or "Main" when empty),
+    /// sizes its radius based on the number of entries, and adds it to <paramref name="menu"/> and the internal cache.
+    /// For each entry:
+    /// - If the entry is a category, creates a category button, sets its target layer to the category name, recursively
+    ///   creates the submenu for that category, and adds the button to the container.
+    /// - If the entry is a prototype, creates a button using the resolved display name and textures, subscribes to the
+    ///   button-up event to send a <see cref="RadialSelectorSelectedMessage"/> with the prototype id, and adds the button
+    ///   to the container.
+    /// </remarks>
+    /// <param name="entries">The radial entries to render as buttons or category nodes.</param>
+    /// <param name="menu">The radial menu to which the created container and buttons will be added.</param>
+    /// <param name="parentCategory">Optional category name used as the container name and as the layer target for child category buttons; defaults to an empty string (renders as "Main").</param>
     protected void CreateMenu(List<RadialSelectorEntry> entries, RadialMenu menu, string parentCategory = "")
     {
         var container = new RadialContainer
         {
             Name = !string.IsNullOrEmpty(parentCategory) ? parentCategory : "Main",
-            InitialRadius = 48f + 24f * MathF.Log(entries.Count),
+            Radius = 48f + 24f * MathF.Log(entries.Count),
         };
 
         menu.AddChild(container);
@@ -50,7 +66,7 @@ public abstract class BasedRadialSelectorMenuBUI : BoundUserInterface
             if (entry.Category != null)
             {
                 var button = CreateButton(entry.Category.Name, _spriteSystem.Frame0(entry.Category.Icon));
-                button.TargetLayer = container;
+                button.TargetLayer = entry.Category.Name;
                 CreateMenu(entry.Category.Entries, menu, entry.Category.Name);
                 container.AddChild(button);
             }

@@ -107,6 +107,16 @@ public sealed partial class GhostRoleRadioMenu : RadialMenu
         RefreshUI();
     }
 
+    /// <summary>
+    /// Rebuilds the radial menu contents for selectable ghost roles on the current entity.
+    /// </summary>
+    /// <remarks>
+    /// Populates the "Main" radial container with a button for each prototype listed in the entity's
+    /// GhostRoleMobSpawnerComponent.SelectablePrototypes. Each button displays the role's name as a
+    /// tooltip and an icon taken from the role's IconPrototype (falling back to the role's EntityPrototype).
+    /// Items with missing prototypes or icons are skipped. If the entity does not have a
+    /// GhostRoleMobSpawnerComponent, the method returns without modifying the UI.
+    /// </remarks>
     private void RefreshUI()
     {
         // The main control that will contain all the clickable options
@@ -128,6 +138,7 @@ public sealed partial class GhostRoleRadioMenu : RadialMenu
 
             var button = new GhostRoleRadioMenuButton()
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = Loc.GetString(ghostRoleProto.Name),
                 ProtoId = ghostRoleProto.ID,
@@ -153,6 +164,10 @@ public sealed partial class GhostRoleRadioMenu : RadialMenu
         }
     }
 
+    /// <summary>
+    /// Attaches click handlers to any <see cref="GhostRoleRadioMenuButton"/> children of the given control so that clicking a button sends its ghost-role prototype ID and closes the menu.
+    /// </summary>
+    /// <param name="control">Expected to be a <see cref="RadialContainer"/>; other control types are ignored.</param>
     private void AddGhostRoleRadioMenuButtonOnClickActions(Control control)
     {
         var mainControl = control as RadialContainer;
@@ -176,7 +191,7 @@ public sealed partial class GhostRoleRadioMenu : RadialMenu
     }
 }
 
-public sealed class GhostRoleRadioMenuButton : RadialMenuTextureButtonWithSector
+public sealed class GhostRoleRadioMenuButton : RadialMenuTextureButton
 {
     public ProtoId<GhostRolePrototype> ProtoId { get; set; }
 }

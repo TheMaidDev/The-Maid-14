@@ -29,6 +29,14 @@ public sealed partial class AugmentToolPanelMenu : RadialMenu
         Refresh();
     }
 
+    /// <summary>
+    /// Rebuilds the radial menu to show buttons for each item stored in the current owner's StorageComponent plus a "none" option.
+    /// </summary>
+    /// <remarks>
+    /// If the owner does not have a StorageComponent, the method returns without modifying the menu.
+    /// For each stored entity a 64×64 button containing a scaled SpriteView (3×) is added; activating that button invokes <c>SendSwitchMessage</c> with the entity and closes the menu.
+    /// A final 64×64 "none" button is added that invokes <c>SendSwitchMessage</c> with <c>null</c> and closes the menu.
+    /// </remarks>
     public void Refresh()
     {
         if (!_ent.TryGetComponent<StorageComponent>(_owner, out var storage))
@@ -36,7 +44,7 @@ public sealed partial class AugmentToolPanelMenu : RadialMenu
 
         foreach (var (entity, _) in storage.StoredItems)
         {
-            var button = new RadialMenuTextureButtonWithSector()
+            var button = new RadialMenuTextureButton()
             {
                 SetSize = new Vector2(64f, 64f),
             };
@@ -54,7 +62,7 @@ public sealed partial class AugmentToolPanelMenu : RadialMenu
             };
         }
 
-        var nilButton = new RadialMenuTextureButtonWithSector()
+        var nilButton = new RadialMenuTextureButton()
         {
             SetSize = new Vector2(64f, 64f),
         };

@@ -42,6 +42,16 @@ public sealed partial class SpellbladeMenu : RadialMenu
         Refresh();
     }
 
+    /// <summary>
+    /// Rebuilds the radial spellblade menu for the currently-set item.
+    /// </summary>
+    /// <remarks>
+    /// Clears the "Main" RadialContainer and, if the current <c>_item</c> has a <see cref="SpellbladeComponent"/>,
+    /// creates a button for each enchantment prototype listed on that component. Each button is populated with the
+    /// prototype's icon, tooltip (from the prototype description), and its <c>ProtoId</c>. After adding all buttons
+    /// the method wires up their click handlers via <see cref="AddSpellbladeMenuButtonOnClickActions(RadialContainer)"/>.
+    /// If the item has no <see cref="SpellbladeComponent"/> or a prototype cannot be resolved, that entry is skipped.
+    /// </remarks>
     public void Refresh()
     {
         var main = FindControl<RadialContainer>("Main");
@@ -57,6 +67,7 @@ public sealed partial class SpellbladeMenu : RadialMenu
 
             var button = new SpellbladeMenuButton
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = Loc.GetString(prototype.Desc),
                 ProtoId = prototype.ID
@@ -77,6 +88,10 @@ public sealed partial class SpellbladeMenu : RadialMenu
         AddSpellbladeMenuButtonOnClickActions(main);
     }
 
+    /// <summary>
+    /// Subscribes click handlers on every SpellbladeMenuButton child of the given radial container.
+    /// </summary>
+    /// <param name="control">The radial container whose SpellbladeMenuButton children should be wired. When a button is released this invokes SendSpellbladeSystemMessageAction with the button's ProtoId and closes the menu.</param>
     private void AddSpellbladeMenuButtonOnClickActions(RadialContainer control)
     {
         foreach (var child in control.Children)
@@ -93,7 +108,7 @@ public sealed partial class SpellbladeMenu : RadialMenu
     }
 }
 
-public sealed class SpellbladeMenuButton : RadialMenuTextureButtonWithSector
+public sealed class SpellbladeMenuButton : RadialMenuTextureButton
 {
     public ProtoId<SpellbladeEnchantmentPrototype> ProtoId { get; set; }
 }

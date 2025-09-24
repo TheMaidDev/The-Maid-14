@@ -46,6 +46,17 @@ public sealed partial class HereticRitualRuneRadialMenu : RadialMenu
         RefreshUI();
     }
 
+    /// <summary>
+    /// Rebuilds the radial menu UI for heretic rituals.
+    /// </summary>
+    /// <remarks>
+    /// Locates the "Main" RadialContainer and, if the local player has a HereticComponent,
+    /// creates one HereticRitualMenuButton per known ritual (setting size, style class,
+    /// tooltip, icon, and ProtoId) and adds them to the container. After populating the
+    /// menu it wires up the click handlers via AddHereticRitualMenuButtonOnClickAction.
+    /// Exits early without changes if the container is missing or the local player is
+    /// not a heretic.
+    /// </remarks>
     private void RefreshUI()
     {
         var main = FindControl<RadialContainer>("Main");
@@ -64,6 +75,7 @@ public sealed partial class HereticRitualRuneRadialMenu : RadialMenu
 
             var button = new HereticRitualMenuButton
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = Loc.GetString(ritualPrototype.LocName),
                 ProtoId = ritualPrototype.ID
@@ -84,6 +96,13 @@ public sealed partial class HereticRitualRuneRadialMenu : RadialMenu
         AddHereticRitualMenuButtonOnClickAction(main);
     }
 
+    /// <summary>
+    /// Attaches click handlers to each HereticRitualMenuButton child of the given radial container.
+    /// </summary>
+    /// <param name="mainControl">The radial container whose HereticRitualMenuButton children will receive click handlers. If null, the method does nothing.</param>
+    /// <remarks>
+    /// When a button is released, this invokes <see cref="SendHereticRitualRuneMessageAction"/> with the button's <c>ProtoId</c> and closes the radial menu.
+    /// </remarks>
     private void AddHereticRitualMenuButtonOnClickAction(RadialContainer mainControl)
     {
         if (mainControl == null)
@@ -104,7 +123,7 @@ public sealed partial class HereticRitualRuneRadialMenu : RadialMenu
         }
     }
 
-    public sealed class HereticRitualMenuButton : RadialMenuTextureButtonWithSector
+    public sealed class HereticRitualMenuButton : RadialMenuTextureButton
     {
         public ProtoId<HereticRitualPrototype> ProtoId { get; set; }
     }

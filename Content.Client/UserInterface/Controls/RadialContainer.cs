@@ -8,6 +8,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 using System.Linq;
 using System.Numerics;
@@ -17,11 +18,6 @@ namespace Content.Client.UserInterface.Controls;
 [Virtual]
 public class RadialContainer : LayoutContainer
 {
-    /// <summary>
-    /// Increment of radius per child element to be rendered.
-    /// </summary>
-    private const float RadiusIncrement = 5f;
-
     /// <summary>
     /// Specifies the anglular range, in radians, in which child elements will be placed.
     /// The first value denotes the angle at which the first element is to be placed, and
@@ -63,30 +59,10 @@ public class RadialContainer : LayoutContainer
     public RAlignment RadialAlignment { get; set; } = RAlignment.Clockwise;
 
     /// <summary>
-    /// Radial menu radius determines how far from the radial container's center its child elements will be placed.
-    /// To correctly display dynamic amount of elements control actually resizes depending on amount of child buttons,
-    /// but uses this property as base value for final radius calculation.
+    /// Determines how far from the radial container's center that its child elements will be placed
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float InitialRadius { get; set; } = 100f;
-
-    /// <summary>
-    /// Radial menu radius determines how far from the radial container's center its child elements will be placed.
-    /// This is dynamically calculated (based on child button count) radius, result of <see cref="InitialRadius"/> and
-    /// <see cref="RadiusIncrement"/> multiplied by currently visible child button count.
-    /// </summary>
-    [ViewVariables(VVAccess.ReadOnly)]
-    public float CalculatedRadius { get; private set; }
-
-    /// <summary>
-    /// Determines radial menu button sectors inner radius, is a multiplier of <see cref="InitialRadius"/>.
-    /// </summary>
-    public float InnerRadiusMultiplier { get; set; } = 0.5f;
-
-    /// <summary>
-    /// Determines radial menu button sectors outer radius, is a multiplier of <see cref="InitialRadius"/>.
-    /// </summary>
-    public float OuterRadiusMultiplier { get; set; } = 1.5f;
+    public float Radius { get; set; } = 100f;
 
     /// <summary>
     /// Sets whether the container should reserve a space on the layout for child which are not currently visible
@@ -96,79 +72,55 @@ public class RadialContainer : LayoutContainer
 
     /// <summary>
     /// This container arranges its children, evenly separated, in a radial pattern
+    /// <summary>
+    /// Initializes a new instance of <see cref="RadialContainer"/>.
     /// </summary>
+    /// <remarks>
+    /// Defaults: <see cref="Radius"/> = 100f, <see cref="RadialAlignment"/> = <c>Clockwise</c>,
+    /// <see cref="AngularRange"/> = (0, Tau - ε), and <see cref="ReserveSpaceForHiddenChildren"/> = true.
+    /// </remarks>
     public RadialContainer()
     {
 
     }
-
-    /// <inheritdoc />
-    protected override Vector2 ArrangeOverride(Vector2 finalSize)
+	
+    /// <summary>
+    /// Positions child controls in a radial layout and updates the container's Radius based on child count.
+    /// </summary>
+    /// <remarks>
+    /// Calculates an angular arc from <see cref="AngularRange"/>, normalizes it into [0, Tau), and reverses direction when <see cref="RadialAlignment"/> is <c>AntiClockwise</c>.
+    /// The method optionally considers only visible children depending on <see cref="ReserveSpaceForHiddenChildren"/>. It updates <see cref="Radius"/> to add padding proportional to the number of considered children to reduce overlap, computes an even angular separation (treating a full circle specially), and places each child at polar coordinates converted to screen positions centered in the container.
+    /// </remarks>
+    protected override void Draw(DrawingHandleScreen handle)
     {
-        var children = ReserveSpaceForHiddenChildren
-            ? Children
-            : Children.Where(x => x.Visible);
-
+		
+        const float baseRadius = 100f;
+        const float radiusIncrement = 5f;
+		
+        var children = ReserveSpaceForHiddenChildren ? Children : Children.Where(x => x.Visible);
         var childCount = children.Count();
-
-        // Add padding from the center at higher child counts so they don't overlap.
-        CalculatedRadius = InitialRadius + (childCount * RadiusIncrement);
-
-        var isAntiClockwise = RadialAlignment == RAlignment.AntiClockwise;
+		
+		// Add padding from the center at higher child counts so they don't overlap.
+		Radius = baseRadius + (childCount * radiusIncrement);
 
         // Determine the size of the arc, accounting for clockwise and anti-clockwise arrangements
         var arc = AngularRange.Y - AngularRange.X;
-        arc = arc < 0
-            ? MathF.Tau + arc
-            : arc;
-        arc = isAntiClockwise
-            ? MathF.Tau - arc
-            : arc;
+        arc = (arc < 0) ? MathF.Tau + arc : arc;
+        arc = (RadialAlignment == RAlignment.AntiClockwise) ? MathF.Tau - arc : arc;
 
         // Account for both circular arrangements and arc-based arrangements
-        var childMod = MathHelper.CloseTo(arc, MathF.Tau, 0.01f)
-            ? 0
-            : 1;
+        var childMod = MathHelper.CloseTo(arc, MathF.Tau, 0.01f) ? 0 : 1;
 
         // Determine the separation between child elements
         var sepAngle = arc / (childCount - childMod);
-        sepAngle *= isAntiClockwise
-            ? -1f
-            : 1f;
-
-        var controlCenter = finalSize * 0.5f;
+        sepAngle *= (RadialAlignment == RAlignment.AntiClockwise) ? -1f : 1f;
 
         // Adjust the positions of all the child elements
-        var query = children.Select((x, index) => (index, x));
-        foreach (var (childIndex, child) in query)
+        foreach (var (i, child) in children.Select((x, i) => (i, x)))
         {
-            const float angleOffset = MathF.PI * 0.5f;
-
-            var targetAngleOfChild = AngularRange.X + sepAngle * (childIndex + 0.5f) + angleOffset;
-
-            // flooring values for snapping float values to physical grid -
-            // it prevents gaps and overlapping between different button segments
-            var position = new Vector2(
-                    MathF.Floor(CalculatedRadius * MathF.Cos(targetAngleOfChild)),
-                    MathF.Floor(-CalculatedRadius * MathF.Sin(targetAngleOfChild))
-                ) + controlCenter - child.DesiredSize * 0.5f + Position;
-
+            var position = new Vector2(Radius * MathF.Sin(AngularRange.X + sepAngle * i) + Width / 2f - child.Width / 2f, -Radius * MathF.Cos(AngularRange.X + sepAngle * i) + Height / 2f - child.Height / 2f);
             SetPosition(child, position);
-
-            // radial menu buttons with sector need to also know in which sector and around which point
-            // they should be rendered, how much space sector should should take etc.
-            if (child is IRadialMenuItemWithSector tb)
-            {
-                tb.AngleSectorFrom = sepAngle * childIndex;
-                tb.AngleSectorTo = sepAngle * (childIndex + 1);
-                tb.AngleOffset = angleOffset;
-                tb.InnerRadius = CalculatedRadius * InnerRadiusMultiplier;
-                tb.OuterRadius = CalculatedRadius * OuterRadiusMultiplier;
-                tb.ParentCenter = controlCenter;
-            }
         }
-
-        return base.ArrangeOverride(finalSize);
     }
 
     /// <summary>
@@ -180,5 +132,4 @@ public class RadialContainer : LayoutContainer
         Clockwise,
         AntiClockwise,
     }
-
 }

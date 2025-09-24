@@ -38,6 +38,18 @@ public sealed partial class ToggleableClothingRadialMenu : RadialMenu
         RefreshUI();
     }
 
+    /// <summary>
+    /// Rebuilds the radial menu UI to reflect the current toggleable clothing attached to <see cref="Entity"/>.
+    /// </summary>
+    /// <remarks>
+    /// Finds the "Main" radial container, reads the <see cref="ToggleableClothingComponent"/> on <see cref="Entity"/>, and
+    /// populates the container with a button for each entry in the component's clothing list. Each button shows the
+    /// clothing's sprite, sets an attach/unattach tooltip based on whether the clothing is present in the component's
+    /// container, and registers the click actions that send toggle events and refresh the menu.
+    /// 
+    /// If the entity has no <see cref="ToggleableClothingComponent"/> or its clothing container is null, the method exits
+    /// without modifying the UI.
+    /// </remarks>
     public void RefreshUI()
     {
         var main = FindControl<RadialContainer>("Main");
@@ -60,6 +72,7 @@ public sealed partial class ToggleableClothingRadialMenu : RadialMenu
 
             var button = new ToggleableClothingRadialMenuButton()
             {
+                StyleClasses = { "RadialMenuButton" },
                 SetSize = new Vector2(64, 64),
                 ToolTip = tooltipText,
                 AttachedClothingId = attached.Key
@@ -82,6 +95,16 @@ public sealed partial class ToggleableClothingRadialMenu : RadialMenu
         AddToggleableClothingMenuButtonOnClickAction(main);
     }
 
+    /// <summary>
+    /// Attaches click handlers to toggleable clothing radial buttons inside the provided radial container.
+    /// </summary>
+    /// <param name="control">The radial container whose children are expected to be ToggleableClothingRadialMenuButton instances. If <paramref name="control"/> is not a RadialContainer the method is a no-op.</param>
+    /// <remarks>
+    /// For each button it subscribes to <c>OnPressed</c> so that pressing the button:
+    /// - invokes <c>SendToggleClothingMessageAction</c> with the button's <c>AttachedClothingId</c> (if set),
+    /// - disposes all children of the radial container, and
+    /// - refreshes the menu UI by calling <c>RefreshUI()</c>.
+    /// </remarks>
     private void AddToggleableClothingMenuButtonOnClickAction(Control control)
     {
         var mainControl = control as RadialContainer;
@@ -106,7 +129,7 @@ public sealed partial class ToggleableClothingRadialMenu : RadialMenu
     }
 }
 
-public sealed class ToggleableClothingRadialMenuButton : RadialMenuTextureButtonWithSector
+public sealed class ToggleableClothingRadialMenuButton : RadialMenuTextureButton
 {
     public EntityUid AttachedClothingId { get; set; }
 }
