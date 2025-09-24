@@ -90,7 +90,7 @@
   components:
   - type: Contraband
     allowedDepartments: [ Security ]
-    allowedJobs: [ BlueshieldOfficer ] # Goob - effectively almost a sec member
+    # allowedJobs: [ BlueshieldOfficer ] # Goob - effectively almost a sec member
 
 - type: entity
   id: BaseEngineeringContraband
@@ -115,7 +115,7 @@
   components:
   - type: Contraband
     allowedDepartments: [ Medical ]
-    allowedJobs: [ Brigmedic, BlueshieldOfficer ] # goob
+    # allowedJobs: [ Brigmedic, BlueshieldOfficer ] # goob
 
 - type: entity
   id: BaseCivilianContraband

@@ -22,7 +22,7 @@
   id: DefaultRuleset
   name: guide-entry-rules
   priority: 60
-  text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
+  text: "/ServerInfo/Rules.xml"
   children:
   - CoreRules
   - RoleplayRules
