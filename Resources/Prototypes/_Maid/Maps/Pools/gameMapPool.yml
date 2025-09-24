@@ -1,0 +1,7 @@
+- type: gameMapPool
+  id: MaidStationMapPool
+  maps:
+  - Bagel
+  - Box
+  - Meta
+  - Kettle
