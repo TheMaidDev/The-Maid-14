@@ -134,33 +134,33 @@
   - Zookeeper
   - ServiceWorker
 
-#- type: department
-#  id: CentralCommand
-#  name: department-CentralCommand
-#  description: department-CentralCommand-description
-#  color: "#0c344d"
-#  roles:
-#  - CentralCommandOfficial
-#  - CBURN
-#  - ERTLeader
-#  - ERTChaplain
-#  - ERTJanitor
-#  - ERTMedical
-#  - ERTSecurity
-#  - ERTEngineer
-#  - DeathSquad
-#  - HecuOperative
-#  - BlueshieldOfficer # Goobstation - Start
-#  - NanotrasenRepresentative
-#  - NanotrasenCareerTrainer
-#  - NavyOfficer
-#  - NavyCaptain
-#  - NavyOfficerUndercover
-#  - SpecialOperationsOfficer
-#  - Diplomat
-#  - GovernmentMan # Goobstation - End
-#  editorHidden: true
-#  weight: 120
+- type: department
+  id: CentralCommand
+  name: department-CentralCommand
+  description: department-CentralCommand-description
+  color: "#0c344d"
+  roles:
+  - CentralCommandOfficial
+  - CBURN
+  - ERTLeader
+  - ERTChaplain
+  - ERTJanitor
+  - ERTMedical
+  - ERTSecurity
+  - ERTEngineer
+  - DeathSquad
+  - HecuOperative
+  - BlueshieldOfficer # Goobstation - Start
+  - NanotrasenRepresentative
+  - NanotrasenCareerTrainer
+  - NavyOfficer
+  - NavyCaptain
+  - NavyOfficerUndercover
+  - SpecialOperationsOfficer
+  - Diplomat
+  - GovernmentMan # Goobstation - End
+  editorHidden: true
+  weight: 120
 
 - type: department
   id: Command
