@@ -285,7 +285,7 @@
   id: AdvancedToolsTechnology
   name: research-technology-advanced-tools
   icon:
-    sprite: Objects/Tools/welder_experimental.rsi
+    sprite: _Maid/Objects/Tools/welder_experimental.rsi # Maid
     state: icon
   discipline: Industrial
   tier: 2

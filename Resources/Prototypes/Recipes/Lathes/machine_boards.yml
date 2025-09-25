@@ -387,7 +387,7 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseGeneralMachineRecipeCategory ]
   id: ReagentGrinderMachineCircuitboard
-  icon: { sprite: Structures/Machines/grinder.rsi, state: grinder_empty } # Goobstation
+  icon: { sprite: _Maid/Structures/Machines/grinder.rsi, state: grinder_empty } # Maid
   result: ReagentGrinderMachineCircuitboard
 
 - type: latheRecipe

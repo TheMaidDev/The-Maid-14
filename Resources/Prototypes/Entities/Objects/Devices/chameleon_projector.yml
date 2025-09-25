@@ -74,7 +74,7 @@
   components:
   - type: Action
     icon:
-      sprite: Objects/Tools/wrench.rsi
+      sprite: _Maid/Objects/Tools/wrench.rsi # Maid
       state: icon
     itemIconStyle: BigAction
   - type: InstantAction

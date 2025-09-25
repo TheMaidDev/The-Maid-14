@@ -16,7 +16,7 @@
 - type: cargoProduct
   id: AtmosphericsAir
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: grey
   product: AirCanister
   cost: 250 # Goobstation - IF YOU SEE THIS IN A MERGE CONFLICT, USE THE GOOB VERSION
@@ -26,7 +26,7 @@
 - type: cargoProduct
   id: AtmosphericsOxygen
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: blue
   product: OxygenCanister
   cost: 250 # Goobstation
@@ -36,7 +36,7 @@
 - type: cargoProduct
   id: AtmosphericsLiquidOxygen
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: blue
   product: LiquidOxygenCanister
   cost: 600 # Goobstation # you literally get infinite gas at atmos
@@ -46,7 +46,7 @@
 - type: cargoProduct
   id: AtmosphericsNitrogen
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: red
   product: NitrogenCanister
   cost: 250 # Goobstation
@@ -56,7 +56,7 @@
 - type: cargoProduct
   id: AtmosphericsLiquidNitrogen
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: red
   product: LiquidNitrogenCanister
   cost: 600 # Goobstation
@@ -66,7 +66,7 @@
 - type: cargoProduct
   id: AtmosphericsCarbonDioxide
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: black
   product: CarbonDioxideCanister
   cost: 400 # even though it's poisonous, it comes locked and only damages you slowly even with high amounts (tested)
@@ -76,7 +76,7 @@
 - type: cargoProduct
   id: AtmosphericsLiquidCarbonDioxide
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: black
   product: LiquidCarbonDioxideCanister
   cost: 1600 # Goobstation # much less deadly than the plasma can (this has been tested) even though this is cold+poison
@@ -86,7 +86,7 @@
 - type: cargoProduct
   id: AtmosphericsStorage
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: yellow
   product: StorageCanister
   cost: 210 # No gases in it so it's cheaper
@@ -97,7 +97,7 @@
 - type: cargoProduct
   id: AtmosphericsWaterVapor
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: water_vapor
   product: WaterVaporCanister
   cost: 250
@@ -107,7 +107,7 @@
 - type: cargoProduct
   id: AtmosphericsPlasma
   icon:
-    sprite: Structures/Storage/canister.rsi
+    sprite: _Maid/Structures/Storage/canister.rsi # Maid
     state: orange
   product: PlasmaCanister
   cost: 2000 # Goobstation # for reference, bagel's 3x1 roundstart plasma chamber contains ~16kmol for free, this is $2k for 1870mol, so $16k to nearly refill a 3x1 (some are 3x3) chamber

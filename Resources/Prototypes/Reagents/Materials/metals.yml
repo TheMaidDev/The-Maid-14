@@ -25,7 +25,7 @@
   id: Steel
   stackEntity: SheetSteel1
   name: materials-steel
-  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: steel }
+  icon: { sprite: _Maid/Objects/Materials/Sheets/metal.rsi, state: steel } # Maid
   price: 0.15 # $15 for 1 unit
 
 - type: material
@@ -50,7 +50,7 @@
   id: Brass
   stackEntity: SheetBrass1
   name: materials-brass
-  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: brass }
+  icon: { sprite: _Maid/Objects/Materials/Sheets/metal.rsi, state: brass } # Maid
   color: "#b18b25"
   price: 0.20 # Goobstation - Cargo repricing
 
@@ -58,6 +58,6 @@
   id: Plasteel
   stackEntity: SheetPlasteel1
   name: materials-plasteel
-  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: plasteel }
+  icon: { sprite: _Maid/Objects/Materials/Sheets/metal.rsi, state: plasteel } # Maid
   color: "#696969" #Okay, this is epic
   price: 0.3 # Goobstation - Cargo repricing

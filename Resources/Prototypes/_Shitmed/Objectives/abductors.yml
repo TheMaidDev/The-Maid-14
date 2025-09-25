@@ -412,7 +412,7 @@
     job: AtmosphericTechnician # It would be too free for atmos techs :) CE is fair game though.
   - type: Objective
     icon:
-      sprite: Objects/Tanks/oxygen.rsi
+      sprite: _Maid/Objects/Tanks/oxygen.rsi # Maid
       state: icon
 
 - type: entity

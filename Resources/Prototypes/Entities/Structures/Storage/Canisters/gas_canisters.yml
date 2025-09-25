@@ -963,7 +963,7 @@
       damageModifierSet: Metallic
     - type: InteractionOutline
     - type: Sprite
-      sprite: Structures/Storage/canister.rsi
+      sprite: _Maid/Structures/Storage/canister.rsi # Maid
       state: grey-1
     - type: Physics
       bodyType: Dynamic

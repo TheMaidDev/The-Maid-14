@@ -330,7 +330,7 @@
   - type: Action
     clientExclusive: true
     temporary: true
-    icon: { sprite: Objects/Tools/multitool.rsi, state: icon }
+    icon: { sprite: _Maid/Objects/Tools/multitool.rsi, state: icon }  # Maid
   - type: InstantAction
     event: !type:ClearAllOverlaysEvent
 

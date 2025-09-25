@@ -93,7 +93,7 @@
   id: LossOfSurprise
   category: Ninjutsu
   icons:
-  - sprite: /Textures/Structures/Storage/closet.rsi
+  - sprite: /Textures/_Maid/Structures/Storage/closet.rsi # Maid
     state: cardboard_special
   name: alerts-loss-of-surprise-name
   description: alerts-loss-of-surprise-desc

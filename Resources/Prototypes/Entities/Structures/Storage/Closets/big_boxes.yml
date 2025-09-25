@@ -57,7 +57,7 @@
       damageContainer: Box
     - type: Sprite
       noRot: true
-      sprite: Structures/Storage/closet.rsi
+      sprite: _Maid/Structures/Storage/closet.rsi # Maid
       layers:
       - state: cardboard
         map: ["enum.StorageVisualLayers.Base"]

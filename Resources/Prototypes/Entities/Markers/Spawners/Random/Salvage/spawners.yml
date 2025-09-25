@@ -412,7 +412,7 @@
   - type: Sprite
     layers:
     - state: pink
-    - sprite: Structures/Storage/canister.rsi
+    - sprite: _Maid/Structures/Storage/canister.rsi # Maid
       state: blue
   - type: EntityTableSpawner
     table: !type:GroupSelector

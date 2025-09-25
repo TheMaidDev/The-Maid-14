@@ -19,7 +19,7 @@
 - type: latheRecipe
   parent: [ BaseCheapElectronicsRecipe, BaseCircuitryRecipeCategory ]
   id: FreezerElectronics
-  icon: { sprite: Structures/Storage/closet.rsi, state: freezer_icon } # Goobstation
+  icon: { sprite: _Maid/Structures/Storage/closet.rsi, state: freezer_icon } # Maid
   result: FreezerElectronics
 
 - type: latheRecipe

@@ -117,13 +117,13 @@
   - type: Item
     size: Huge
   - type: Sprite
-    sprite: Structures/Machines/fax_machine.rsi
+    sprite: _Maid/Structures/Machines/fax_machine.rsi # Maid
     drawdepth: SmallObjects
     layers:
     - state: icon
       map: [ "enum.FaxMachineVisuals.VisualState" ]
   - type: Icon
-    sprite: Structures/Machines/fax_machine.rsi
+    sprite: _Maid/Structures/Machines/fax_machine.rsi # Maid
     state: icon
   - type: Appearance
   - type: ActivatableUI

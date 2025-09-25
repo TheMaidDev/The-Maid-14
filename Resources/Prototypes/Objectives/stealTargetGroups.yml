@@ -327,7 +327,7 @@
   id: FaxMachineCaptain
   name: steal-target-groups-fax-machine-captain
   sprite:
-    sprite: Structures/Machines/fax_machine.rsi
+    sprite: _Maid/Structures/Machines/fax_machine.rsi # Maid
     state: icon
 
 - type: stealTargetGroup

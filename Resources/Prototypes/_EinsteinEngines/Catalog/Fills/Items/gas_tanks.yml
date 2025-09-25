@@ -5,11 +5,11 @@
   description: An easily portable tank for emergencies. Contains very little plasma, rated for survival use only.
   components:
   - type: Sprite
-    sprite: Objects/Tanks/emergency_red.rsi # TODO: emergency plasma tank sprite
+    sprite: _Maid/Objects/Tanks/emergency_red.rsi # Maid # TODO: emergency plasma tank sprite
   - type: Item
-    sprite: Objects/Tanks/emergency_red.rsi
+    sprite: _Maid/Objects/Tanks/emergency_red.rsi # Maid
   - type: Clothing
-    sprite: Objects/Tanks/emergency_red.rsi
+    sprite: _Maid/Objects/Tanks/emergency_red.rsi # Maid
 
 - type: entity
   id: EmergencyPlasmaTankFilled
@@ -35,11 +35,11 @@
   description: An emergency tank with extended capacity. Technically rated for prolonged use.
   components:
   - type: Sprite
-    sprite: Objects/Tanks/emergency_extended_red.rsi # TODO: extended-capacity emergency plasma tank sprite
+    sprite: _Maid/Objects/Tanks/emergency_extended_red.rsi # Maid # TODO: extended-capacity emergency plasma tank sprite
   - type: Item
-    sprite: Objects/Tanks/emergency_extended_red.rsi
+    sprite: _Maid/Objects/Tanks/emergency_extended_red.rsi # Maid
   - type: Clothing
-    sprite: Objects/Tanks/emergency_extended_red.rsi
+    sprite: _Maid/Objects/Tanks/emergency_extended_red.rsi # Maid
 
 - type: entity
   id: ExtendedEmergencyPlasmaTankFilled

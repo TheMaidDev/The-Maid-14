@@ -26,7 +26,7 @@
         doAfter: 2
       - tag: WeldingTool
         icon:
-          sprite: Objects/Tools/welder.rsi
+          sprite: _Maid/Objects/Tools/welder.rsi # Maid
           state: icon
         name: construction-graph-tag-welding-tool
         doAfter: 2

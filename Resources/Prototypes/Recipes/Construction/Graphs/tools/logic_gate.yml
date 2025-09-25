@@ -46,7 +46,7 @@
       steps:
       - tag: Multitool
         icon:
-          sprite: Objects/Tools/multitool.rsi
+          sprite: _Maid/Objects/Tools/multitool.rsi # Maid
           state: icon
         name: construction-graph-tag-multitool
       - material: Cable

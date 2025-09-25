@@ -22,7 +22,7 @@
 - type: cargoProduct
   id: MaterialGlass
   icon:
-    sprite: Objects/Materials/Sheets/glass.rsi
+    sprite: _Maid/Objects/Materials/Sheets/glass.rsi # Maid
     state: glass_3
   product: CrateMaterialGlass
   cost: 1500
@@ -32,7 +32,7 @@
 - type: cargoProduct
   id: MaterialSteel
   icon:
-    sprite: Objects/Materials/Sheets/metal.rsi
+    sprite: _Maid/Objects/Materials/Sheets/metal.rsi # Maid
     state: steel_3
   product: CrateMaterialSteel
   cost: 1500
@@ -42,7 +42,7 @@
 - type: cargoProduct
   id: MaterialPlastic
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _Maid/Objects/Materials/Sheets/other.rsi # Maid
     state: plastic_3
   product: CrateMaterialPlastic
   cost: 2000
@@ -52,7 +52,7 @@
 - type: cargoProduct
   id: MaterialBrass
   icon:
-    sprite: Objects/Materials/Sheets/metal.rsi
+    sprite: _Maid/Objects/Materials/Sheets/metal.rsi # Maid
     state: brass_3
   product: CrateMaterialBrass
   cost: 2000 # Goobstation # this is mostly decorative
@@ -62,7 +62,7 @@
 - type: cargoProduct
   id: MaterialPlasteel
   icon:
-    sprite: Objects/Materials/Sheets/metal.rsi
+    sprite: _Maid/Objects/Materials/Sheets/metal.rsi # Maid
     state: plasteel_3
   product: CrateMaterialPlasteel
   cost: 1000 # Goobstation # $3k/3 stacks
@@ -102,7 +102,7 @@
 - type: cargoProduct
   id: MaterialPlasma
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _Maid/Objects/Materials/Sheets/other.rsi # Maid
     state: plasma_3
   product: CrateMaterialPlasma
   cost: 1500
@@ -122,7 +122,7 @@
 - type: cargoProduct
   id: PaperMaterial
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _Maid/Objects/Materials/Sheets/other.rsi # Maid
     state: paper_3
   product: CrateMaterialPaper
   cost: 185
@@ -132,7 +132,7 @@
 - type: cargoProduct
   id: MaterialBasic
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _Maid/Objects/Materials/Sheets/other.rsi # Maid
     state: generic_materials
   product: CrateMaterialBasicResource
   cost: 1660

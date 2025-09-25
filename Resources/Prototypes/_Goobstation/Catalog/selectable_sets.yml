@@ -89,7 +89,7 @@
   name: selectable-set-thief-sleeper-name
   description: selectable-set-thief-sleeper-description
   sprite:
-    sprite: Objects/Tanks/anesthetic.rsi
+    sprite: _Maid/Objects/Tanks/anesthetic.rsi # Maid
     state: icon
   content:
   - ChemistryBottleNocturine

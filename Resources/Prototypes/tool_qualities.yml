@@ -16,7 +16,7 @@
   name: tool-quality-anchoring-name
   toolName: tool-quality-anchoring-tool-name
   spawn: Wrench
-  icon: { sprite: Objects/Tools/wrench.rsi, state: icon }
+  icon: { sprite: _Maid/Objects/Tools/wrench.rsi, state: icon } # Maid
 
 - type: tool
   id: Prying
@@ -44,14 +44,14 @@
   name: tool-quality-welding-name
   toolName: tool-quality-welding-tool-name
   spawn: Welder
-  icon: { sprite: Objects/Tools/welder.rsi, state: icon }
+  icon: { sprite: _Maid/Objects/Tools/welder.rsi, state: icon } # Maid
 
 - type: tool
   id: Pulsing
   name: tool-quality-pulsing-name
   toolName: tool-quality-pulsing-tool-name
   spawn: Multitool
-  icon: { sprite: Objects/Tools/multitool.rsi, state: icon }
+  icon: { sprite: _Maid/Objects/Tools/multitool.rsi, state: icon } # Maid
 
 - type: tool
   id: Slicing

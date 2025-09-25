@@ -35,7 +35,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: /Textures/Structures/Storage/closet.rsi
+    sprite: /Textures/_Maid/Structures/Storage/closet.rsi # Maid
     state: cardboard_special
 
 - type: entity

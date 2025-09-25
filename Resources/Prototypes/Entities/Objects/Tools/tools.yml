@@ -415,7 +415,7 @@
       sound:
         path: /Audio/Items/multitool_drop.ogg
     - type: Sprite
-      sprite: Objects/Tools/network_configurator.rsi
+      sprite: _Maid/Objects/Tools/network_configurator.rsi # Maid
       layers:
         - state: icon
         - state: mode-link
