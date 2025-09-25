@@ -40,9 +40,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/reinforced_window.rsi
+    sprite: _Maid/Structures/Windows/reinforced_window.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Windows/reinforced_window.rsi
+    sprite: _Maid/Structures/Windows/reinforced_window.rsi # Maid
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -89,7 +89,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi # Maid
   - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 50
     damagePenalty: 0.1
@@ -107,10 +107,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: reinforced_window
   - type: Icon
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -121,7 +121,7 @@
     damageDivisor: 1.5
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi # Maid
   - type: Damageable
     damageModifierSet: RGlass
   - type: RCDDeconstructable
@@ -170,7 +170,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/reinforced_window_diagonal.rsi
+    sprite: _Maid/Structures/Windows/reinforced_window_diagonal.rsi # Maid
     state: state0
   - type: Tag
     tags:
@@ -180,7 +180,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: _Maid/Structures/Windows/reinforced_window_diagonal.rsi
+    sprite: _Maid/Structures/Windows/reinforced_window_diagonal.rsi # Maid
     state: state0
   - type: Fixtures
     fixtures:
@@ -202,7 +202,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi # Maid
   - type: Construction
     graph: WindowDiagonal
     node: reinforcedWindowDiagonal

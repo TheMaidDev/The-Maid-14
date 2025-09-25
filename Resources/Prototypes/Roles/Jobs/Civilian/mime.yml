@@ -161,7 +161,7 @@
     priority: -1
     useDelay: 30
     icon:
-      sprite: Structures/Walls/solid.rsi
+      sprite: _Maid/Structures/Walls/solid.rsi # Maid
       state: full
   - type: InstantAction
     event: !type:InvisibleWallActionEvent

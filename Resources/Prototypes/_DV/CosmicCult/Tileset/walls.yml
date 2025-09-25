@@ -91,7 +91,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi # Maid
   - type: RadiationBlocker
     resistance: 5
 

@@ -69,9 +69,9 @@
       - Window
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/window.rsi
+    sprite: _Maid/Structures/Windows/window.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Windows/window.rsi
+    sprite: _Maid/Structures/Windows/window.rsi # Maid
     state: full
   - type: Physics
     bodyType: Static
@@ -137,7 +137,7 @@
     damageDivisor: 2
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi # Maid
   - type: StaticPrice
     price: 100
   - type: BlockWeather
@@ -149,9 +149,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/tinted_window.rsi
+    sprite: _Maid/Structures/Windows/tinted_window.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Windows/tinted_window.rsi
+    sprite: _Maid/Structures/Windows/tinted_window.rsi # Maid
   - type: IconSmooth
     base: twindow
   - type: Construction
@@ -192,10 +192,10 @@
         collection: GlassSmack
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: window
   - type: Icon
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: window
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
@@ -261,7 +261,7 @@
     thresholds: [5, 10, 20]
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi # Maid
   - type: StaticPrice
     price: 15
 
@@ -284,10 +284,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: frosted_window
   - type: Icon
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: frosted_window
   - type: StaticPrice
     price: 35
@@ -303,7 +303,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/window_diagonal.rsi
+    sprite: _Maid/Structures/Windows/window_diagonal.rsi # Maid
     state: state0
   - type: Tag
     tags:
@@ -313,7 +313,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: _Maid/Structures/Windows/window_diagonal.rsi
+    sprite: _Maid/Structures/Windows/window_diagonal.rsi # Maid
     state: state0
   - type: Fixtures
     fixtures:
@@ -335,7 +335,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi # Maid
   - type: Construction
     graph: WindowDiagonal
     node: windowDiagonal

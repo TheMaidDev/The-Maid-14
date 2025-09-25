@@ -39,9 +39,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/plasma_window.rsi
+    sprite: _Maid/Structures/Windows/plasma_window.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Windows/plasma_window.rsi
+    sprite: _Maid/Structures/Windows/plasma_window.rsi # Maid
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass
@@ -81,7 +81,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi # Maid
   - type: StaticPrice
     price: 100
   - type: RadiationBlocker
@@ -103,10 +103,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: plasma_window
   - type: Icon
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: plasma_window
   - type: Construction
     graph: WindowDirectional
@@ -117,7 +117,7 @@
     damageDivisor: 1.5
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger:
@@ -162,7 +162,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/plasma_diagonal.rsi
+    sprite: _Maid/Structures/Windows/plasma_diagonal.rsi # Maid
     state: state0
   - type: Tag
     tags:
@@ -172,7 +172,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: _Maid/Structures/Windows/plasma_diagonal.rsi
+    sprite: _Maid/Structures/Windows/plasma_diagonal.rsi # Maid
     state: state0
   - type: Fixtures
     fixtures:
@@ -194,7 +194,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi # Maid
   - type: Construction
     graph: WindowDiagonal
     node: plasmaWindowDiagonal

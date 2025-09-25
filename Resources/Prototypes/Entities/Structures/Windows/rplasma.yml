@@ -42,9 +42,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/reinforced_plasma_window.rsi
+    sprite: _Maid/Structures/Windows/reinforced_plasma_window.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Windows/reinforced_plasma_window.rsi
+    sprite: _Maid/Structures/Windows/reinforced_plasma_window.rsi # Maid
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -89,7 +89,7 @@
     damageDivisor: 6
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi # Maid
   - type: StaticPrice
     price: 132
 
@@ -104,10 +104,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: plasma_reinforced_window
   - type: Icon
-    sprite: _Maid/Structures/Windows/directional.rsi
+    sprite: _Maid/Structures/Windows/directional.rsi # Maid
     state: plasma_reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -118,7 +118,7 @@
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_directional.rsi
+      sprite: _Maid/Structures/Windows/cracks_directional.rsi # Maid
   - type: Damageable
     damageModifierSet: RGlass
   - type: RadiationBlocker
@@ -164,7 +164,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/reinforced_plasma_diagonal.rsi
+    sprite: _Maid/Structures/Windows/reinforced_plasma_diagonal.rsi # Maid
     state: state0
   - type: Tag
     tags:
@@ -174,7 +174,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: _Maid/Structures/Windows/reinforced_plasma_diagonal.rsi
+    sprite: _Maid/Structures/Windows/reinforced_plasma_diagonal.rsi # Maid
     state: state0
   - type: Fixtures
     fixtures:
@@ -197,7 +197,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi # Maid
   - type: Construction
     graph: WindowDiagonal
     node: reinforcedPlasmaWindowDiagonal

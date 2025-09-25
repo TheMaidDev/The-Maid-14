@@ -388,7 +388,7 @@
   components:
   - type: Objective
     icon:
-      sprite: Structures/Walls/solid.rsi
+      sprite: _Maid/Structures/Walls/solid.rsi # Maid
       state: rgeneric
 
 - type: entity

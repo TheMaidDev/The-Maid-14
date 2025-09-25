@@ -275,9 +275,9 @@
   name: brick wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/brick.rsi
+    sprite: _Maid/Structures/Walls/brick.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/brick.rsi
+    sprite: _Maid/Structures/Walls/brick.rsi # Maid
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -309,9 +309,9 @@
   name: clock wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/clock.rsi
+    sprite: _Maid/Structures/Walls/clock.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/clock.rsi
+    sprite: _Maid/Structures/Walls/clock.rsi # Maid
   - type: Construction
     graph: ClockworkGirder
     node: clockworkWall
@@ -342,9 +342,9 @@
   name: bananium wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/clown.rsi
+    sprite: _Maid/Structures/Walls/clown.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/clown.rsi
+    sprite: _Maid/Structures/Walls/clown.rsi # Maid
   - type: Construction
     graph: Girder
     node: bananiumWall
@@ -397,9 +397,9 @@
       - Wall
       - Structure
   - type: Sprite
-    sprite: _Maid/Structures/Walls/meat.rsi
+    sprite: _Maid/Structures/Walls/meat.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/meat.rsi
+    sprite: _Maid/Structures/Walls/meat.rsi # Maid
   - type: Construction
     graph: Girder
     node: meatWall
@@ -426,9 +426,9 @@
   name: cult wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cult.rsi
+    sprite: _Maid/Structures/Walls/cult.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cult.rsi
+    sprite: _Maid/Structures/Walls/cult.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger:
@@ -459,9 +459,9 @@
       - Wall
       - Debug
   - type: Sprite
-    sprite: _Maid/Structures/Walls/debug.rsi
+    sprite: _Maid/Structures/Walls/debug.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/debug.rsi
+    sprite: _Maid/Structures/Walls/debug.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger:
@@ -487,9 +487,9 @@
   name: diamond wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/diamond.rsi
+    sprite: _Maid/Structures/Walls/diamond.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/diamond.rsi
+    sprite: _Maid/Structures/Walls/diamond.rsi # Maid
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -521,9 +521,9 @@
   name: gold wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/gold.rsi
+    sprite: _Maid/Structures/Walls/gold.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/gold.rsi
+    sprite: _Maid/Structures/Walls/gold.rsi # Maid
   - type: Construction
     graph: Girder
     node: goldWall
@@ -578,9 +578,9 @@
   name: ice wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/ice.rsi
+    sprite: _Maid/Structures/Walls/ice.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/ice.rsi
+    sprite: _Maid/Structures/Walls/ice.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger:
@@ -608,9 +608,9 @@
   name: plasma wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/plasma.rsi
+    sprite: _Maid/Structures/Walls/plasma.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/plasma.rsi
+    sprite: _Maid/Structures/Walls/plasma.rsi # Maid
   - type: Construction
     graph: Girder
     node: plasmaWall
@@ -654,9 +654,9 @@
   name: plastic wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/plastic.rsi
+    sprite: _Maid/Structures/Walls/plastic.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/plastic.rsi
+    sprite: _Maid/Structures/Walls/plastic.rsi # Maid
   - type: Construction
     graph: Girder
     node: plasticWall
@@ -699,9 +699,9 @@
   suffix: indestructible
   components:
     - type: Sprite
-      sprite: _Maid/Structures/Walls/plastitanium.rsi
+      sprite: _Maid/Structures/Walls/plastitanium.rsi # Maid
     - type: Icon
-      sprite: _Maid/Structures/Walls/plastitanium.rsi
+      sprite: _Maid/Structures/Walls/plastitanium.rsi # Maid
     - type: IconSmooth
       key: walls
       base: plastitanium
@@ -760,10 +760,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi # Maid
     state: state0
   - type: Icon
-    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi # Maid
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -779,10 +779,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi # Maid
     state: state0
   - type: Icon
-    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Maid/Structures/Walls/plastitanium_diagonal.rsi # Maid
     state: state0
   - type: Destructible
     thresholds:
@@ -807,9 +807,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/solid.rsi
+    sprite: _Maid/Structures/Walls/solid.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/solid.rsi
+    sprite: _Maid/Structures/Walls/solid.rsi # Maid
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -884,9 +884,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/solid_rust.rsi
+    sprite: _Maid/Structures/Walls/solid_rust.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/solid_rust.rsi
+    sprite: _Maid/Structures/Walls/solid_rust.rsi # Maid
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -931,10 +931,10 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: _Maid/Structures/Walls/reinforced_diagonal.rsi
+    sprite: _Maid/Structures/Walls/reinforced_diagonal.rsi # Maid
     state: state0
   - type: Icon
-    sprite: _Maid/Structures/Walls/reinforced_diagonal.rsi
+    sprite: _Maid/Structures/Walls/reinforced_diagonal.rsi # Maid
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -973,9 +973,9 @@
   name: riveted wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/riveted.rsi
+    sprite: _Maid/Structures/Walls/riveted.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/riveted.rsi
+    sprite: _Maid/Structures/Walls/riveted.rsi # Maid
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -1009,9 +1009,9 @@
   name: sandstone wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/sandstone.rsi
+    sprite: _Maid/Structures/Walls/sandstone.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/sandstone.rsi
+    sprite: _Maid/Structures/Walls/sandstone.rsi # Maid
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1039,9 +1039,9 @@
   name: silver wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/silver.rsi
+    sprite: _Maid/Structures/Walls/silver.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/silver.rsi
+    sprite: _Maid/Structures/Walls/silver.rsi # Maid
   - type: Construction
     graph: Girder
     node: silverWall
@@ -1085,10 +1085,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: _Maid/Structures/Walls/shuttle_diagonal.rsi
+    sprite: _Maid/Structures/Walls/shuttle_diagonal.rsi # Maid
     state: state0
   - type: Icon
-    sprite: _Maid/Structures/Walls/shuttle_diagonal.rsi
+    sprite: _Maid/Structures/Walls/shuttle_diagonal.rsi # Maid
     state: state0
   - type: Reflect
     reflectProb: 1
@@ -1187,9 +1187,9 @@
   - type: RadiationBlocker
     resistance: 5
   - type: Sprite
-    sprite: _Maid/Structures/Walls/shuttle.rsi
+    sprite: _Maid/Structures/Walls/shuttle.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/shuttle.rsi
+    sprite: _Maid/Structures/Walls/shuttle.rsi # Maid
     state: full
   - type: Construction
     graph: Girder
@@ -1236,13 +1236,13 @@
   name: solid wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/solid.rsi
+    sprite: _Maid/Structures/Walls/solid.rsi # Maid
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: _Maid/Structures/Walls/solid.rsi
+    sprite: _Maid/Structures/Walls/solid.rsi # Maid
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1282,10 +1282,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: _Maid/Structures/Walls/solid_diagonal.rsi
+    sprite: _Maid/Structures/Walls/solid_diagonal.rsi # Maid
     state: state0
   - type: Icon
-    sprite: _Maid/Structures/Walls/solid_diagonal.rsi
+    sprite: _Maid/Structures/Walls/solid_diagonal.rsi # Maid
     state: state0
   - type: Destructible
     thresholds:
@@ -1316,9 +1316,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/solid_rust.rsi
+    sprite: _Maid/Structures/Walls/solid_rust.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/solid_rust.rsi
+    sprite: _Maid/Structures/Walls/solid_rust.rsi # Maid
     state: full
   - type: Construction
     graph: Girder
@@ -1358,9 +1358,9 @@
   name: uranium wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/uranium.rsi
+    sprite: _Maid/Structures/Walls/uranium.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/uranium.rsi
+    sprite: _Maid/Structures/Walls/uranium.rsi # Maid
   - type: Construction
     graph: Girder
     node: uraniumWall
@@ -1412,9 +1412,9 @@
   description: The traditional greytide defense.
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/wood.rsi
+    sprite: _Maid/Structures/Walls/wood.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/wood.rsi
+    sprite: _Maid/Structures/Walls/wood.rsi # Maid
   - type: Construction
     graph: Barricade
     node: woodWall
@@ -1460,9 +1460,9 @@
   - type: Damageable
     damageModifierSet: Web
   - type: Sprite
-    sprite: _Maid/Structures/Walls/web.rsi
+    sprite: _Maid/Structures/Walls/web.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/web.rsi
+    sprite: _Maid/Structures/Walls/web.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger: # Excess damage, don't spawn entities
@@ -1504,9 +1504,9 @@
   name: stone wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/necropolis.rsi
+    sprite: _Maid/Structures/Walls/necropolis.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/necropolis.rsi
+    sprite: _Maid/Structures/Walls/necropolis.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger:
@@ -1529,9 +1529,9 @@
   name: mining wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/mining.rsi
+    sprite: _Maid/Structures/Walls/mining.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/mining.rsi
+    sprite: _Maid/Structures/Walls/mining.rsi # Maid
   - type: Destructible
     thresholds:
     - trigger:
@@ -1560,10 +1560,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: _Maid/Structures/Walls/mining_diagonal.rsi
+    sprite: _Maid/Structures/Walls/mining_diagonal.rsi # Maid
     state: state0
   - type: Icon
-    sprite: _Maid/Structures/Walls/mining_diagonal.rsi
+    sprite: _Maid/Structures/Walls/mining_diagonal.rsi # Maid
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -1604,10 +1604,10 @@
   description: A mysterious ornate looking wall. There may be ancient dangers inside.
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/vault.rsi
+    sprite: _Maid/Structures/Walls/vault.rsi # Maid
     state: alienvault
   - type: Icon
-    sprite: _Maid/Structures/Walls/vault.rsi
+    sprite: _Maid/Structures/Walls/vault.rsi # Maid
     state: alienvault
   - type: Destructible
     thresholds:
@@ -1628,10 +1628,10 @@
   name: rock vault wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/vault.rsi
+    sprite: _Maid/Structures/Walls/vault.rsi # Maid
     state: rockvault
   - type: Icon
-    sprite: _Maid/Structures/Walls/vault.rsi
+    sprite: _Maid/Structures/Walls/vault.rsi # Maid
     state: rockvault
 
 - type: entity
@@ -1640,10 +1640,10 @@
   name: sandstone vault wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/vault.rsi
+    sprite: _Maid/Structures/Walls/vault.rsi # Maid
     state: sandstonevault
   - type: Icon
-    sprite: _Maid/Structures/Walls/vault.rsi
+    sprite: _Maid/Structures/Walls/vault.rsi # Maid
     state: sandstonevault
 
 # Mime
@@ -1744,9 +1744,9 @@
   description: Stone by stone, perfectly fitted together to form a wall.
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cobblebrick.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cobblebrick.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick.rsi # Maid
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1771,9 +1771,9 @@
   name: basalt brick wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cobblebrick_basalt.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_basalt.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cobblebrick_basalt.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_basalt.rsi # Maid
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
@@ -1798,9 +1798,9 @@
   name: asteroid stone brick wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cobblebrick_asteroid.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_asteroid.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cobblebrick_asteroid.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_asteroid.rsi # Maid
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
@@ -1811,9 +1811,9 @@
   name: sandstone brick wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cobblebrick_sand.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_sand.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cobblebrick_sand.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_sand.rsi # Maid
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
@@ -1824,9 +1824,9 @@
   name: chromite brick wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cobblebrick_chromite.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_chromite.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cobblebrick_chromite.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_chromite.rsi # Maid
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
@@ -1837,9 +1837,9 @@
   name: andesite brick wall
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Walls/cobblebrick_andesite.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_andesite.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Walls/cobblebrick_andesite.rsi
+    sprite: _Maid/Structures/Walls/cobblebrick_andesite.rsi # Maid
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick

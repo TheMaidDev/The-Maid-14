@@ -18,9 +18,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/mining.rsi
+    sprite: _Maid/Structures/Windows/mining.rsi # Maid
   - type: Icon
-    sprite: _Maid/Structures/Windows/mining.rsi
+    sprite: _Maid/Structures/Windows/mining.rsi # Maid
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
@@ -60,7 +60,7 @@
     damageDivisor: 4
     trackAllDamage: true
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks.rsi
+      sprite: _Maid/Structures/Windows/cracks.rsi # Maid
   - type: StaticPrice
     price: 100
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
@@ -77,7 +77,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Maid/Structures/Windows/mining_diagonal.rsi
+    sprite: _Maid/Structures/Windows/mining_diagonal.rsi # Maid
     state: state0
   - type: Tag
     tags:
@@ -87,7 +87,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: _Maid/Structures/Windows/mining_diagonal.rsi
+    sprite: _Maid/Structures/Windows/mining_diagonal.rsi # Maid
     state: state0
   - type: Fixtures
     fixtures:
@@ -109,4 +109,4 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi
+      sprite: _Maid/Structures/Windows/cracks_diagonal.rsi # Maid
