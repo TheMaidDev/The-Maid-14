@@ -9,7 +9,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-emote-menu-category-farts = ...
 chat-emote-name-flip = Сделать сальто
 chat-emote-name-spin = Крутиться
 chat-emote-name-jump = Прыжок

@@ -10,8 +10,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-emote-menu-category-farts = Farts
-
 chat-emote-name-flip = Do a flip
 chat-emote-name-spin = Spin
 chat-emote-name-jump = Jump

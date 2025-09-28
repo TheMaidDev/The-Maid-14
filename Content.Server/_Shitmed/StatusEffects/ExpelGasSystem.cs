@@ -26,7 +26,6 @@ public sealed class ExpelGasEffectSystem : EntitySystem
         var mix = _atmos.GetContainingMixture((uid, Transform(uid)), true, true) ?? new();
         var gas = _random.Pick(component.PossibleGases);
         mix.AdjustMoles(gas, 60);
-        _chat.TryEmoteWithChat(uid, "Fart");
     }
 
 

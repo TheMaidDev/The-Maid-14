@@ -191,8 +191,6 @@
   - type: TemperatureSpeed
     thresholds:
       243: 0.8
-  - type: Fart
-    gasToFart: Plasma
 
 - type: entity
   parent: BaseSpeciesDummy
