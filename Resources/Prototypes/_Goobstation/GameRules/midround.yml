@@ -23,7 +23,7 @@
     minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
@@ -62,7 +62,7 @@
     minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
@@ -103,7 +103,7 @@
     minimumPlayers: 30
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
