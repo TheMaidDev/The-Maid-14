@@ -10,7 +10,7 @@
   suffix: Pinion, Clockwork
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/clockwork_pinion.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/clockwork_pinion.rsi
   - type: Construction
     graph: PinionAirlock
     node: airlock
@@ -23,7 +23,7 @@
   suffix: Pinion, Clockwork
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/clockwork_pinion.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/clockwork_pinion.rsi
   - type: Construction
     graph: PinionAirlock
     node: glassAirlock
