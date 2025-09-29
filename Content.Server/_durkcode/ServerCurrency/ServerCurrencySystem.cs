@@ -11,10 +11,9 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Common.CCVar;
-using Content.Goobstation.Common.ServerCurrency;
-using Content.Server._RMC14.LinkAccount;
 using Content.Server.GameTicking;
 using Content.Server.Popups;
+using Content.Shared._durkcode.ServerCurrency;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
@@ -23,15 +22,16 @@ using Content.Shared.Roles.Jobs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
+using Content.Server._RMC14.LinkAccount;
 
-namespace Content.Goobstation.Server.ServerCurrency
+namespace Content.Server._durkcode.ServerCurrency
 {
     /// <summary>
     /// Connects <see cref="ServerCurrencyManager"/> to the simulation state.
     /// </summary>
     public sealed class ServerCurrencySystem : EntitySystem
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly SharedMindSystem _mind = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;

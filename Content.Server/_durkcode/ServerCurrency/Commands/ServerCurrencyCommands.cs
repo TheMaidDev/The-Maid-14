@@ -7,7 +7,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Goobstation.Common.ServerCurrency;
 using Content.Server.Administration;
 using Content.Server.Chat.Managers;
 using Content.Shared.Administration;
@@ -15,12 +14,12 @@ using Content.Shared.Chat;
 using Robust.Server.Player;
 using Robust.Shared.Console;
 
-namespace Content.Goobstation.Server.ServerCurrency.Commands
+namespace Content.Server._durkcode.ServerCurrency.Commands
 {
     [AnyCommand]
     public sealed class BalanceServerCurrencyCommand : IConsoleCommand
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
         [Dependency] private readonly IChatManager _chatManager = default!;
         public string Command => Loc.GetString("server-currency-balance-command");
         public string Description => Loc.GetString("server-currency-balance-command-description");
@@ -50,7 +49,7 @@ namespace Content.Goobstation.Server.ServerCurrency.Commands
     [AnyCommand]
     public sealed class GiftServerCurrencyCommand : IConsoleCommand
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
         [Dependency] private readonly IChatManager _chatManager = default!;
 
         public string Command => Loc.GetString("server-currency-gift-command");
@@ -123,7 +122,7 @@ namespace Content.Goobstation.Server.ServerCurrency.Commands
     [AdminCommand(AdminFlags.Host)]
     public sealed class AddServerCurrencyCommand : IConsoleCommand
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
 
         public string Command => Loc.GetString("server-currency-add-command");
         public string Description => Loc.GetString("server-currency-add-command-description");
@@ -168,7 +167,7 @@ namespace Content.Goobstation.Server.ServerCurrency.Commands
     [AdminCommand(AdminFlags.Host)]
     public sealed class RemoveServerCurrencyCommand : IConsoleCommand
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
 
         public string Command => Loc.GetString("server-currency-remove-command");
         public string Description => Loc.GetString("server-currency-remove-command-description");
@@ -213,7 +212,7 @@ namespace Content.Goobstation.Server.ServerCurrency.Commands
     [AdminCommand(AdminFlags.Host)]
     public sealed class SetServerCurrencyCommand : IConsoleCommand
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
 
         public string Command => Loc.GetString("server-currency-set-command");
         public string Description => Loc.GetString("server-currency-set-command-description");
@@ -259,7 +258,7 @@ namespace Content.Goobstation.Server.ServerCurrency.Commands
     [AdminCommand(AdminFlags.Host)]
     public sealed class GetServerCurrencyCommand : IConsoleCommand
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
 
         public string Command => Loc.GetString("server-currency-get-command");
         public string Description => Loc.GetString("server-currency-get-command-description");

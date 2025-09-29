@@ -5,20 +5,19 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Goobstation.Common.ServerCurrency;
-using Content.Goobstation.Shared.ServerCurrency;
-using Content.Goobstation.Shared.ServerCurrency.UI;
 using Content.Server.Administration.Notes;
 using Content.Server.EUI;
+using Content.Shared._durkcode.ServerCurrency;
+using Content.Shared._durkcode.ServerCurrency.UI;
 using Content.Shared.Eui;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
-namespace Content.Goobstation.Server.ServerCurrency.UI
+namespace Content.Server._durkcode.ServerCurrency.UI
 {
     public sealed class CurrencyEui : BaseEui
     {
-        [Dependency] private readonly ICommonCurrencyManager _currencyMan = default!;
+        [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
         [Dependency] private readonly IAdminNotesManager _notesMan = default!;
         [Dependency] private readonly IPrototypeManager _protoMan = default!;
         public CurrencyEui()
@@ -60,7 +59,7 @@ namespace Content.Goobstation.Server.ServerCurrency.UI
             if (balance < token.Price)
                 return;
 
-            await _notesMan.AddAdminRemark(Player, Player.UserId, 0,
+            await _notesMan.AddAdminRemark(Player, Player.UserId, 0, 
                 Loc.GetString(token.AdminNote), 0, false, null);
             _currencyMan.RemoveCurrency(Player.UserId, token.Price);
         }
