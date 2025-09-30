@@ -47,7 +47,6 @@
       inverted: true
       species:
       - Felinid
-  goobcoins: 45
   weight: 20
   startingGear: BlueshieldOfficerGear
   icon: "JobIconBlueshield"

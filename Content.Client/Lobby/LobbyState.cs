@@ -80,7 +80,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Client._durkcode.ServerCurrency;
 using Content.Client._RMC14.LinkAccount;
 using Content.Client.Audio;
 using Content.Client.GameTicking.Managers;
@@ -112,7 +111,6 @@ namespace Content.Client.Lobby
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly IVoteManager _voteManager = default!;
-        [Dependency] private readonly ServerCurrencySystem _serverCur = default!; // Goobstation - server currency
         [Dependency] private readonly IPrototypeManager _protoMan = default!; // Goobstation - credits
         [Dependency] private readonly LinkAccountManager _linkAccount = default!; // RMC - Patreon
         [Dependency] private readonly ClientsidePlaytimeTrackingManager _playtimeTracking = default!;
@@ -164,8 +162,6 @@ namespace Content.Client.Lobby
             _gameTicker.InfoBlobUpdated += UpdateLobbyUi;
             _gameTicker.LobbyStatusUpdated += LobbyStatusUpdated;
             _gameTicker.LobbyLateJoinStatusUpdated += LobbyLateJoinStatusUpdated;
-
-            _serverCur.BalanceChange += UpdatePlayerBalance; // Goobstation - Goob Coin
         }
 
         protected override void Shutdown()
@@ -176,7 +172,6 @@ namespace Content.Client.Lobby
             _gameTicker.LobbyStatusUpdated -= LobbyStatusUpdated;
             _gameTicker.LobbyLateJoinStatusUpdated -= LobbyLateJoinStatusUpdated;
             _contentAudioSystem.LobbySoundtrackChanged -= UpdateLobbySoundtrackInfo;
-            _serverCur.BalanceChange -= UpdatePlayerBalance; // Goobstation - Goob Coin
 
             _voteManager.ClearPopupContainer();
 
@@ -300,8 +295,6 @@ namespace Content.Client.Lobby
                 Lobby!.ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
             }
 
-            UpdatePlayerBalance(); // Goobstation - Goob Coin
-
             var minutesToday = _playtimeTracking.PlaytimeMinutesToday;
             if (minutesToday > 60)
             {
@@ -390,11 +383,6 @@ namespace Content.Client.Lobby
             }
 
             _consoleHost.ExecuteCommand($"toggleready {newReady}");
-        }
-
-        private void UpdatePlayerBalance() // Goobstation - Goob Coin
-        {
-            Lobby!.Balance.Text = _serverCur.Stringify(_serverCur.GetBalance());
         }
     }
 }

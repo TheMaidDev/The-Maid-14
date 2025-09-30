@@ -76,7 +76,6 @@
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
   canBeAntag: false
-  goobcoins: 30 #Goob content
   access:
   - Security
   - Brig
