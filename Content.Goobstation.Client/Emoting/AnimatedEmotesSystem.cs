@@ -30,9 +30,6 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
 {
     [Dependency] private readonly AnimationPlayerSystem _anim = default!;
     [Dependency] private readonly IPrototypeManager _prot = default!;
-    [Dependency] private readonly RaysSystem _rays = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
 
     private const int TweakAnimationDurationMs = 1100; // 11 frames * 100ms per frame
     private const int FlexAnimationDurationMs = 200 * 7; // 7 frames * 200ms per frame
