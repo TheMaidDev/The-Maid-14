@@ -113,7 +113,7 @@
   - type: Appearance
   - type: WiresVisuals
   - type: Sprite
-    sprite: Structures/Wallmounts/air_monitors.rsi
+    sprite: _Maid/Structures/Wallmounts/air_monitors.rsi # Maid
     layers:
     - state: alarmp
       map: ["airAlarmBase"]

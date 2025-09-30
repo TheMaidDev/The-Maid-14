@@ -142,7 +142,7 @@
       - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects
-      sprite: Structures/Piping/Atmospherics/vent.rsi
+      sprite: _Maid/Structures/Piping/Atmospherics/vent.rsi # Maid
       noRot: true
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi
@@ -194,7 +194,7 @@
       - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects
-      sprite: Structures/Piping/Atmospherics/vent.rsi
+      sprite: _Maid/Structures/Piping/Atmospherics/vent.rsi # Maid
       noRot: true
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi
@@ -249,7 +249,7 @@
       - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects
-      sprite: Structures/Piping/Atmospherics/scrubber.rsi
+      sprite: _Maid/Structures/Piping/Atmospherics/scrubber.rsi # Maid
       noRot: true
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi

@@ -39,7 +39,7 @@
   - type: InteractionOutline
   - type: Anchorable
   - type: Sprite
-    sprite: Structures/Power/Generation/Singularity/containment.rsi
+    sprite: _Maid/Structures/Power/Generation/Singularity/containment.rsi # Maid
     state: icon
     noRot: true
     layers:
@@ -57,7 +57,7 @@
         visible: false
         shader: unshaded
   - type: Icon
-    sprite: Structures/Power/Generation/Singularity/containment.rsi
+    sprite: _Maid/Structures/Power/Generation/Singularity/containment.rsi # Maid
     state: icon
   - type: ContainmentFieldGenerator
   - type: PointLight
@@ -114,11 +114,11 @@
         layer:
         - GlassLayer
   - type: Sprite
-    sprite: Structures/Power/Generation/Singularity/containment_field.rsi
+    sprite: _Maid/Structures/Power/Generation/Singularity/containment_field.rsi # Maid
     state: field
     noRot: true
   - type: Icon
-    sprite: Structures/Power/Generation/Singularity/containment_field.rsi
+    sprite: _Maid/Structures/Power/Generation/Singularity/containment_field.rsi # Maid
     state: field
   - type: ContainmentField
     throwForce: 50
