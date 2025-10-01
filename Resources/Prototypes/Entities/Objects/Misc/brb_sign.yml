@@ -10,10 +10,10 @@
   description: Lets others know you are away.
   components:
   - type: Sprite
-    sprite: Objects/Misc/brbsign.rsi
+    sprite: _Maid/Objects/Misc/brbsign.rsi # Maid
     state: icon
   - type: Clothing
-    sprite: Objects/Misc/brbsign.rsi
+    sprite: _Maid/Objects/Misc/brbsign.rsi # Maid
     quickEquip: false
     slots:
     - Neck
