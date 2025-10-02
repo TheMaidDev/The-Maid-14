@@ -16,7 +16,7 @@
 - type: stack
   id: Ointment
   name: stack-ointment
-  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: ointment }
+  icon: { sprite: "/Textures/_Maid/Objects/Specific/Medical/medical.rsi", state: ointment } # Maid
   spawn: Ointment
   maxCount: 15 #Was 10, bumped up due to Shitmed changes. (Goobstation)
 
@@ -37,7 +37,7 @@
 - type: stack
   id: Brutepack
   name: stack-brutepack
-  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: gauze }
+  icon: { sprite: "/Textures/_Maid/Objects/Specific/Medical/medical.rsi", state: brutepack } # Maid
   spawn: Brutepack
   maxCount: 15 #Was 10, bumped up due to Shitmed changes. (Goobstation)
 
