@@ -105,7 +105,7 @@
           "/Audio/Weapons/smash.ogg"
   - type: InteractionOutline
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/basic.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/basic.rsi # Maid
     snapCardinals: true
     layers:
     - state: closed
@@ -297,7 +297,7 @@
   - type: Occluder
     enabled: false
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/glass.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/glass.rsi # Maid
   - type: AnimationPlayer
   - type: Fixtures
     fixtures:

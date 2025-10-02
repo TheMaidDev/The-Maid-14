@@ -41,7 +41,7 @@
         layer:
         - MachineLayer
   - type: Sprite
-    sprite: _Maid/Structures/Piping/Atmospherics/Portable/portable_scrubber.rsi
+    sprite: _Maid/Structures/Piping/Atmospherics/Portable/portable_scrubber.rsi # Maid
     noRot: true
     layers:
     - state: icon

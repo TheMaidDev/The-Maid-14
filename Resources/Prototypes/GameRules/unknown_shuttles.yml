@@ -65,7 +65,7 @@
   - type: StationEvent
     startAnnouncement: station-event-unknown-shuttle-incoming
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     weight: 4 #Common, but not every round
     reoccurrenceDelay: 30
     earliestStart: 20 # Goobstation

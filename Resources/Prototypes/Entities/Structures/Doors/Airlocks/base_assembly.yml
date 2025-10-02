@@ -24,7 +24,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/basic.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/basic.rsi # Maid
     state: "assembly"
   - type: Physics
   - type: Fixtures

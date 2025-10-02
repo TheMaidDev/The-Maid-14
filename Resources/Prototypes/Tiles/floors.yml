@@ -129,7 +129,7 @@
 - type: tile
   id: FloorSteel
   name: tiles-steel-floor
-  sprite: /Textures/_Maid/Tiles/steel.png
+  sprite: /Textures/_Maid/Tiles/steel.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -148,7 +148,7 @@
 - type: tile
   id: FloorSteelCheckerLight
   name: tiles-steel-floor-checker-light
-  sprite: /Textures/_Maid/Tiles/cafeteria.png
+  sprite: /Textures/_Maid/Tiles/cafeteria.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -167,7 +167,7 @@
 - type: tile
   id: FloorSteelCheckerDark
   name: tiles-steel-floor-checker-dark
-  sprite: /Textures/_Maid/Tiles/checker_dark.png
+  sprite: /Textures/_Maid/Tiles/checker_dark.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -186,7 +186,7 @@
 - type: tile
   id: FloorSteelMini
   name: tiles-steel-floor-mini
-  sprite: /Textures/_Maid/Tiles/steel_mini.png
+  sprite: /Textures/_Maid/Tiles/steel_mini.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -205,7 +205,7 @@
 - type: tile
   id: FloorSteelPavement
   name: tiles-steel-floor-pavement
-  sprite: /Textures/_Maid/Tiles/steel_pavement.png
+  sprite: /Textures/_Maid/Tiles/steel_pavement.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -224,7 +224,7 @@
 - type: tile
   id: FloorSteelDiagonal
   name: tiles-steel-floor-diagonal
-  sprite: /Textures/_Maid/Tiles/steel_diagonal.png
+  sprite: /Textures/_Maid/Tiles/steel_diagonal.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -243,7 +243,7 @@
 - type: tile
   id: FloorSteelOffset
   name: tiles-steel-floor-offset
-  sprite: /Textures/_Maid/Tiles/steel_offset.png
+  sprite: /Textures/_Maid/Tiles/steel_offset.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -256,7 +256,7 @@
 - type: tile
   id: FloorSteelMono
   name: tiles-steel-floor-mono
-  sprite: /Textures/_Maid/Tiles/steel_mono.png
+  sprite: /Textures/_Maid/Tiles/steel_mono.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -275,7 +275,7 @@
 - type: tile
   id: FloorSteelPavementVertical
   name: tiles-steel-floor-pavement-vertical
-  sprite: /Textures/_Maid/Tiles/steel_pavement_vertical.png
+  sprite: /Textures/_Maid/Tiles/steel_pavement_vertical.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -294,7 +294,7 @@
 - type: tile
   id: FloorSteelHerringbone
   name: tiles-steel-floor-herringbone
-  sprite: /Textures/_Maid/Tiles/steel_herringbone.png
+  sprite: /Textures/_Maid/Tiles/steel_herringbone.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -313,7 +313,7 @@
 - type: tile
   id: FloorSteelDiagonalMini
   name: tiles-steel-floor-diagonal-mini
-  sprite: /Textures/_Maid/Tiles/steel_diagonal_mini.png
+  sprite: /Textures/_Maid/Tiles/steel_diagonal_mini.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -332,7 +332,7 @@
 - type: tile
   id: FloorBrassFilled
   name: tiles-brass-floor-filled
-  sprite: /Textures/_Maid/Tiles/Misc/clockwork/clockwork_floor_filled.png
+  sprite: /Textures/_Maid/Tiles/Misc/clockwork/clockwork_floor_filled.png # Maid
   baseTurf: PlatingBrass
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -345,7 +345,7 @@
 - type: tile
   id: FloorBrassReebe
   name: tiles-brass-floor-reebe
-  sprite: /Textures/_Maid/Tiles/Misc/clockwork/reebe.png
+  sprite: /Textures/_Maid/Tiles/Misc/clockwork/reebe.png # Maid
   baseTurf: PlatingBrass
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -358,7 +358,7 @@
 - type: tile
   id: FloorPlastic
   name: tiles-plastic-floor
-  sprite: /Textures/_Maid/Tiles/plastic.png
+  sprite: /Textures/_Maid/Tiles/plastic.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -377,7 +377,7 @@
 - type: tile
   id: FloorWood
   name: tiles-wood
-  sprite: /Textures/_Maid/Tiles/wood.png
+  sprite: /Textures/_Maid/Tiles/wood.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -398,7 +398,7 @@
 - type: tile
   id: FloorWhite
   name: tiles-white-floor
-  sprite: /Textures/_Maid/Tiles/white.png
+  sprite: /Textures/_Maid/Tiles/white.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -417,7 +417,7 @@
 - type: tile
   id: FloorWhiteMini
   name: tiles-white-floor-mini
-  sprite: /Textures/_Maid/Tiles/white_mini.png
+  sprite: /Textures/_Maid/Tiles/white_mini.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -436,7 +436,7 @@
 - type: tile
   id: FloorWhitePavement
   name: tiles-white-floor-pavement
-  sprite: /Textures/_Maid/Tiles/white_pavement.png
+  sprite: /Textures/_Maid/Tiles/white_pavement.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -455,7 +455,7 @@
 - type: tile
   id: FloorWhiteDiagonal
   name: tiles-white-floor-diagonal
-  sprite: /Textures/_Maid/Tiles/white_diagonal.png
+  sprite: /Textures/_Maid/Tiles/white_diagonal.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -474,7 +474,7 @@
 - type: tile
   id: FloorWhiteOffset
   name: tiles-white-floor-offset
-  sprite: /Textures/_Maid/Tiles/white_offset.png
+  sprite: /Textures/_Maid/Tiles/white_offset.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -487,7 +487,7 @@
 - type: tile
   id: FloorWhiteMono
   name: tiles-white-floor-mono
-  sprite: /Textures/_Maid/Tiles/white_mono.png
+  sprite: /Textures/_Maid/Tiles/white_mono.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -506,7 +506,7 @@
 - type: tile
   id: FloorWhitePavementVertical
   name: tiles-white-floor-pavement-vertical
-  sprite: /Textures/_Maid/Tiles/white_pavement_vertical.png
+  sprite: /Textures/_Maid/Tiles/white_pavement_vertical.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -525,7 +525,7 @@
 - type: tile
   id: FloorWhiteHerringbone
   name: tiles-white-floor-herringbone
-  sprite: /Textures/_Maid/Tiles/white_herringbone.png
+  sprite: /Textures/_Maid/Tiles/white_herringbone.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -544,7 +544,7 @@
 - type: tile
   id: FloorWhiteDiagonalMini
   name: tiles-white-floor-diagonal-mini
-  sprite: /Textures/_Maid/Tiles/white_diagonal_mini.png
+  sprite: /Textures/_Maid/Tiles/white_diagonal_mini.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -563,7 +563,7 @@
 - type: tile
   id: FloorWhitePlastic
   name: tiles-plastic-white-floor
-  sprite: /Textures/_Maid/Tiles/white_plastic.png
+  sprite: /Textures/_Maid/Tiles/white_plastic.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -582,7 +582,7 @@
 - type: tile
   id: FloorDark
   name: tiles-dark-floor
-  sprite: /Textures/_Maid/Tiles/dark.png
+  sprite: /Textures/_Maid/Tiles/dark.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -601,7 +601,7 @@
 - type: tile
   id: FloorDarkMini
   name: tiles-dark-floor-mini
-  sprite: /Textures/_Maid/Tiles/dark_mini.png
+  sprite: /Textures/_Maid/Tiles/dark_mini.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -620,7 +620,7 @@
 - type: tile
   id: FloorDarkPavement
   name: tiles-dark-floor-pavement
-  sprite: /Textures/_Maid/Tiles/dark_pavement.png
+  sprite: /Textures/_Maid/Tiles/dark_pavement.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -639,7 +639,7 @@
 - type: tile
   id: FloorDarkDiagonal
   name: tiles-dark-floor-diagonal
-  sprite: /Textures/_Maid/Tiles/dark_diagonal.png
+  sprite: /Textures/_Maid/Tiles/dark_diagonal.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -658,7 +658,7 @@
 - type: tile
   id: FloorDarkOffset
   name: tiles-dark-floor-offset
-  sprite: /Textures/_Maid/Tiles/dark_offset.png
+  sprite: /Textures/_Maid/Tiles/dark_offset.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -671,7 +671,7 @@
 - type: tile
   id: FloorDarkMono
   name: tiles-dark-floor-mono
-  sprite: /Textures/_Maid/Tiles/dark_mono.png
+  sprite: /Textures/_Maid/Tiles/dark_mono.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -690,7 +690,7 @@
 - type: tile
   id: FloorDarkPavementVertical
   name: tiles-dark-floor-pavement-vertical
-  sprite: /Textures/_Maid/Tiles/dark_pavement_vertical.png
+  sprite: /Textures/_Maid/Tiles/dark_pavement_vertical.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -709,7 +709,7 @@
 - type: tile
   id: FloorDarkHerringbone
   name: tiles-dark-floor-herringbone
-  sprite: /Textures/_Maid/Tiles/dark_herringbone.png
+  sprite: /Textures/_Maid/Tiles/dark_herringbone.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -728,7 +728,7 @@
 - type: tile
   id: FloorDarkDiagonalMini
   name: tiles-dark-floor-diagonal-mini
-  sprite: /Textures/_Maid/Tiles/dark_diagonal_mini.png
+  sprite: /Textures/_Maid/Tiles/dark_diagonal_mini.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -747,7 +747,7 @@
 - type: tile
   id: FloorDarkPlastic
   name: tiles-plastic-dark-floor
-  sprite: /Textures/_Maid/Tiles/dark_plastic.png
+  sprite: /Textures/_Maid/Tiles/dark_plastic.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -766,7 +766,7 @@
 - type: tile
   id: FloorTechMaint
   name: tiles-techmaint-floor
-  sprite: /Textures/_Maid/Tiles/tech_maint.png
+  sprite: /Textures/_Maid/Tiles/tech_maint.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -792,7 +792,7 @@
 - type: tile
   id: FloorReinforced
   name: tiles-reinforced-floor
-  sprite: /Textures/_Maid/Tiles/reinforced.png
+  sprite: /Textures/_Maid/Tiles/reinforced.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -805,7 +805,7 @@
 - type: tile
   id: FloorMono
   name: tiles-mono-floor
-  sprite: /Textures/_Maid/Tiles/mono.png
+  sprite: /Textures/_Maid/Tiles/mono.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -818,7 +818,7 @@
 - type: tile
   id: FloorLino
   name: tiles-linoleum-floor
-  sprite: /Textures/_Maid/Tiles/lino.png
+  sprite: /Textures/_Maid/Tiles/lino.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -831,7 +831,7 @@
 - type: tile
   id: FloorSteelDirty
   name: tiles-dirty-steel-floor
-  sprite: /Textures/_Maid/Tiles/steel_dirty.png
+  sprite: /Textures/_Maid/Tiles/steel_dirty.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -844,7 +844,7 @@
 - type: tile
   id: FloorElevatorShaft
   name: tiles-elevator-shaft
-  sprite: /Textures/_Maid/Tiles/elevator_shaft.png
+  sprite: /Textures/_Maid/Tiles/elevator_shaft.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -857,7 +857,7 @@
 - type: tile
   id: FloorMetalDiamond
   name: tiles-diamond-plate-floor
-  sprite: /Textures/_Maid/Tiles/metaldiamond.png
+  sprite: /Textures/_Maid/Tiles/metaldiamond.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -870,7 +870,7 @@
 - type: tile
   id: FloorRockVault
   name: tiles-rock-floor
-  sprite: /Textures/_Maid/Tiles/rock_vault.png
+  sprite: /Textures/_Maid/Tiles/rock_vault.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -883,7 +883,7 @@
 - type: tile
   id: FloorBlue
   name: tiles-blue-tile
-  sprite: /Textures/_Maid/Tiles/blue.png
+  sprite: /Textures/_Maid/Tiles/blue.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -896,7 +896,7 @@
 - type: tile
   id: FloorSteelLime
   name: tiles-lime-floor
-  sprite: /Textures/_Maid/Tiles/lime.png
+  sprite: /Textures/_Maid/Tiles/lime.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -915,7 +915,7 @@
 - type: tile
   id: FloorMining
   name: tiles-mining-tile
-  sprite: /Textures/_Maid/Tiles/mining_floor.png
+  sprite: /Textures/_Maid/Tiles/mining_floor.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -928,7 +928,7 @@
 - type: tile
   id: FloorMiningDark
   name: tiles-mining-dark-tile
-  sprite: /Textures/_Maid/Tiles/mining_floor_dark.png
+  sprite: /Textures/_Maid/Tiles/mining_floor_dark.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -941,7 +941,7 @@
 - type: tile
   id: FloorMiningLight
   name: tiles-mining-light-tile
-  sprite: /Textures/_Maid/Tiles/mining_floor_light.png
+  sprite: /Textures/_Maid/Tiles/mining_floor_light.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -955,7 +955,7 @@
 - type: tile
   id: FloorFreezer
   name: tiles-freezer
-  sprite: /Textures/_Maid/Tiles/freezer.png
+  sprite: /Textures/_Maid/Tiles/freezer.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -968,7 +968,7 @@
 - type: tile
   id: FloorShowroom
   name: tiles-showroom-floor
-  sprite: /Textures/_Maid/Tiles/showroom.png
+  sprite: /Textures/_Maid/Tiles/showroom.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -987,7 +987,7 @@
 - type: tile
   id: FloorHydro
   name: tiles-hydro-floor
-  sprite: /Textures/_Maid/Tiles/hydro.png
+  sprite: /Textures/_Maid/Tiles/hydro.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1000,7 +1000,7 @@
 - type: tile
   id: FloorBar
   name: tiles-bar-floor
-  sprite: /Textures/_Maid/Tiles/bar.png
+  sprite: /Textures/_Maid/Tiles/bar.png # Maid # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1019,7 +1019,7 @@
 - type: tile
   id: FloorClown
   name: tiles-clown-floor
-  sprite: /Textures/_Maid/Tiles/clown.png
+  sprite: /Textures/_Maid/Tiles/clown.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1032,7 +1032,7 @@
 - type: tile
   id: FloorMime
   name: tiles-mime-floor
-  sprite: /Textures/_Maid/Tiles/mime.png
+  sprite: /Textures/_Maid/Tiles/mime.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1045,7 +1045,7 @@
 - type: tile
   id: FloorKitchen
   name: tiles-kitchen-floor
-  sprite: /Textures/_Maid/Tiles/kitchen.png
+  sprite: /Textures/_Maid/Tiles/kitchen.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1058,7 +1058,7 @@
 - type: tile
   id: FloorLaundry
   name: tiles-laundry-floor
-  sprite: /Textures/_Maid/Tiles/laundry.png
+  sprite: /Textures/_Maid/Tiles/laundry.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1071,7 +1071,7 @@
 - type: tile
   id: FloorSteelDamaged
   name: tiles-steel-floor
-  sprite: /Textures/_Maid/Tiles/steel_damaged.png
+  sprite: /Textures/_Maid/Tiles/steel_damaged.png # Maid
   variants: 5
   placementVariants:
   - 1.0
@@ -1091,7 +1091,7 @@
 - type: tile
   id: FloorSteelBurnt
   name: tiles-steel-floor
-  sprite: /Textures/_Maid/Tiles/steel_burnt.png
+  sprite: /Textures/_Maid/Tiles/steel_burnt.png # Maid
   variants: 2
   placementVariants:
   - 1.0
@@ -1109,7 +1109,7 @@
 - type: tile
   id: FloorConcrete
   name: tiles-concrete-tile
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/concrete.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/concrete.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1129,7 +1129,7 @@
 - type: tile
   id: FloorConcreteMono
   name: tiles-concrete-slab
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/concrete_mono.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/concrete_mono.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1149,7 +1149,7 @@
 - type: tile
   id: FloorConcreteSmooth
   name: tiles-concrete-smooth
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/concrete_smooth.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/concrete_smooth.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1169,7 +1169,7 @@
 - type: tile
   id: FloorGrayConcrete
   name: tiles-gray-concrete-tile
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/grayconcrete.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/grayconcrete.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1189,7 +1189,7 @@
 - type: tile
   id: FloorGrayConcreteMono
   name: tiles-gray-concrete-slab
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/grayconcrete_mono.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/grayconcrete_mono.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1209,7 +1209,7 @@
 - type: tile
   id: FloorGrayConcreteSmooth
   name: tiles-gray-concrete-smooth
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/grayconcrete_smooth.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/grayconcrete_smooth.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1229,7 +1229,7 @@
 - type: tile
   id: FloorOldConcrete
   name: tiles-old-concrete-tile
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/oldconcrete.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/oldconcrete.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1249,7 +1249,7 @@
 - type: tile
   id: FloorOldConcreteMono
   name: tiles-old-concrete-slab
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/oldconcrete_mono.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/oldconcrete_mono.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1269,7 +1269,7 @@
 - type: tile
   id: FloorOldConcreteSmooth
   name: tiles-old-concrete-smooth
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/oldconcrete_smooth.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/oldconcrete_smooth.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1290,7 +1290,7 @@
 - type: tile
   id: FloorArcadeBlue
   name: tiles-blue-arcade-floor
-  sprite: /Textures/_Maid/Tiles/arcadeblue.png
+  sprite: /Textures/_Maid/Tiles/arcadeblue.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1306,7 +1306,7 @@
 - type: tile
   id: FloorArcadeBlue2
   name: tiles-blue-arcade-floor
-  sprite: /Textures/_Maid/Tiles/arcadeblue2.png
+  sprite: /Textures/_Maid/Tiles/arcadeblue2.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1322,7 +1322,7 @@
 - type: tile
   id: FloorArcadeRed
   name: tiles-red-arcade-floor
-  sprite: /Textures/_Maid/Tiles/arcadered.png
+  sprite: /Textures/_Maid/Tiles/arcadered.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1338,7 +1338,7 @@
 - type: tile
   id: FloorEighties
   name: tiles-eighties-floor
-  sprite: /Textures/_Maid/Tiles/eighties.png
+  sprite: /Textures/_Maid/Tiles/eighties.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1354,7 +1354,7 @@
 - type: tile
   id: FloorCarpetClown
   name: tiles-clown-carpet-floor
-  sprite: /Textures/_Maid/Tiles/carpetclown.png
+  sprite: /Textures/_Maid/Tiles/carpetclown.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1370,7 +1370,7 @@
 - type: tile
   id: FloorCarpetOffice
   name: tiles-office-carpet-floor
-  sprite: /Textures/_Maid/Tiles/carpetoffice.png
+  sprite: /Textures/_Maid/Tiles/carpetoffice.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1386,7 +1386,7 @@
 - type: tile
   id: FloorBoxing
   name: tiles-boxing-ring-floor
-  sprite: /Textures/_Maid/Tiles/boxing.png
+  sprite: /Textures/_Maid/Tiles/boxing.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1406,7 +1406,7 @@
 - type: tile
   id: FloorGym
   name: tiles-gym-floor
-  sprite: /Textures/_Maid/Tiles/gym.png
+  sprite: /Textures/_Maid/Tiles/gym.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1427,7 +1427,7 @@
 - type: tile
   id: FloorShuttleWhite
   name: tiles-white-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttlewhite.png
+  sprite: /Textures/_Maid/Tiles/shuttlewhite.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1446,7 +1446,7 @@
 - type: tile
   id: FloorShuttleGrey
   name: tiles-grey-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttlegrey.png
+  sprite: /Textures/_Maid/Tiles/shuttlegrey.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1465,7 +1465,7 @@
 - type: tile
   id: FloorShuttleBlack
   name: tiles-black-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttleblack.png
+  sprite: /Textures/_Maid/Tiles/shuttleblack.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1484,7 +1484,7 @@
 - type: tile
   id: FloorShuttleBlue
   name: tiles-blue-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttleblue.png
+  sprite: /Textures/_Maid/Tiles/shuttleblue.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1503,7 +1503,7 @@
 - type: tile
   id: FloorShuttleOrange
   name: tiles-orange-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttleorange.png
+  sprite: /Textures/_Maid/Tiles/shuttleorange.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1522,7 +1522,7 @@
 - type: tile
   id: FloorShuttlePurple
   name: tiles-purple-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttlepurple.png
+  sprite: /Textures/_Maid/Tiles/shuttlepurple.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1541,7 +1541,7 @@
 - type: tile
   id: FloorShuttleRed
   name: tiles-red-shuttle-floor
-  sprite: /Textures/_Maid/Tiles/shuttlered.png
+  sprite: /Textures/_Maid/Tiles/shuttlered.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1562,7 +1562,7 @@
 - type: tile
   id: FloorGold
   name: tiles-gold-tile
-  sprite: /Textures/_Maid/Tiles/gold.png
+  sprite: /Textures/_Maid/Tiles/gold.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1575,7 +1575,7 @@
 - type: tile
   id: FloorSilver
   name: tiles-silver-tile
-  sprite: /Textures/_Maid/Tiles/silver.png
+  sprite: /Textures/_Maid/Tiles/silver.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1588,7 +1588,7 @@
 - type: tile
   id: FloorGlass
   name: tiles-glass-floor
-  sprite: /Textures/_Maid/Tiles/glass.png
+  sprite: /Textures/_Maid/Tiles/glass.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1607,7 +1607,7 @@
 - type: tile
   id: FloorRGlass
   name: tiles-reinforced-glass-floor
-  sprite: /Textures/_Maid/Tiles/rglass.png
+  sprite: /Textures/_Maid/Tiles/rglass.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1626,7 +1626,7 @@
 - type: tile
   id: FloorMetalFoam
   name: tiles-metal-foam
-  sprite: /Textures/_Maid/Tiles/foammetal.png
+  sprite: /Textures/_Maid/Tiles/foammetal.png # Maid
   variants: 1
   placementVariants:
   - 1.0
@@ -1642,7 +1642,7 @@
 - type: tile
   id: FloorGreenCircuit
   name: tiles-green-circuit-floor
-  sprite: /Textures/_Maid/Tiles/green_circuit.png
+  sprite: /Textures/_Maid/Tiles/green_circuit.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1655,7 +1655,7 @@
 - type: tile
   id: FloorBlueCircuit
   name: tiles-blue-circuit-floor
-  sprite: /Textures/_Maid/Tiles/blue_circuit.png
+  sprite: /Textures/_Maid/Tiles/blue_circuit.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1668,7 +1668,7 @@
 - type: tile
   id: FloorRedCircuit
   name: tiles-red-circuit-floor
-  sprite: /Textures/_Maid/Tiles/red_circuit.png
+  sprite: /Textures/_Maid/Tiles/red_circuit.png # Maid
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1681,7 +1681,7 @@
 - type: tile
   id: FloorAsphalt
   name: tiles-asphalt
-  sprite: /Textures/_Maid/Tiles/Planet/Concrete/asphalt.png
+  sprite: /Textures/_Maid/Tiles/Planet/Concrete/asphalt.png # Maid
   variants: 10
   placementVariants:
   - 1.0
@@ -1704,7 +1704,7 @@
 - type: tile
   id: FloorGrass
   name: tiles-planet-grass-floor
-  sprite: /Textures/_Maid/Tiles/grass.png
+  sprite: /Textures/_Maid/Tiles/grass.png # Maid
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1716,7 +1716,7 @@
 - type: tile
   id: FloorGrassJungle
   name: tiles-jungle-grass-floor
-  sprite: /Textures/_Maid/Tiles/grassjungle.png
+  sprite: /Textures/_Maid/Tiles/grassjungle.png # Maid
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1728,7 +1728,7 @@
 - type: tile
   id: FloorGrassDark
   name: tiles-dark-grass-floor
-  sprite: /Textures/_Maid/Tiles/grassdark.png
+  sprite: /Textures/_Maid/Tiles/grassdark.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1745,7 +1745,7 @@
 - type: tile
   id: FloorGrassLight
   name: tiles-light-grass-floor
-  sprite: /Textures/_Maid/Tiles/grasslight.png
+  sprite: /Textures/_Maid/Tiles/grasslight.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1762,7 +1762,7 @@
 - type: tile
   id: FloorDirt
   name: tiles-dirt-floor
-  sprite: /Textures/_Maid/Tiles/dirt.png
+  sprite: /Textures/_Maid/Tiles/dirt.png # Maid
   variants: 4
   placementVariants:
   - 1.0
@@ -1781,7 +1781,7 @@
 - type: tile
   id: FloorAsteroidSandBorderless
   name: tiles-asteroid-sand-borderless
-  sprite: /Textures/_Maid/Tiles/Asteroid/asteroid.png
+  sprite: /Textures/_Maid/Tiles/Asteroid/asteroid.png # Maid
   variants: 13
   placementVariants:
   - 0.8

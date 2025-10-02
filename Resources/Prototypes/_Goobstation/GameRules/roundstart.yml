@@ -274,7 +274,7 @@
       briefing:
         text: blob-carrier-role-greeting
         color: Plum
-        sound: /Audio/_Maid/Announcements/bloblarm.ogg
+        sound: /Audio/_Maid/Announcements/bloblarm.ogg # Maid
       mindRoles:
       - MindRoleBlob
 

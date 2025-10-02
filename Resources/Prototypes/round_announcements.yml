@@ -7,4 +7,4 @@
 
 - type: roundAnnouncement
   id: Welcome
-  sound: /Audio/_Maid/Announcements/welcome.ogg
+  sound: /Audio/_Maid/Announcements/welcome.ogg # Maid

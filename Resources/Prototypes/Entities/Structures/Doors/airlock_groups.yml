@@ -81,71 +81,71 @@
   id: Standard
   iconPriority: 100
   stylePaths:
-    atmospherics: _Maid/Structures/Doors/Airlocks/Standard/atmospherics.rsi
-    basic:       _Maid/Structures/Doors/Airlocks/Standard/basic.rsi
-    cargo:       _Maid/Structures/Doors/Airlocks/Standard/cargo.rsi
-    chemistry:   _Maid/Structures/Doors/Airlocks/Standard/chemistry.rsi
-    command:     _Maid/Structures/Doors/Airlocks/Standard/command.rsi
-    engineering: _Maid/Structures/Doors/Airlocks/Standard/engineering.rsi
-    freezer:     _Maid/Structures/Doors/Airlocks/Standard/freezer.rsi
-    hydroponics: _Maid/Structures/Doors/Airlocks/Standard/hydroponics.rsi
+    atmospherics: _Maid/Structures/Doors/Airlocks/Standard/atmospherics.rsi # Maid
+    basic:       _Maid/Structures/Doors/Airlocks/Standard/basic.rsi # Maid
+    cargo:       _Maid/Structures/Doors/Airlocks/Standard/cargo.rsi # Maid
+    chemistry:   _Maid/Structures/Doors/Airlocks/Standard/chemistry.rsi # Maid
+    command:     _Maid/Structures/Doors/Airlocks/Standard/command.rsi # Maid
+    engineering: _Maid/Structures/Doors/Airlocks/Standard/engineering.rsi # Maid
+    freezer:     _Maid/Structures/Doors/Airlocks/Standard/freezer.rsi # Maid
+    hydroponics: _Maid/Structures/Doors/Airlocks/Standard/hydroponics.rsi # Maid
     janitor:     _Goobstation/Structures/Doors/Airlocks/Standard/janitor.rsi # Goobstation - Sweet jani door recolour
-    maintenance: _Maid/Structures/Doors/Airlocks/Standard/maint.rsi
-    medical:     _Maid/Structures/Doors/Airlocks/Standard/medical.rsi
-    salvage:     _Maid/Structures/Doors/Airlocks/Standard/salvage.rsi
-    science:     _Maid/Structures/Doors/Airlocks/Standard/science.rsi
-    security:    _Maid/Structures/Doors/Airlocks/Standard/security.rsi
-    virology:    _Maid/Structures/Doors/Airlocks/Standard/virology.rsi
+    maintenance: _Maid/Structures/Doors/Airlocks/Standard/maint.rsi # Maid
+    medical:     _Maid/Structures/Doors/Airlocks/Standard/medical.rsi # Maid
+    salvage:     _Maid/Structures/Doors/Airlocks/Standard/salvage.rsi # Maid
+    science:     _Maid/Structures/Doors/Airlocks/Standard/science.rsi # Maid
+    security:    _Maid/Structures/Doors/Airlocks/Standard/security.rsi # Maid
+    virology:    _Maid/Structures/Doors/Airlocks/Standard/virology.rsi # Maid
 
 - type: AirlockGroup
   id: Glass
   iconPriority: 90
   stylePaths:
-    atmospherics: _Maid/Structures/Doors/Airlocks/Glass/atmospherics.rsi
-    basic:       _Maid/Structures/Doors/Airlocks/Glass/basic.rsi
-    cargo:       _Maid/Structures/Doors/Airlocks/Glass/cargo.rsi
-    command:     _Maid/Structures/Doors/Airlocks/Glass/command.rsi
-    chemistry:   _Maid/Structures/Doors/Airlocks/Glass/chemistry.rsi
-    science:     _Maid/Structures/Doors/Airlocks/Glass/science.rsi
-    engineering: _Maid/Structures/Doors/Airlocks/Glass/engineering.rsi
-    glass:       _Maid/Structures/Doors/Airlocks/Glass/glass.rsi
-    hydroponics: _Maid/Structures/Doors/Airlocks/Glass/hydroponics.rsi
+    atmospherics: _Maid/Structures/Doors/Airlocks/Glass/atmospherics.rsi # Maid
+    basic:       _Maid/Structures/Doors/Airlocks/Glass/basic.rsi # Maid
+    cargo:       _Maid/Structures/Doors/Airlocks/Glass/cargo.rsi # Maid
+    command:     _Maid/Structures/Doors/Airlocks/Glass/command.rsi # Maid
+    chemistry:   _Maid/Structures/Doors/Airlocks/Glass/chemistry.rsi # Maid
+    science:     _Maid/Structures/Doors/Airlocks/Glass/science.rsi # Maid
+    engineering: _Maid/Structures/Doors/Airlocks/Glass/engineering.rsi # Maid
+    glass:       _Maid/Structures/Doors/Airlocks/Glass/glass.rsi # Maid
+    hydroponics: _Maid/Structures/Doors/Airlocks/Glass/hydroponics.rsi # Maid
     janitor:     _Goobstation/Structures/Doors/Airlocks/Glass/janitor.rsi # Goobstation - Sweet jani door recolour
-    maintenance: _Maid/Structures/Doors/Airlocks/Glass/maint.rsi
-    medical:     _Maid/Structures/Doors/Airlocks/Glass/medical.rsi
-    salvage:     _Maid/Structures/Doors/Airlocks/Glass/salvage.rsi
-    security:    _Maid/Structures/Doors/Airlocks/Glass/security.rsi
-    virology:    _Maid/Structures/Doors/Airlocks/Glass/virology.rsi
+    maintenance: _Maid/Structures/Doors/Airlocks/Glass/maint.rsi # Maid
+    medical:     _Maid/Structures/Doors/Airlocks/Glass/medical.rsi # Maid
+    salvage:     _Maid/Structures/Doors/Airlocks/Glass/salvage.rsi # Maid
+    security:    _Maid/Structures/Doors/Airlocks/Glass/security.rsi # Maid
+    virology:    _Maid/Structures/Doors/Airlocks/Glass/virology.rsi # Maid
 
 - type: AirlockGroup
   id: Windoor
   iconPriority: 80
   stylePaths:
-    basic:       _Maid/Structures/Doors/Airlocks/Glass/glass.rsi
+    basic:       _Maid/Structures/Doors/Airlocks/Glass/glass.rsi # Maid
 
 - type: AirlockGroup
   id: External
   iconPriority: 70
   stylePaths:
-    external:    _Maid/Structures/Doors/Airlocks/Standard/external.rsi
+    external:    _Maid/Structures/Doors/Airlocks/Standard/external.rsi # Maid
 
 - type: AirlockGroup
   id: ExternalGlass
   iconPriority: 60
   stylePaths:
-    external:    _Maid/Structures/Doors/Airlocks/Glass/external.rsi
+    external:    _Maid/Structures/Doors/Airlocks/Glass/external.rsi # Maid
 
 - type: AirlockGroup
   id: Shuttle
   iconPriority: 50
   stylePaths:
-    shuttle:     _Maid/Structures/Doors/Airlocks/Standard/shuttle.rsi
+    shuttle:     _Maid/Structures/Doors/Airlocks/Standard/shuttle.rsi # Maid
 
 - type: AirlockGroup
   id: ShuttleGlass
   iconPriority: 40
   stylePaths:
-    shuttle:     _Maid/Structures/Doors/Airlocks/Glass/shuttle.rsi
+    shuttle:     _Maid/Structures/Doors/Airlocks/Glass/shuttle.rsi # Maid
 
 # fun
 - type: airlockDepartments

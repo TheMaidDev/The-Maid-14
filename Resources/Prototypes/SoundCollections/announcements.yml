@@ -14,11 +14,11 @@
 - type: soundCollection
   id: RoundEnd
   files:
-  - /Audio/_Maid/Announcements/RoundEnd/apc_destroyed.ogg
-  - /Audio/_Maid/Announcements/RoundEnd/disappointed.ogg
-  - /Audio/_Maid/Announcements/RoundEnd/notevenpaidforthis.ogg
+  - /Audio/_Maid/Announcements/RoundEnd/apc_destroyed.ogg # Maid
+  - /Audio/_Maid/Announcements/RoundEnd/disappointed.ogg # Maid
+  - /Audio/_Maid/Announcements/RoundEnd/notevenpaidforthis.ogg # Maid
 
 - type: soundCollection
   id: PowerOn
   files:
-  - /Audio/_Maid/Announcements/power_on.ogg
+  - /Audio/_Maid/Announcements/power_on.ogg # Maid

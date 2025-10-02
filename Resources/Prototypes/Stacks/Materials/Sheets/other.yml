@@ -33,6 +33,6 @@
 - type: stack
   id: Uranium
   name: stack-uranium
-  icon: { sprite: /Textures/_Maid/Objects/Materials/Sheets/other.rsi, state: uranium }
+  icon: { sprite: /Textures/_Maid/Objects/Materials/Sheets/other.rsi, state: uranium } # Maid
   spawn: SheetUranium1
   maxCount: 30

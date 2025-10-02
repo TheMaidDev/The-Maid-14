@@ -107,7 +107,7 @@
   suffix: Freezer
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/freezer.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/freezer.rsi # Maid
   - type: Wires
     layoutId: AirlockService
 
@@ -117,7 +117,7 @@
   suffix: Engineering
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/engineering.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/engineering.rsi # Maid
   - type: PaintableAirlock
     department: Engineering
   - type: Wires
@@ -129,7 +129,7 @@
   suffix: Atmospherics
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/atmospherics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/atmospherics.rsi # Maid
 
 - type: entity
   parent: Airlock
@@ -137,7 +137,7 @@
   suffix: Cargo
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/cargo.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/cargo.rsi # Maid
   - type: PaintableAirlock
     department: Cargo
   - type: Wires
@@ -149,7 +149,7 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/salvage.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/salvage.rsi # Maid
   - type: Wires
     layoutId: AirlockCargo
 
@@ -159,7 +159,7 @@
   suffix: Hydroponics
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/hydroponics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/hydroponics.rsi # Maid
   - type: Wires
     layoutId: AirlockService
 
@@ -169,7 +169,7 @@
   suffix: Medical
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/medical.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/medical.rsi # Maid
   - type: PaintableAirlock
     department: Medical
   - type: Wires
@@ -181,7 +181,7 @@
   suffix: Virology
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/virology.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/virology.rsi # Maid
 
 - type: entity
   parent: AirlockMedical
@@ -189,7 +189,7 @@
   suffix: Chemistry
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/chemistry.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/chemistry.rsi # Maid
 
 - type: entity
   parent: Airlock
@@ -197,7 +197,7 @@
   suffix: Science
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/science.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/science.rsi # Maid
   - type: PaintableAirlock
     department: Science
   - type: Wires
@@ -209,7 +209,7 @@
   suffix: Command
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/command.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/command.rsi # Maid
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: PaintableAirlock
@@ -223,7 +223,7 @@
   suffix: Security
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/security.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/security.rsi # Maid
   - type: PaintableAirlock
     department: Security
   - type: Wires
@@ -235,7 +235,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/maint.rsi # Maid
 
 - type: entity
   parent: AirlockSecurity # if you get syndie door somehow it counts as sec
@@ -243,7 +243,7 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/syndicate.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/syndicate.rsi # Maid
 
 - type: entity
   parent: AirlockCargo
@@ -251,7 +251,7 @@
   suffix: Mining(Salvage)
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/mining.rsi # Maid
   - type: Wires
     layoutId: AirlockCargo
 
@@ -261,7 +261,7 @@
   suffix: Central Command
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/centcomm.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/centcomm.rsi # Maid
 
 - type: entity
   parent: Airlock
@@ -269,7 +269,7 @@
   name: airtight hatch
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/hatch.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/hatch.rsi # Maid
 
 - type: entity
   parent: Airlock
@@ -277,7 +277,7 @@
   name: maintenance hatch
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/hatch_maint.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/hatch_maint.rsi # Maid
 
 # Glass
 - type: entity
@@ -286,7 +286,7 @@
   suffix: Engineering
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/engineering.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/engineering.rsi # Maid
   - type: PaintableAirlock
     department: Engineering
   - type: Wires
@@ -298,7 +298,7 @@
   suffix: Maintenance
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/maint.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/maint.rsi # Maid
 
 - type: entity
   parent: AirlockEngineeringGlass
@@ -306,7 +306,7 @@
   suffix: Atmospherics
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/atmospherics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/atmospherics.rsi # Maid
 
 - type: entity
   parent: AirlockGlass
@@ -314,7 +314,7 @@
   suffix: Cargo
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/cargo.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/cargo.rsi # Maid
   - type: PaintableAirlock
     department: Cargo
   - type: Wires
@@ -326,7 +326,7 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/salvage.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/salvage.rsi # Maid
   - type: Wires
     layoutId: AirlockCargo
 
@@ -336,7 +336,7 @@
   suffix: Hydroponics
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/hydroponics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/hydroponics.rsi # Maid
   - type: Wires
     layoutId: AirlockService
 
@@ -346,7 +346,7 @@
   suffix: Medical
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/medical.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/medical.rsi # Maid
   - type: PaintableAirlock
     department: Medical
   - type: Wires
@@ -358,7 +358,7 @@
   suffix: Chemistry
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/chemistry.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/chemistry.rsi # Maid
 
 - type: entity
   parent: AirlockMedicalGlass
@@ -366,7 +366,7 @@
   suffix: Virology
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/virology.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/virology.rsi # Maid
 
 - type: entity
   parent: AirlockGlass
@@ -374,7 +374,7 @@
   suffix: Science
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/science.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/science.rsi # Maid
   - type: PaintableAirlock
     department: Science
   - type: Wires
@@ -386,7 +386,7 @@
   suffix: Command
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/command.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/command.rsi # Maid
   - type: PaintableAirlock
     department: Command
   - type: WiresPanelSecurity
@@ -400,7 +400,7 @@
   suffix: Security
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/security.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/security.rsi # Maid
   - type: PaintableAirlock
     department: Security
   - type: Wires
@@ -412,7 +412,7 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/syndicate.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/syndicate.rsi # Maid
 
 - type: entity
   parent: AirlockCargoGlass
@@ -420,7 +420,7 @@
   suffix: Mining(Salvage)
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/mining.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/mining.rsi # Maid
 
 - type: entity
   parent: AirlockCommandGlass # see standard
@@ -428,7 +428,7 @@
   suffix: Central Command
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/centcomm.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/centcomm.rsi # Maid
 
 - type: entity
   parent: AirlockGlass
@@ -436,4 +436,4 @@
   suffix: Service
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/basic.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/basic.rsi # Maid

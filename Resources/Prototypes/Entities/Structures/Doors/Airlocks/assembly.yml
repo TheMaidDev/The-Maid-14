@@ -23,7 +23,7 @@
   suffix: Atmospherics
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/atmospherics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/atmospherics.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -32,7 +32,7 @@
   suffix: Atmospherics, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/atmospherics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/atmospherics.rsi # Maid
     state: "assembly"
 
 #Cargo
@@ -42,7 +42,7 @@
   suffix: Cargo
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/cargo.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/cargo.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -51,7 +51,7 @@
   suffix: Cargo, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/cargo.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/cargo.rsi # Maid
     state: "assembly"
 
 #Clockwork
@@ -62,7 +62,7 @@
   parent: AirlockAssembly
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/clockwork_pinion.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/clockwork_pinion.rsi # Maid
     state: "assembly"
   - type: Construction
     graph: PinionAirlock
@@ -76,7 +76,7 @@
   suffix: Pinion, Clockwork, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/clockwork_pinion.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/clockwork_pinion.rsi # Maid
     state: "assembly"
 
 #Command
@@ -86,7 +86,7 @@
   suffix: Command
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/command.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/command.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -95,7 +95,7 @@
   suffix: Command, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/command.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/command.rsi # Maid
     state: "assembly"
 
 #Engineering
@@ -105,7 +105,7 @@
   suffix: Engineering
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/engineering.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/engineering.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -114,7 +114,7 @@
   suffix: Engineering, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/engineering.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/engineering.rsi # Maid
     state: "assembly"
 
 #External
@@ -124,7 +124,7 @@
   suffix: External
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/external.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/external.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -133,7 +133,7 @@
   suffix: External, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/external.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/external.rsi # Maid
     state: "assembly"
 
 #Public (Glass Airlock)
@@ -143,7 +143,7 @@
   suffix: Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/glass.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/glass.rsi # Maid
     state: "assembly"
 
 #Freezer
@@ -153,7 +153,7 @@
   suffix: Freezer
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/freezer.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/freezer.rsi # Maid
     state: "assembly"
 
 #Hydroponics
@@ -163,7 +163,7 @@
   suffix: Hydroponics
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/hydroponics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/hydroponics.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -172,7 +172,7 @@
   suffix: Hydroponics, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/hydroponics.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/hydroponics.rsi # Maid
     state: "assembly"
 
 #Maintenance
@@ -182,7 +182,7 @@
   suffix: Maintenance
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/maint.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -191,7 +191,7 @@
   suffix: Maintenance, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/maint.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/maint.rsi # Maid
     state: "assembly"
 
 #Medical
@@ -201,7 +201,7 @@
   suffix: Medical
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/medical.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/medical.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -210,7 +210,7 @@
   suffix: Medical, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/medical.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/medical.rsi # Maid
     state: "assembly"
 
 #Salvage
@@ -220,7 +220,7 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/salvage.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/salvage.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -229,7 +229,7 @@
   suffix: Salvage, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/salvage.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/salvage.rsi # Maid
     state: "assembly"
 
 #Science
@@ -239,7 +239,7 @@
   suffix: Science
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/science.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/science.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -248,7 +248,7 @@
   suffix: Science, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/science.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/science.rsi # Maid
     state: "assembly"
 
 #Security
@@ -258,7 +258,7 @@
   suffix: Security
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/security.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/security.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -267,7 +267,7 @@
   suffix: Security, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/security.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/security.rsi # Maid
     state: "assembly"
 
 #Shuttle
@@ -277,7 +277,7 @@
   suffix: Shuttle
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/shuttle.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/shuttle.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -286,7 +286,7 @@
   suffix: Shuttle, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/shuttle.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/shuttle.rsi # Maid
     state: "assembly"
 
 #Virology
@@ -296,7 +296,7 @@
   suffix: Virology
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/virology.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/virology.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -305,7 +305,7 @@
   suffix: Virology, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/virology.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/virology.rsi # Maid
     state: "assembly"
 
 #CentralCommand
@@ -315,7 +315,7 @@
   suffix: CentralCommand
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/centcomm.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/centcomm.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -324,7 +324,7 @@
   suffix: CentralCommand, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/centcomm.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/centcomm.rsi # Maid
     state: "assembly"
 
 #Mining
@@ -334,7 +334,7 @@
   suffix: Mining
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/mining.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -343,7 +343,7 @@
   suffix: Mining, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/mining.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/mining.rsi # Maid
     state: "assembly"
 
 #Syndicate
@@ -353,7 +353,7 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/syndicate.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/syndicate.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -362,7 +362,7 @@
   suffix: Syndicate, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/syndicate.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/syndicate.rsi # Maid
     state: "assembly"
 
 #ShuttleSyndicate
@@ -372,7 +372,7 @@
   suffix: ShuttleSyndicate
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Standard/shuttle_syndicate.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Standard/shuttle_syndicate.rsi # Maid
     state: "assembly"
 
 - type: entity
@@ -381,7 +381,7 @@
   suffix: ShuttleSyndicate, Glass
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/Glass/shuttle_syndicate.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/Glass/shuttle_syndicate.rsi # Maid
     state: "assembly"
 
 #High Security
@@ -391,5 +391,5 @@
   suffix: HighSec
   components:
   - type: Sprite
-    sprite: _Maid/Structures/Doors/Airlocks/highsec/highsec.rsi
+    sprite: _Maid/Structures/Doors/Airlocks/highsec/highsec.rsi # Maid
     state: "assembly"

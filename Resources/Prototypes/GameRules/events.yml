@@ -239,7 +239,7 @@
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:
-      path: /Audio/_Maid/Announcements/announce.ogg
+      path: /Audio/_Maid/Announcements/announce.ogg # Maid
     weight: 8
     duration: 35
     chaos: # Goobstation
@@ -262,7 +262,7 @@
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:
-      path: /Audio/_Maid/Announcements/announce.ogg
+      path: /Audio/_Maid/Announcements/announce.ogg # Maid
     weight: 8
     duration: 35
     chaos: # Goobstation
@@ -582,7 +582,7 @@
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     endAnnouncement: station-event-gas-leak-end-announcement
     weight: 8
     chaos:
@@ -622,7 +622,7 @@
     startAnnouncement: station-event-power-grid-check-start-announcement
     endAnnouncement: station-event-power-grid-check-end-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/power_off.ogg
+      path: /Audio/_Maid/Announcements/power_off.ogg # Maid
       params:
         volume: -4
     duration: 60
@@ -642,7 +642,7 @@
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     duration: 120
     maxDuration: 240
     chaos: # Goobstation
@@ -674,7 +674,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/ventclog.ogg
+      path: /Audio/_Maid/Announcements/ventclog.ogg # Maid
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -694,7 +694,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/aliens.ogg
+      path: /Audio/_Maid/Announcements/aliens.ogg # Maid
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -720,7 +720,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -746,7 +746,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/aliens.ogg
+      path: /Audio/_Maid/Announcements/aliens.ogg # Maid
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -769,7 +769,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     earliestStart: 45 # DeltaV - was 20
     minimumPlayers: 30 # DeltaV - was 20
     weight: 1 # DeltaV - was 1.5
@@ -890,7 +890,7 @@
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     duration: null # the rule has to last the whole round not 1 second
     occursDuringRoundEnd: false
     eventType: HostilesSpawn # Goobstation
@@ -977,7 +977,7 @@
   components:
   - type: StationEvent
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     weight: 5
     minimumPlayers: 25
     reoccurrenceDelay: 20

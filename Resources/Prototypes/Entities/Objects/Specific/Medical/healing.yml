@@ -76,10 +76,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Maid/Objects/Specific/Medical/medical.rsi
+    sprite: _Maid/Objects/Specific/Medical/medical.rsi # Maid
   - type: Item
     size: Small
-    sprite: _Maid/Objects/Specific/Medical/medical.rsi
+    sprite: _Maid/Objects/Specific/Medical/medical.rsi # Maid
     heldPrefix: ointment
   # Inherited
   - type: StaticPrice

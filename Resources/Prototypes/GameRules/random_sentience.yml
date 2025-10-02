@@ -15,7 +15,7 @@
     duration: 1
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
     startAudio:
-      path: /Audio/_Maid/Announcements/attention.ogg
+      path: /Audio/_Maid/Announcements/attention.ogg # Maid
     chaos: # Goobstation
       Mess: 5
       Friend: -5
