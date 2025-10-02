@@ -903,9 +903,9 @@
   components:
   - type: Item
     size: Tiny
-    sprite: Objects/Specific/Chemistry/pills_canister.rsi
+    sprite: _Maid/Objects/Specific/Chemistry/pills_canister.rsi # Maid
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/pills_canister.rsi
+    sprite: _Maid/Objects/Specific/Chemistry/pills_canister.rsi # Maid
     state: pill_canister
   - type: Tag
     tags:
