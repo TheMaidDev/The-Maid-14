@@ -10,10 +10,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: loadout
-  id: SecurityJudoBelt
-  equipment:
-    belt: ClothingBeltCorporateJudoFilled
+#- type: loadout
+#  id: SecurityJudoBelt
+#  equipment:
+#    belt: ClothingBeltCorporateJudoFilled
 
 - type: loadout
   id: WinterCoatSeniorSecArmored
