@@ -26,7 +26,7 @@
           availableJobs:
             # command
             Captain: [ 1, 1 ]
-            NanotrasenRepresentative: [ 1, 1 ]
+            # NanotrasenRepresentative: [ 1, 1 ]
             # BlueshieldOfficer: [ 1, 1 ]
             # cargo
             Quartermaster: [ 1, 1 ]
