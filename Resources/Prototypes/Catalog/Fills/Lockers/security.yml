@@ -143,8 +143,8 @@
       - id: Binoculars
       - id: Multitool # Goobstation
       - id: Wrench # Goobstation
-      - id: ContrabandDetectorFlatpack # Goobstation
-        amount: 2
+#      - id: ContrabandDetectorFlatpack # Goobstation
+#        amount: 2
 
 - type: entity
   id: LockerSecurityFilled

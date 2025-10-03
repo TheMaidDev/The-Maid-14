@@ -121,7 +121,7 @@
     # secfab - real guns and mech weapons 1984'd
     - SecurityEquipmentStatic
     - SecurityEquipmentStaticGoob
-    - SecurityBoardsStaticGoob
+#  - SecurityBoardsStaticGoob
     - SecurityPracticeStatic
     - MechWeaponsSecurityStatic
     - MechBoardsSecurity

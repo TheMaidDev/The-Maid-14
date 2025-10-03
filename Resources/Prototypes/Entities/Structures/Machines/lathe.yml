@@ -583,7 +583,7 @@
     # Goobstation Packs
     - SharedBoardsStatic
     - MedicalBoardsStaticGoob
-    - SecurityBoardsStaticGoob
+#  - SecurityBoardsStaticGoob
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards
@@ -755,8 +755,8 @@
     - SecurityEquipmentStaticGoob
     - SecurityHypoStatic
     - MechWeaponsSecurityStatic
-    - SecurityBoardsStaticGoob
-    - SecurityBoardsStaticGoob
+#  - SecurityBoardsStaticGoob
+#  - SecurityBoardsStaticGoob
     - PowerCellsStatic
     - ScienceExplosives
     - GrenadeTriggersStatic
