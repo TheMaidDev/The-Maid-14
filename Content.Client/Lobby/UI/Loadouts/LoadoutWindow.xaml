@@ -24,9 +24,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 <LineEdit Name="RoleNameEdit" VerticalExpand="True" HorizontalExpand="True"/>
             </PanelContainer>
         </BoxContainer>
-        <controls:CustomVerticalTabContainer Name="LoadoutGroupsContainer"
-                              VerticalExpand="True"
-                              HorizontalExpand="True">
+        <controls:CustomVerticalTabContainer
+            Name="LoadoutGroupsContainer"
+            VerticalExpand="True"
+            HorizontalExpand="True">
         </controls:CustomVerticalTabContainer>
     </BoxContainer>
 </controls:FancyWindow>
