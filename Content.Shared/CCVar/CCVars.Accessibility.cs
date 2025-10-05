@@ -11,12 +11,6 @@ namespace Content.Shared.CCVar;
 
 public sealed partial class CCVars
 {
-    /// <summary>
-    ///     Chat window opacity slider, controlling the alpha of the chat window background.
-    ///     Goes from to 0 (completely transparent) to 1 (completely opaque)
-    /// </summary>
-    public static readonly CVarDef<float> ChatWindowOpacity =
-        CVarDef.Create("accessibility.chat_window_transparency", 0.85f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     ///     Toggle for visual effects that may potentially cause motion sickness.

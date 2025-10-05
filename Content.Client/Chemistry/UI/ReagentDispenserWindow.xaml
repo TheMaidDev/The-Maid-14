@@ -79,7 +79,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                              MinHeight="50">
                 <PanelContainer VerticalExpand="True">
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#1b1b1e" />
+                        <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
                     </PanelContainer.PanelOverride>
                     <BoxContainer Name="ContainerInfo"
                                   Orientation="Vertical"

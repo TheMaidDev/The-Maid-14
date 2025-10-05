@@ -21,7 +21,7 @@ public sealed partial class PdaProgramItem : ContainerButton
 
     private readonly StyleBoxFlat _styleBox = new()
     {
-        BackgroundColor = Color.FromHex("#25252a"),
+        BackgroundColor = Color.FromHex("#2d100b"),
     };
 
     public Color BackgroundColor

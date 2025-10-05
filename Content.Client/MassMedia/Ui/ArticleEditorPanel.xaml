@@ -13,7 +13,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <PanelContainer StyleClasses="BackgroundOpenLeft"/>
     <PanelContainer>
         <PanelContainer.PanelOverride>
-            <graphics:StyleBoxFlat BorderColor="#25252A" BorderThickness="0 0 0 3"/>
+            <graphics:StyleBoxFlat BorderColor="#2d100b" BorderThickness="0 0 0 3"/>
         </PanelContainer.PanelOverride>
     </PanelContainer>
     <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">

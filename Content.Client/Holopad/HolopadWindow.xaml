@@ -20,14 +20,14 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                     <RichTextLabel Name="EmergencyBroadcastText" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10 10 10 10" ReservesSpace="False"/>
                 </PanelContainer>
             </controls:StripeBack>
-            
+
             <Label Text="{Loc 'holopad-window-controls-locked-out'}" HorizontalAlignment="Center" Margin="10 5 10 0" ReservesSpace="False"/>
             <RichTextLabel Name="LockOutIdText" HorizontalAlignment="Center" Margin="10 5 10 0" ReservesSpace="False"/>
             <Label Name="LockOutCountDownText" Text="{Loc 'holopad-window-controls-unlock-countdown'}" HorizontalAlignment="Center" Margin="10 15 10 10" ReservesSpace="False"/>
         </BoxContainer>
 
         <BoxContainer Name="ControlsContainer" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" ReservesSpace="False">
-        
+
             <!-- Active call controls (either this or the call placement controls will be active) -->
             <BoxContainer Name="ActiveCallControlsContainer" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" ReservesSpace="False">
 
@@ -76,11 +76,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
                 <!-- List of contactable holopads (the list is created in C#) -->
                 <BoxContainer Name="HolopadContactListContainer" Orientation="Vertical" Margin="10 0 10 5" ReservesSpace="False" Visible="False">
-                    <PanelContainer Name="HolopadContactListHeaderPanel">
+                    <PanelContainer Name="HolopadContactListHeaderPanel" >
                         <Label Text="{Loc 'holopad-window-select-contact-from-list'}" HorizontalAlignment="Center" Margin="0 3 0 3"/>
                     </PanelContainer>
 
-                    <PanelContainer Name="HolopadContactListPanel">
+                    <PanelContainer Name="HolopadContactListPanel" StyleClasses="BorderedWindowPanel">
                         <BoxContainer Orientation="Vertical">
 
                             <!-- Contact filter -->

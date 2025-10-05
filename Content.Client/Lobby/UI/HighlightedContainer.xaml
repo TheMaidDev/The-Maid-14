@@ -9,7 +9,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     xmlns="https://spacestation14.io"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client">
     <PanelContainer.PanelOverride>
-        <graphics:StyleBoxFlat BackgroundColor="#2F2F35"
+        <graphics:StyleBoxFlat BackgroundColor="#1a0604"
                                ContentMarginTopOverride="10"
                                ContentMarginBottomOverride="10"
                                ContentMarginLeftOverride="10"

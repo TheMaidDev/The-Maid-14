@@ -347,7 +347,6 @@ ui-options-accessability-header-content = Содержимое
 ui-options-screen-shake-intensity = Интенсивность дрожания экрана
 ui-options-show-offer-mode-indicators = Показывать индикатор передачи предмета
 ui-options-function-offer-item = Передать что-либо
-ui-options-chat-window-opacity = Непрозрачность окна чата
 ui-options-speech-bubble-text-opacity = Непрозрачность текста речевого пузыря
 ui-options-speech-bubble-speaker-opacity = Непрозрачность диктора речевого пузыря
 ui-options-speech-bubble-background-opacity = Непрозрачность фона речевого пузыря

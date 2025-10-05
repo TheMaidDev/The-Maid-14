@@ -27,7 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <Control MinHeight="10"/>
         <PanelContainer VerticalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1b1b1e" />
+                    <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
                 </PanelContainer.PanelOverride>
             <ScrollContainer HScrollEnabled="False"
                      HorizontalExpand="True"

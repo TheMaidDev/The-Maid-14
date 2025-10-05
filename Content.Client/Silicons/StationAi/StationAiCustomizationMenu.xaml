@@ -15,9 +15,9 @@
                 </BoxContainer>
             </controls:StripeBack>
         </BoxContainer>
-        <VerticalTabContainer Name="CustomizationGroupsContainer"
-                              VerticalExpand="True"
-                              HorizontalExpand="True">
-        </VerticalTabContainer>
+        <controls:CustomVerticalTabContainer Name="CustomizationGroupsContainer"
+                                    VerticalExpand="True"
+                                    HorizontalExpand="True">
+        </controls:CustomVerticalTabContainer>
     </BoxContainer>
 </controls:FancyWindow>

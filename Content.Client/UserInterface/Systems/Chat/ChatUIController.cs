@@ -56,7 +56,6 @@ using Content.Client.Gameplay;
 using Content.Client.Ghost;
 using Content.Client.Mind;
 using Content.Client.Roles;
-using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Screens;
 using Content.Client.UserInterface.Systems.Chat.Widgets;
 using Content.Client.UserInterface.Systems.Gameplay;
@@ -86,9 +85,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Replays;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Client.CharacterInfo;
-using Content.Goobstation.Common.CCVar; // Goob - start
-using static Content.Client.CharacterInfo.CharacterInfoSystem;
 
 
 namespace Content.Client.UserInterface.Systems.Chat;
@@ -299,8 +295,6 @@ public sealed partial class ChatUIController : UIController
             _chatNameColors[i] = nameColors[i].ToHex();
         }
 
-        _config.OnValueChanged(CCVars.ChatWindowOpacity, OnChatWindowOpacityChanged);
-
         InitializeHighlights();
     }
 
@@ -310,41 +304,11 @@ public sealed partial class ChatUIController : UIController
 
         var viewportContainer = UIManager.ActiveScreen!.FindControl<LayoutContainer>("ViewportContainer");
         SetSpeechBubbleRoot(viewportContainer);
-
-        SetChatWindowOpacity(_config.GetCVar(CCVars.ChatWindowOpacity));
     }
 
     public void OnScreenUnload()
     {
         SetMainChat(false);
-    }
-
-    private void OnChatWindowOpacityChanged(float opacity)
-    {
-        SetChatWindowOpacity(opacity);
-    }
-
-    private void SetChatWindowOpacity(float opacity)
-    {
-        var chatBox = UIManager.ActiveScreen?.GetWidget<ChatBox>() ?? UIManager.ActiveScreen?.GetWidget<ResizableChatBox>();
-
-        var panel = chatBox?.ChatWindowPanel;
-        if (panel is null)
-            return;
-
-        Color color;
-        if (panel.PanelOverride is StyleBoxFlat styleBoxFlat)
-            color = styleBoxFlat.BackgroundColor;
-        else if (panel.TryGetStyleProperty<StyleBox>(PanelContainer.StylePropertyPanel, out var style)
-                 && style is StyleBoxFlat propStyleBoxFlat)
-            color = propStyleBoxFlat.BackgroundColor;
-        else
-            color = StyleNano.ChatBackgroundColor;
-
-        panel.PanelOverride = new StyleBoxFlat
-        {
-            BackgroundColor = color.WithAlpha(opacity)
-        };
     }
 
     public void SetMainChat(bool setting)

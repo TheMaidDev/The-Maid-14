@@ -56,7 +56,7 @@ SPDX-License-Identifier: MIT
         <BoxContainer VerticalExpand="True" Margin="10 0 10 10" Orientation="Vertical">
             <PanelContainer VerticalExpand="True" MinSize="0 200">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+                    <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
                 </PanelContainer.PanelOverride>
                 <ScrollContainer
                     HScrollEnabled="False"

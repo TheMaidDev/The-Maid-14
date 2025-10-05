@@ -10,6 +10,7 @@
 // SPDX-License-Identifier: MIT
 
 using System.Numerics;
+using Content.Client.Stylesheets;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 
@@ -19,7 +20,7 @@ namespace Content.Client.UserInterface.Controls
     {
         private const float PadSize = 4;
         private const float EdgeSize = 2;
-        private static readonly Color EdgeColor = Color.FromHex("#525252ff");
+        private static readonly Color EdgeColor = StyleNano.PanelDark;
 
         private bool _hasTopEdge = true;
         private bool _hasBottomEdge = true;

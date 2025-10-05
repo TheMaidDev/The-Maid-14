@@ -72,18 +72,6 @@ public sealed partial class HolopadWindow : FancyWindow
         EndCallButton.AddStyleClass("Caution");
         StartBroadcastButton.AddStyleClass("Caution");
 
-        HolopadContactListPanel.PanelOverride = new StyleBoxFlat
-        {
-            BackgroundColor = new Color(47, 47, 59) * Color.DarkGray,
-            BorderColor = new Color(82, 82, 82), //new Color(70, 73, 102),
-            BorderThickness = new Thickness(2),
-        };
-
-        HolopadContactListHeaderPanel.PanelOverride = new StyleBoxFlat
-        {
-            BackgroundColor = new Color(82, 82, 82),
-        };
-
         EmergencyBroadcastText.SetMessage(FormattedMessage.FromMarkupOrThrow(Loc.GetString("holopad-window-emergency-broadcast-in-progress")));
         SubtitleText.SetMessage(FormattedMessage.FromMarkupOrThrow(Loc.GetString("holopad-window-subtitle")));
         OptionsText.SetMessage(FormattedMessage.FromMarkupOrThrow(Loc.GetString("holopad-window-options")));
