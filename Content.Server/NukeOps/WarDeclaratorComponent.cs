@@ -48,7 +48,7 @@ public sealed partial class WarDeclaratorComponent : Component
     /// War declaration sound file path
     /// </summary>
     [DataField]
-    public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Announcements/war.ogg");
+    public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/_Maid/Announcements/war.ogg"); // Maid
 
     /// <summary>
     /// Fluent ID for the declaration sender title

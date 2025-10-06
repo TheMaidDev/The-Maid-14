@@ -18,10 +18,10 @@ namespace Content.Goobstation.Server.Blob.GameTicking;
 public sealed partial class BlobRuleComponent : Component
 {
     [DataField]
-    public SoundSpecifier? DetectedAudio = new SoundPathSpecifier("/Audio/_Goobstation/Announcements/blob_detected.ogg");
+    public SoundSpecifier? DetectedAudio = new SoundPathSpecifier("/Audio/_Maid/Announcements/bloblarm.ogg"); // Maid
 
     [DataField]
-    public SoundSpecifier? CriticalAudio = new SoundPathSpecifier("/Audio/StationEvents/blobin_time.ogg");
+    public SoundSpecifier? CriticalAudio = new SoundPathSpecifier("/Audio/_Maid/Announcements/blob_critical.ogg"); // Maid
 
     [ViewVariables]
     public List<(EntityUid mindId, MindComponent mind)> Blobs = new(); //BlobRoleComponent
