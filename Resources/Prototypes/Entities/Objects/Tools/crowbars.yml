@@ -134,6 +134,7 @@
     quickEquip: false
     slots:
     - Belt
+    - Pocket # Maid
   - type: Item
     sprite: Objects/Tools/crowbar.rsi
     size: Normal
