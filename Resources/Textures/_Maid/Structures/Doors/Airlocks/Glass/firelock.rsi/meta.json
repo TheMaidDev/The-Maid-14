@@ -142,6 +142,12 @@
         ]
       ]
     },
+      {
+          "name": "bolted_open_unlit"
+      },
+      {
+          "name": "emergency_open_unlit"
+      },
     {
       "name": "base_pressure_unlit",
       "delays": [
