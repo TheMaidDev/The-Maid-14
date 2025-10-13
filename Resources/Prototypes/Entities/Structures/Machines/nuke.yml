@@ -44,7 +44,7 @@
   - type: Transform
     anchored: true
   - type: Sprite
-    sprite: Objects/Devices/nuke.rsi
+    sprite: _Maid/Objects/Devices/nuke.rsi
     noRot: true
     layers:
     - state: nuclearbomb_base
@@ -53,26 +53,9 @@
       map: ["enum.NukeVisualLayers.Unlit"]
       shader: unshaded
       visible: false
-    - state: nuclearbomb_gay
-      map: ["pride"]
-      visible: false
-    - state: nukefestive
-      map: ["christmas"]
-      visible: false
   - type: Appearance
-  - type: HolidayVisuals
-    holidays:
-      festive:
-      - FestiveSeason
-      pride:
-      - PrideMonth
   - type: GenericVisualizer
     visuals:
-      enum.HolidayVisuals.Holiday:
-        christmas:
-          festive: { visible: true }
-        pride:
-          pride: { visible: true }
       enum.NukeVisuals.Deployed:
         enum.NukeVisualLayers.Base:
           False: { state: nuclearbomb_base }
@@ -172,29 +155,10 @@
     anchored: false
   - type: NukeLabel
   - type: Sprite
-    sprite: Objects/Devices/nuke.rsi
+    sprite: _Maid/Objects/Devices/nuke.rsi # Maid
     layers:
     - state: nuclearbomb_base
-    - state: nukefestive
-      map: ["christmas"]
-      visible: false
-    - state: nuclearbomb_gay
-      map: [ "pride" ]
-      visible: false
   - type: Appearance
-  - type: HolidayVisuals
-    holidays:
-      festive:
-      - FestiveSeason
-      pride:
-      - PrideMonth
-  - type: GenericVisualizer
-    visuals:
-      enum.HolidayVisuals.Holiday:
-        christmas:
-          festive: { visible: true }
-        pride:
-          pride: { visible: true }
   - type: Physics
     bodyType: Dynamic
   - type: Fixtures
