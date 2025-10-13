@@ -14,20 +14,20 @@
 - type: stack
   id: Cable
   name: stack-lv-cable
-  icon: { sprite: "/Textures/Objects/Tools/cable-coils.rsi", state: coil-30 }
+  icon: { sprite: "/Textures/_Maid/Objects/Tools/cable-coils.rsi", state: coil-30 } # Maid
   spawn: CableApcStack1
   maxCount: 30
 
 - type: stack
   id: CableMV
   name: stack-mv-cable
-  icon: { sprite: "/Textures/Objects/Tools/cable-coils.rsi", state: coilmv-30 }
+  icon: { sprite: "/Textures/_Maid/Objects/Tools/cable-coils.rsi", state: coilmv-30 } # Maid
   spawn: CableMVStack1
   maxCount: 30
 
 - type: stack
   id: CableHV
   name: stack-hv-cable
-  icon: { sprite: "/Textures/Objects/Tools/cable-coils.rsi", state: coilhv-30 }
+  icon: { sprite: "/Textures/_Maid/Objects/Tools/cable-coils.rsi", state: coilhv-30 } # Maid
   spawn: CableHVStack1
   maxCount: 30
