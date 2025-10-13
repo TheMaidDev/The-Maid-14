@@ -120,8 +120,11 @@
   id: BaseSignDirectional
   abstract: true
   components:
-    - type: Sprite
-      snapCardinals: false
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Maid/Structures/Wallmounts/signs.rsi # Maid
+    snapCardinals: false
+    noRot: true
 
 - type: entity
   parent: BaseSignDirectional
