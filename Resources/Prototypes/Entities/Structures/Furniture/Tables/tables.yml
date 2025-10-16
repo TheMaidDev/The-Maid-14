@@ -520,9 +520,9 @@
   description: Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/wood.rsi
+    sprite: _Maid/Structures/Furniture/Tables/wood.rsi # Maid
   - type: Icon
-    sprite: Structures/Furniture/Tables/wood.rsi
+    sprite: _Maid/Structures/Furniture/Tables/wood.rsi # Maid
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible
