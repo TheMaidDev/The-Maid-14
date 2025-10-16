@@ -1,7 +1,10 @@
 - type: gameMapPool
   id: MaidStationMapPool
   maps:
+  # Standard
   - Bagel
   - Box
   - Meta
   - Kettle
+  # Maid
+  - WonderBox
