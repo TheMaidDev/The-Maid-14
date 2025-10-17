@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/17/2025 02:05:06
+  time: 10/17/2025 13:11:49
   entityCount: 26610
 maps:
 - 1
@@ -15488,7 +15488,7 @@ entities:
       pos: 7.5,-4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4379.273
+      secondsUntilStateChange: -4499.0454
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -109872,6 +109872,13 @@ entities:
     - type: Transform
       pos: -10.5,-3.5
       parent: 2
+- proto: GlassBoxLawbringerFilled
+  entities:
+  - uid: 16459
+    components:
+    - type: Transform
+      pos: -2.5,56.5
+      parent: 2
 - proto: GravityGenerator
   entities:
   - uid: 14635
@@ -124086,13 +124093,6 @@ entities:
     components:
     - type: Transform
       pos: -43.488655,-33.61698
-      parent: 2
-- proto: PlushieLamp
-  entities:
-  - uid: 16459
-    components:
-    - type: Transform
-      pos: -2.5895042,56.62824
       parent: 2
 - proto: PlushieLizard
   entities:
@@ -147263,11 +147263,6 @@ entities:
     - type: Transform
       pos: -28.5,-30.5
       parent: 2
-  - uid: 19711
-    components:
-    - type: Transform
-      pos: -2.5,56.5
-      parent: 2
   - uid: 19712
     components:
     - type: Transform
@@ -147996,6 +147991,18 @@ entities:
           showEnts: False
           occludes: True
           ents: []
+- proto: TeslaGroundingRod
+  entities:
+  - uid: 19711
+    components:
+    - type: Transform
+      pos: -0.5,-64.5
+      parent: 2
+  - uid: 20167
+    components:
+    - type: Transform
+      pos: 1.5,-62.5
+      parent: 2
 - proto: ThermomachineFreezerMachineCircuitBoard
   entities:
   - uid: 19821
@@ -173154,12 +173161,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 58.5,-14.5
-      parent: 2
-  - uid: 23455
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -2.5,56.5
       parent: 2
   - uid: 23456
     components:
