@@ -8,14 +8,14 @@
 - type: entity
   id: GlassBoxLawbringer
   parent: GlassBox
-  suffix: Lawbringer
+  suffix: multiphas # Maid
   components:
   - type: Sprite
     noRot: true
     sprite: Structures/Storage/glassbox.rsi
     layers:
     - state: base
-    - state: lawbringer
+    - state: multiphas # Maid
       map: [ "enum.ItemCabinetVisuals.Layer" ]
       visible: true
     - state: glass
@@ -34,15 +34,15 @@
         ejectOnInteract: true
         whitelist:
           tags:
-          - WeaponEnergyGunLawbringer
+          - WeaponEnergyGunMultiphase
         ejectSound: /Audio/Machines/machine_switch.ogg
 
 - type: entity
   id: GlassBoxLawbringerFilled
   parent: GlassBoxLawbringer
-  suffix: Lawbringer, Filled
+  suffix: Multiphas, Filled
   components:
   - type: ContainerFill
     containers:
       ItemCabinet:
-      - WeaponEnergyGunLawbringer
+      - WeaponEnergyGunMultiphase # Maid
