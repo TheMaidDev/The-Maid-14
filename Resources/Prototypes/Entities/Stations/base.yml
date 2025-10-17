@@ -123,6 +123,9 @@
           paths:
             - /Maps/Shuttles/trading_outpost.yml
           nameDataset: TradeStationNames
+        mining: !type:GridSpawnGroup
+          paths:
+          - /Maps/Shuttles/mining.yml # Maid
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true
@@ -150,8 +153,8 @@
           minimumDistance: 150
           maximumDistance: 300
           stationGrid: false
-          minCount: 12
-          maxCount: 16
+          minCount: 4
+          maxCount: 6
           addComponents:
           - type: Gravity
             enabled: true
