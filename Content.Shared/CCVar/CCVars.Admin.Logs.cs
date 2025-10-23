@@ -50,5 +50,5 @@ public sealed partial class CCVars
     /// Set to -1 to disable.
     /// </summary>
     public static readonly CVarDef<int> AdminLogsHighLogPlaytime =
-        CVarDef.Create("adminlogs.high_log_playtime", 5, CVar.SERVERONLY);
+        CVarDef.Create("adminlogs.high_log_playtime", 2, CVar.SERVERONLY);
 }
