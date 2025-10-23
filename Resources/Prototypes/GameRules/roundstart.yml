@@ -626,10 +626,10 @@
   parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 mins
+    minimumTimeUntilFirstEvent: 1800 # 30 mins
     minMaxEventTiming:
-      min: 600 # 10 mins
-      max: 1800 # 30 mins
+      min: 1800 # 30 mins
+      max: 5400 # 90 mins
     scheduledGameRules: !type:NestedSelector
       tableId: UnknownShuttlesFriendlyTable
 
@@ -655,7 +655,7 @@
     - id: SolarPanelDamageVariationPass
     - id: SolarPanelEmptyVariationPass
     - id: BasicDecalDirtVariationPass
-    - id: BasicDecalGraffitiVariationPass
+#    - id: BasicDecalGraffitiVariationPass
     - id: BasicDecalBrunsVariationPass
       prob: 0.50
       orGroup: monospaceDecals
