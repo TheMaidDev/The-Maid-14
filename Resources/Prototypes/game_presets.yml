@@ -79,9 +79,9 @@
 - type: gamePreset
   id: KesslerSyndrome
   alias:
-    - kessler
-    - junk
-    - meteorhell
+    - kesslerSyndrome
+#    - junk
+#    - meteorhell
   name: kessler-syndrome-title
   showInVote: false # secret
   description: kessler-syndrome-description
@@ -119,10 +119,10 @@
 - type: gamePreset
   id: AllerAtOnce
   alias:
-  - allall
-  - aller
-  - badidea
-  - punishment
+#  - allall
+  - allerAtOnce
+#  - badidea
+#  - punishment
   name: aller-at-once-title
   description: aller-at-once-description
   showInVote: false #Please god dont do this
@@ -151,7 +151,7 @@
   id: Extended
   alias:
   - extended
-  - shittersafari
+#  - shittersafari
   name: extended-title
   showInVote: false #2boring2vote
   description: extended-description
@@ -166,7 +166,7 @@
   id: Greenshift
   alias:
   - greenshift
-  - shittersafarideluxeedition
+#  - shittersafarideluxeedition
   name: greenshift-title
   showInVote: false #4boring4vote
   description: greenshift-description
@@ -179,7 +179,7 @@
   id: Secret
   alias:
     - secret
-    - sekrit
+#    - sekrit
   name: secret-title
   showInVote: false # Goob - Game Director
   description: secret-description
@@ -229,7 +229,7 @@
   id: Traitor
   alias:
     - traitor
-    - tator
+#    - tator
   name: traitor-title
   description: traitor-description
   showInVote: false
@@ -247,7 +247,7 @@
   id: Deathmatch
   alias:
     - deathmatch
-    - dm
+#    - dm
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
@@ -276,9 +276,9 @@
 - type: gamePreset
   id: Revolutionary
   alias:
-    - rev
-    - revs
-    - revolutionaries
+    - revolutionary
+#    - revs
+#    - revolutionaries
   name: rev-title
   description: rev-description
   showInVote: false
@@ -296,10 +296,10 @@
   id: Zombie
   alias:
   - zombie
-  - zombies
-  - Zombies
-  - zz14
-  - zomber
+#  - zombies
+#  - Zombies
+#  - zz14
+#  - zomber
   name: zombie-title
   description: zombie-description
   showInVote: false
@@ -315,8 +315,8 @@
   id: Zombieteors
   alias:
   - zombieteors
-  - zombombies
-  - meteombies
+#  - zombombies
+#  - meteombies
   name: zombieteors-title
   description: zombieteors-description
   showInVote: false

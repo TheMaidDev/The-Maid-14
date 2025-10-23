@@ -33,8 +33,8 @@
 - type: gamePreset
   id: Changeling
   alias:
-    - ling
-    - lings
+#    - ling
+#    - lings
     - changeling
   name: changeling-gamemode-title
   description: changeling-gamemode-description
@@ -50,7 +50,7 @@
 - type: gamePreset
   id: Traitorling
   alias:
-    - lingtraitor
+#    - lingtraitor
     - traitorling
   name: traitorling-title
   description: traitorling-description
@@ -66,9 +66,9 @@
 - type: gamePreset
   id: NukeTraitor
   alias:
-    - nuketot
-    - optraitor
-    - optot
+    - nuketraitor
+#    - optraitor
+#    - optot
   name: nukeops-title
   description: nukeops-description
   showInVote: false
@@ -84,7 +84,7 @@
   id: NukeLing
   alias:
     - nukeling
-    - opling
+#    - opling
   name: nukeops-title
   description: nukeops-description
   showInVote: false
@@ -100,8 +100,8 @@
   id: RevTraitor
   alias:
     - revtraitor
-    - revtot
-    - totrevs
+#    - revtot
+#    - totrevs
   name: revtraitor-title
   description: revtraitor-description
   showInVote: false
@@ -116,7 +116,7 @@
   id: RevLing
   alias:
     - revling
-    - lingrevs
+#    - lingrevs
   name: revling-title
   description: revling-description
   showInVote: false
@@ -132,7 +132,7 @@
 - type: gamePreset
   id: Blob
   alias:
-  - blab
+  - blob
   name: blob-title
   description: blob-description
   showInVote: false
@@ -160,102 +160,102 @@
     - BasicRoundstartVariation
     - LavalandStormScheduler
 
-- type: gamePreset
-  id: TheGhost
-  alias:
-    - calm
-    - calmdynamic
-  name: sleeper-title
-  description: sleeper-description
-  showInVote: true
-  minPlayers: 5
-  rules:
-    - CalmDynamic
-    - LavalandStormScheduler
-    - SubGamemodesRule
-    - RareIonStormScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+#- type: gamePreset
+#  id: TheGhost
+#  alias:
+#    - calm
+#    - calmdynamic
+#  name: sleeper-title
+#  description: sleeper-description
+#  showInVote: true
+#  minPlayers: 5
+#  rules:
+#    - CalmDynamic
+#    - LavalandStormScheduler
+#    - SubGamemodesRule
+#    - RareIonStormScheduler
+#    - SpaceTrafficControlFriendlyEventScheduler
 
-- type: gamePreset
-  id: TheGuide
-  alias:
-    - combat
-    - combatdynamic
-  name: guide-title
-  description: guide-description
-  showInVote: false
-  minPlayers: 25
-  rules:
-    - CombatDynamic
-    - LavalandStormScheduler
-    - SubGamemodesRule
-    - IonStormScheduler
-    - SpaceTrafficControlEventScheduler
+#- type: gamePreset
+#  id: TheGuide
+#  alias:
+#    - combat
+#    - combatdynamic
+#  name: guide-title
+#  description: guide-description
+#  showInVote: false
+#  minPlayers: 25
+#  rules:
+#    - CombatDynamic
+#    - LavalandStormScheduler
+#    - SubGamemodesRule
+#    - IonStormScheduler
+#    - SpaceTrafficControlEventScheduler
 
-- type: gamePreset
-  id: SecretPlusLow
-  alias:
-    - secretpluslow
-    - secretpluscalm
-    - turbulence
-  name: secretplus-low-title
-  description: secretplus-low-description
-  showInVote: true
-  rules:
-    - SecretPlusLow
-    - LavalandStormScheduler
+#- type: gamePreset
+#  id: SecretPlusLow
+#  alias:
+#    - secretpluslow
+#    - secretpluscalm
+#    - turbulence
+#  name: secretplus-low-title
+#  description: secretplus-low-description
+#  showInVote: true
+#  rules:
+#    - SecretPlusLow
+#    - LavalandStormScheduler
 
-- type: gamePreset
-  id: SecretPlusMid
-  alias:
-    - secretplusmid
-    - secretplus
-    - entropy
-  name: secretplus-mid-title
-  description: secretplus-mid-description
-  showInVote: true
-  rules:
-    - SecretPlusMid
-    - LavalandStormScheduler
+#- type: gamePreset
+#  id: SecretPlusMid
+#  alias:
+#    - secretplusmid
+#    - secretplus
+#    - entropy
+#  name: secretplus-mid-title
+#  description: secretplus-mid-description
+#  showInVote: true
+#  rules:
+#    - SecretPlusMid
+#    - LavalandStormScheduler
 
-- type: gamePreset
-  id: SecretPlusAdmeme
-  alias:
-    - secretplusadmeme
-    - secretplusevil
-    - secretplushigh
-    - chaos
-  name: secretplus-admeme-title
-  description: secretplus-admeme-description
-  showInVote: false # 1984
-  rules:
-    - SecretPlusAdmeme
-    - LavalandStormScheduler
+#- type: gamePreset
+#  id: SecretPlusAdmeme
+#  alias:
+#    - secretplusadmeme
+#    - secretplusevil
+#    - secretplushigh
+#    - chaos
+#  name: secretplus-admeme-title
+#  description: secretplus-admeme-description
+#  showInVote: false # 1984
+#  rules:
+#    - SecretPlusAdmeme
+#    - LavalandStormScheduler
 
-- type: gamePreset
-  id: SurvivalPlusMid
-  alias:
-    - survivalplus
-    - newsurvival
-    - survivalnew
-  name: survivalplus-title
-  description: survivalplus-description
-  showInVote: true
-  rules:
-    - SecretPlusRampingMid
-    - LavalandStormScheduler
+#- type: gamePreset
+#  id: SurvivalPlusMid
+#  alias:
+#    - survivalplus
+#    - newsurvival
+#    - survivalnew
+#  name: survivalplus-title
+#  description: survivalplus-description
+#  showInVote: true
+#  rules:
+#    - SecretPlusRampingMid
+#    - LavalandStormScheduler
 
-# survival+ but it has roundstart abductors and maybe thieves
-- type: gamePreset
-  id: Abductors
-  alias:
-  - ayylmao
-  name: abductors-title
-  description: abductors-description
-  showInVote: false
-  minPlayers: 20
-  rules:
-  - DuoAbductorRoundstart
-  - SubGamemodesRule
-  - SecretPlusRampingMid
-  - LavalandStormScheduler
+## survival+ but it has roundstart abductors and maybe thieves
+#- type: gamePreset
+#  id: Abductors
+#  alias:
+#  - ayylmao
+#  name: abductors-title
+#  description: abductors-description
+#  showInVote: false
+#  minPlayers: 20
+#  rules:
+#  - DuoAbductorRoundstart
+#  - SubGamemodesRule
+#  - SecretPlusRampingMid
+#  - LavalandStormScheduler
