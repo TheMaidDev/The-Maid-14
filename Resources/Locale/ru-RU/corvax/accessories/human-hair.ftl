@@ -39,6 +39,7 @@ marking-HumanHairHightight = Хай-тайт
 marking-HumanHairHyenamane = Грива гиены
 marking-HumanHairJessica = Джессика
 marking-HumanHairLong4 = Длинная 4
+marking-HumanHairLong5 = Длинная 5
 marking-HumanHairLongdtails = Длинные хвосты
 marking-HumanHairLongerAlt = Длинная (Альт.)
 marking-HumanHairLongovereyeAlt = Длинная (Через глаз альт.)
