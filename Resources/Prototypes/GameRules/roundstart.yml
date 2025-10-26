@@ -156,8 +156,8 @@
   components:
   - type: SubGamemodes
     rules:
-    - id: Thief
-      prob: 0.5
+#    - id: Thief
+#      prob: 0.5
     - id: Heretic # goob edit
       prob: 0.2
     - id: Devil # Goob
@@ -518,7 +518,7 @@
     selectionTime: IntraPlayerSpawn # Pre-selection before jobs; assignment doesn't really matter though, we only care about the pre-selection to block other antags.
     removeUponFailedSpawn: false
     definitions:
-    - prefRoles: [ InitialInfected, Traitor, Thief, HeadRev ]
+    - prefRoles: [ InitialInfected, Traitor, HeadRev ] # - Deleted Thief
       max: 2
       playerRatio: 30
 

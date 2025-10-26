@@ -119,8 +119,8 @@ public sealed partial class AdminVerbSystem
     [ValidatePrototypeId<EntityPrototype>]
     private const string DefaultRevsRule = "Revolutionary";
 
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string DefaultThiefRule = "Thief";
+    // [ValidatePrototypeId<EntityPrototype>]
+    // private const string DefaultThiefRule = "Thief";
 
     [ValidatePrototypeId<StartingGearPrototype>]
     private const string PirateGearId = "PirateGear";
@@ -234,20 +234,20 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(headRev);
 
-        var thiefName = Loc.GetString("admin-verb-text-make-thief");
-        Verb thief = new()
-        {
-            Text = thiefName,
-            Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Clothing/Hands/Gloves/Color/black.rsi"), "icon"),
-            Act = () =>
-            {
-                _antag.ForceMakeAntag<ThiefRuleComponent>(targetPlayer, DefaultThiefRule);
-            },
-            Impact = LogImpact.High,
-            Message = string.Join(": ", thiefName, Loc.GetString("admin-verb-make-thief")),
-        };
-        args.Verbs.Add(thief);
+        // var thiefName = Loc.GetString("admin-verb-text-make-thief");
+        // Verb thief = new()
+        // {
+        //     Text = thiefName,
+        //     Category = VerbCategory.Antag,
+        //     Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Clothing/Hands/Gloves/Color/black.rsi"), "icon"),
+        //     Act = () =>
+        //     {
+        //         _antag.ForceMakeAntag<ThiefRuleComponent>(targetPlayer, DefaultThiefRule);
+        //     },
+        //     Impact = LogImpact.High,
+        //     Message = string.Join(": ", thiefName, Loc.GetString("admin-verb-make-thief")),
+        // };
+        // args.Verbs.Add(thief);
 
         var paradoxCloneName = Loc.GetString("admin-verb-text-make-paradox-clone");
         Verb paradox = new()
