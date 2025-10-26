@@ -234,16 +234,16 @@
     antagPrototype: Rev
     subtype: role-subtype-revolutionary
 
-# Thief
-- type: entity
-  parent: BaseMindRoleAntag
-  id: MindRoleThief
-  name: Thief Role
-  components:
-  - type: MindRole
-    antagPrototype: Thief
-    subtype: role-subtype-thief
-  - type: ThiefRole
+## Thief
+#- type: entity
+#  parent: BaseMindRoleAntag
+#  id: MindRoleThief
+#  name: Thief Role
+#  components:
+#  - type: MindRole
+#    antagPrototype: Thief
+#    subtype: role-subtype-thief
+#  - type: ThiefRole
 
 # Traitors
 - type: entity
