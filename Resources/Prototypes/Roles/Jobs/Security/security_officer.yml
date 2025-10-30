@@ -92,6 +92,11 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 9000 #2.5 hrs
+    - !type:SpeciesRequirement # Maid
+      inverted: false
+      species:
+      - Human
+      - Dwarf
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

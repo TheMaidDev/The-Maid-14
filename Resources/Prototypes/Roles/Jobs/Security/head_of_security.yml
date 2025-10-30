@@ -151,10 +151,11 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 # 10 hrs
-    - !type:SpeciesRequirement # Goob - None Felinid
-      inverted: true
+    - !type:SpeciesRequirement # Maid
+      inverted: false
       species:
-      - Felinid
+      - Human
+      - Dwarf
   #  - !type:StyleRequirement
   #    styles:
   #    - HumanHairFloorlengthBedhead

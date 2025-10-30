@@ -143,15 +143,16 @@
   - !type:DepartmentTimeRequirement
     department: Science
     time: 36000 #10 hrs
-  - !type:SpeciesRequirement # Goob - None Felinid
-    inverted: true
+  - !type:SpeciesRequirement
+    inverted: false
     species:
     - Felinid
+    - Human
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-captain
-  #canBeAntag: false
+  canBeAntag: true # Maid
   antagAdvantage: 75 # Goobstation
   access:
   - Research
