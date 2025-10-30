@@ -21,12 +21,25 @@
 - type: species
   id: Felinid
   name: species-name-felinid
-  roundStart: false # Goobstation change
+  roundStart: true # Maid
   prototype: MobFelinid
   sprites: MobHumanSprites
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
+  sexes:
+  - Male
+  - Female
+  minAge: 18
+  maxAge: 120
+  # begin Goobstation: port EE height/width sliders
+  minHeight: 0.8
+  defaultHeight: 0.85
+  maxHeight: 1
+  minWidth: 0.8
+  defaultWidth: 0.8
+  maxWidth: 1
+  # begin Goobstation: port EE height/width sliders
 
 - type: markingPoints
   id: MobFelinidMarkingLimits
