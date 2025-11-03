@@ -80,7 +80,7 @@
   description: uplink-thermal-vision-desc
   productEntity: ClothingEyesThermalVisionGogglesSyndie
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 25 # Maid
   categories:
   - UplinkWearables
   conditions:

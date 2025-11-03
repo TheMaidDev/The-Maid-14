@@ -146,7 +146,7 @@
         - ScramImplanter
         - StorageImplanter
         - FreedomImplanter
-        - DeathAcidifierImplanter
+        # - DeathAcidifierImplanter # Maid
         - UplinkImplanter
         - MicroBombImplanter
         - DnaScramblerImplanter
