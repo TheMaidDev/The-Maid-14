@@ -148,6 +148,7 @@
     species:
     - Felinid
     - Human
+    - Dwarf
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
