@@ -27,7 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <customControls:HSeparator Margin="0 10 0 10"/>
             <PanelContainer VerticalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1a0604"/>
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
                 </PanelContainer.PanelOverride>
                 <BoxContainer HorizontalAlignment="Center" VerticalAlignment="Center">
                     <SpriteView Name="BorgSprite" Scale="5 5"/>
@@ -48,7 +48,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <Label Text="{Loc 'borg-ui-modules-label'}" Margin="0 0 0 5"/>
             <PanelContainer VerticalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1a0604"/>
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
                 </PanelContainer.PanelOverride>
                 <BoxContainer VerticalExpand="True" Orientation="Vertical">
                     <ScrollContainer HScrollEnabled="False" HorizontalExpand="True" VerticalExpand="True">

@@ -10,7 +10,7 @@
         <PanelContainer Name="LeftPanel" Margin="5" VerticalExpand="False"
                         VerticalAlignment="Top">
             <PanelContainer.PanelOverride>
-                <graphics:StyleBoxFlat BackgroundColor="#1a0604"/>
+                <graphics:StyleBoxFlat BackgroundColor="#19181B"/>
             </PanelContainer.PanelOverride>
             <BoxContainer Name="TabContainer" Margin="5" Orientation="Vertical"/>
         </PanelContainer>
@@ -23,7 +23,7 @@
                      Margin="0 5 5 5">
         <PanelContainer Name="RightPanel" Margin="5" HorizontalExpand="True" HorizontalAlignment="Stretch">
             <PanelContainer.PanelOverride>
-                <graphics:StyleBoxFlat BackgroundColor="#1A0604"/>
+                <graphics:StyleBoxFlat BackgroundColor="#19181B"/>
             </PanelContainer.PanelOverride>
             <BoxContainer Margin="5"
                           Orientation="Vertical"

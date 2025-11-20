@@ -27,6 +27,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <!-- Panel that appears on selecting the device -->
 
             <PanelContainer HorizontalExpand="True" Margin="-8 0 -14 -4" Access="Public">
+                <PanelContainer.PanelOverride>
+                    <gfx:StyleBoxFlat BackgroundColor="#25252a"/>
+                </PanelContainer.PanelOverride>
                 <BoxContainer Name="MainDataContainer" HorizontalExpand="True" VerticalExpand="True" Orientation="Vertical">
                     <Control>
                         <BoxContainer HorizontalExpand="True" VerticalExpand="True" Orientation="Vertical">
@@ -37,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                             </BoxContainer>
                             <PanelContainer HorizontalExpand="True">
                                 <PanelContainer.PanelOverride>
-                                    <gfx:StyleBoxFlat BackgroundColor="#202023"/>
+                                    <gfx:StyleBoxFlat BackgroundColor="#202020"/>
                                 </PanelContainer.PanelOverride>
                                 <BoxContainer HorizontalExpand="True" Orientation="Horizontal">
                                     <Label Name="TemperatureLabel" Text="???" HorizontalAlignment="Center" HorizontalExpand="True" FontColorOverride="#a9a9a9" Margin="0 2 0 0" SetHeight="24"></Label>
@@ -59,7 +62,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                         <BoxContainer HorizontalExpand="True" VerticalExpand="True" Orientation="Vertical">
                             <PanelContainer HorizontalExpand="True">
                                 <PanelContainer.PanelOverride>
-                                    <gfx:StyleBoxFlat BackgroundColor="#925941"/>
+                                    <gfx:StyleBoxFlat BackgroundColor="#202020"/>
                                 </PanelContainer.PanelOverride>
 
                                 <!-- Gas entries added via C# code -->

@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
             <PanelContainer VerticalExpand="True" MinSize="0 200">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
                 </PanelContainer.PanelOverride>
 
                 <ScrollContainer HorizontalExpand="True" MinSize="0 200">
@@ -55,7 +55,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <!-- Buffer info -->
             <PanelContainer VerticalExpand="True" MinSize="0 200">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
                 </PanelContainer.PanelOverride>
 
                 <ScrollContainer HorizontalExpand="True" MinSize="0 200">
@@ -77,7 +77,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
             <PanelContainer VerticalExpand="True" MinSize="0 200">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
                 </PanelContainer.PanelOverride>
 
                 <ScrollContainer HorizontalExpand="True" MinSize="0 200">
@@ -102,7 +102,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <!-- Wrap the packaging info-->
             <PanelContainer>
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1a0604" />
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
                 </PanelContainer.PanelOverride>
 
                 <!-- Packaging Info -->

@@ -69,7 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                         Margin="0 0 0 10"/>
                 <PanelContainer VerticalExpand="True">
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#1a0604"/>
+                        <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
                     </PanelContainer.PanelOverride>
                     <ScrollContainer
                         HScrollEnabled="False"
@@ -95,7 +95,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                         Margin="0 0 0 10"/>
                 <PanelContainer VerticalExpand="True">
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#1a0604"/>
+                        <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
                     </PanelContainer.PanelOverride>
                     <ScrollContainer
                         HScrollEnabled="False"

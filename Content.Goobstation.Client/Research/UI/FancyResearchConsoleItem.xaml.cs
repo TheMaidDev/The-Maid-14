@@ -30,8 +30,8 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
 
     // Some visuals
     public static readonly Color DefaultColor = Color.FromHex("#141F2F");
-    public static readonly Color DefaultBorderColor = Color.FromHex("#4972A1");
-    public static readonly Color DefaultHoveredColor = Color.FromHex("#4972A1");
+    public static readonly Color DefaultBorderColor = Color.FromHex("#6f6f6f");
+    public static readonly Color DefaultHoveredColor = Color.FromHex("#6f6f6f");
 
     public Color Color = DefaultColor;
     public Color BorderColor = DefaultBorderColor;

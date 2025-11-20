@@ -86,15 +86,23 @@ public sealed partial class LobbyCharacterPreviewPanel : Control
         _previewDummy = uid;
 
         ViewBox.DisposeAllChildren();
-        var spriteView = new SpriteView
+
+        //Maid edit start
+        var directions = new[] { Direction.South, Direction.North, Direction.West, Direction.East };
+
+        foreach (var direction in directions)
         {
-            OverrideDirection = Direction.South,
-            Scale = new Vector2(4f, 4f),
-            MaxSize = new Vector2(112, 112),
-            Stretch = SpriteView.StretchMode.Fill,
-        };
-        spriteView.SetEntity(uid);
-        ViewBox.AddChild(spriteView);
+            var spriteView = new SpriteView
+            {
+                OverrideDirection = direction,
+                Scale = new Vector2(3.25f, 3.25f),
+                MaxSize = new Vector2(112, 112),
+                Stretch = SpriteView.StretchMode.Fill,
+            };
+            spriteView.SetEntity(uid);
+            ViewBox.AddChild(spriteView);
+        }
+        //Maid edit end
     }
 
     protected override void Dispose(bool disposing)

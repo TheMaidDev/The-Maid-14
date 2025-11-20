@@ -35,8 +35,6 @@ namespace Content.Client.Voting.UI
             IoCManager.InjectDependencies(this);
             RobustXamlLoader.Load(this);
 
-            Stylesheet = IoCManager.Resolve<IStylesheetManager>().SheetSpace;
-
             if (_vote.TargetEntity != null && _vote.TargetEntity != 0)
             {
                 _targetEntity = new NetEntity(_vote.TargetEntity.Value);

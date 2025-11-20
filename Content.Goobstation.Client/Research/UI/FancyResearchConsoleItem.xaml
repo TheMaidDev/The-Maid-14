@@ -16,8 +16,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                         HorizontalExpand="True"
                         Name="Panel">
             <PanelContainer.PanelOverride>
-                <graphics:StyleBoxFlat BackgroundColor="#162031"
-                                       BorderColor="#4972A1"
+                <graphics:StyleBoxFlat BackgroundColor="#252525"
+                                       BorderColor="#6f6f6f"
                                        BorderThickness="2"/>
             </PanelContainer.PanelOverride>
             <goob:DrawButton Name="Button"

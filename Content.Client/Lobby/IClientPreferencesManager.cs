@@ -7,6 +7,7 @@ namespace Content.Client.Lobby
     public interface IClientPreferencesManager
     {
         event Action OnServerDataLoaded;
+        event Action? OnPreferencesUpdated; //Maid edit
 
         bool ServerDataLoaded => Settings != null;
 

@@ -57,14 +57,11 @@ namespace Content.Client.Launcher
 
             LayoutContainer.SetAnchorPreset(this, LayoutContainer.LayoutPreset.Wide);
 
-            Stylesheet = IoCManager.Resolve<IStylesheetManager>().SheetSpace;
+            Stylesheet = IoCManager.Resolve<IStylesheetManager>().SheetNano; // Maid edit
 
-            ChangeLoginTip();
             RetryButton.OnPressed += ReconnectButtonPressed;
             ReconnectButton.OnPressed += ReconnectButtonPressed;
 
-            CopyButton.OnPressed += CopyButtonPressed;
-            CopyButtonDisconnected.OnPressed += CopyButtonDisconnectedPressed;
             ExitButton.OnPressed += _ => _state.Exit();
 
             var addr = state.Address;
@@ -95,24 +92,6 @@ namespace Content.Client.Launcher
             }
 
             _state.RetryConnect();
-        }
-
-        private void CopyButtonPressed(BaseButton.ButtonEventArgs args)
-        {
-            CopyText(ConnectFailReason.Text);
-        }
-
-        private void CopyButtonDisconnectedPressed(BaseButton.ButtonEventArgs args)
-        {
-            CopyText(DisconnectReason.Text);
-        }
-
-        private void CopyText(string? text)
-        {
-            if (!string.IsNullOrEmpty(text))
-            {
-                _clipboard.SetText(text);
-            }
         }
 
         private void ConnectFailReasonChanged(string? reason)
@@ -150,29 +129,6 @@ namespace Content.Client.Launcher
             }
         }
 
-        private void ChangeLoginTip()
-        {
-            var tipsDataset = _cfg.GetCVar(CCVars.LoginTipsDataset);
-            var loginTipsEnabled = _prototype.TryIndex<LocalizedDatasetPrototype>(tipsDataset, out var tips);
-
-            LoginTips.Visible = loginTipsEnabled;
-            if (!loginTipsEnabled)
-            {
-                return;
-            }
-
-            var tipList = tips!.Values;
-
-            if (tipList.Count == 0)
-                return;
-
-            var randomIndex = _random.Next(tipList.Count);
-            var tip = tipList[randomIndex];
-            LoginTip.SetMessage(Loc.GetString(tip));
-
-            LoginTipTitle.Text = Loc.GetString("connecting-window-tip", ("numberTip", randomIndex));
-        }
-
         protected override void FrameUpdate(FrameEventArgs args)
         {
             base.FrameUpdate(args);
@@ -205,6 +161,11 @@ namespace Content.Client.Launcher
             ConnectingStatus.Visible = page == LauncherConnecting.Page.Connecting;
             ConnectFail.Visible = page == LauncherConnecting.Page.ConnectFailed;
             Disconnected.Visible = page == LauncherConnecting.Page.Disconnected;
+
+            // Maid edit start
+            RetryButton.Visible = page == LauncherConnecting.Page.ConnectFailed;
+            ReconnectButton.Visible = page == LauncherConnecting.Page.Disconnected;
+            // Maid edit end
 
             if (page == LauncherConnecting.Page.Disconnected)
                 DisconnectReason.Text = _state.LastDisconnectReason;

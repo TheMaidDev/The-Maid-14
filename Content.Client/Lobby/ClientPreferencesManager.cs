@@ -40,6 +40,7 @@ namespace Content.Client.Lobby
         [Dependency] private readonly IPlayerManager _playerManager = default!;
 
         public event Action? OnServerDataLoaded;
+        public event Action? OnPreferencesUpdated; //Maid edit
 
         public GameSettings Settings { get; private set; } = default!;
         public PlayerPreferences Preferences { get; private set; } = default!;
@@ -76,6 +77,7 @@ namespace Content.Client.Lobby
                 SelectedCharacterIndex = slot
             };
             _netManager.ClientSendMessage(msg);
+            OnPreferencesUpdated?.Invoke(); //Maid edit
         }
 
         public void UpdateCharacter(ICharacterProfile profile, int slot)
@@ -90,6 +92,7 @@ namespace Content.Client.Lobby
                 Slot = slot
             };
             _netManager.ClientSendMessage(msg);
+            OnPreferencesUpdated?.Invoke(); //Maid edit
         }
 
         public void CreateCharacter(ICharacterProfile profile)
@@ -114,6 +117,7 @@ namespace Content.Client.Lobby
         public void DeleteCharacter(ICharacterProfile profile)
         {
             DeleteCharacter(Preferences.IndexOfCharacter(profile));
+            OnPreferencesUpdated?.Invoke(); //Maid edit
         }
 
         public void DeleteCharacter(int slot)

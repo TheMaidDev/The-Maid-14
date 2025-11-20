@@ -65,7 +65,7 @@ namespace Content.Client.Wires.UI
             var back = new StyleBoxTexture
             {
                 Texture = panelTex,
-                Modulate = Color.FromHex("#2d100b"),
+                Modulate = Color.FromHex("#25252A"),
             };
             back.SetPatchMargin(StyleBox.Margin.All, 10);
 

@@ -21,6 +21,7 @@ changelog-version-tag = { $fork }/{ $version }
 changelog-button = Changelog
 changelog-button-new-entries = Changelog (new!)
 
+changelog-tab-title-Maidlog = Maid
 # Goobstation
 changelog-tab-title-Changelog = Wizden
 changelog-tab-title-Admin = Admin

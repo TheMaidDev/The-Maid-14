@@ -138,3 +138,8 @@
   id: Hologram
   kind: source
   path: "/Textures/Shaders/hologram.swsl"
+
+- type: shader
+  id: MonochromeSignalDrift
+  kind: source
+  path: "/Textures/Shaders/_Maid/monochrome_signal_drift.swsl"

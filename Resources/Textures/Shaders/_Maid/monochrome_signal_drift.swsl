@@ -1,0 +1,109 @@
+highp float customHash1(highp float x)
+{
+    x = fract(x * 0.3179);
+    x = (x + 0.8912) * (x - 0.4536);
+    return fract(abs(x * 37.291) + 0.7318);
+}
+
+highp float customHash2(highp vec2 p)
+{
+    highp vec3 q = vec3(p.x, p.y, p.x + p.y);
+    q = fract(q * 0.2753);
+    q += dot(q, q.zxy + 23.47);
+    highp float r = dot(q, vec3(0.1937, 0.4821, 0.3243));
+    return fract(r * 41.583);
+}
+
+highp float valueNoise1(in highp float t)
+{
+    highp float i = floor(t);
+    highp float f = fract(t);
+
+    highp float w = f * f * f * (f * (f * 6.0 - 15.0) + 10.0);
+
+    return mix(customHash1(i), customHash1(i + 1.0), w);
+}
+
+highp float valueNoise2(in highp vec2 uv)
+{
+    highp vec2 i = floor(uv);
+    highp vec2 f = fract(uv);
+
+    highp vec2 w = f * f * (3.0 - 2.0 * f);
+    w = w * w * (3.0 - 2.0 * w);
+
+    highp float a = customHash2(i + vec2(0.0, 0.0));
+    highp float b = customHash2(i + vec2(1.0, 0.0));
+    highp float c = customHash2(i + vec2(0.0, 1.0));
+    highp float d = customHash2(i + vec2(1.0, 1.0));
+
+    return mix(mix(a, b, w.x), mix(c, d, w.x), w.y);
+}
+
+highp float generateStripes(highp vec2 uv, highp float time)
+{
+    highp float baseFreq = 18.5;
+    highp float noise = valueNoise1(uv.y * baseFreq + time * 0.3);
+    highp float pattern = sin(uv.y * 0.7 + time * 2.0 + noise * 3.14159);
+    return pattern * pattern * pattern;
+}
+
+highp float monochromeIntensity(highp float hue)
+{
+    highp float t = hue;
+    t = t * 0.7;
+    t = t * t * (3.0 - 2.0 * t);
+    t = pow(t, 1.4);
+    return t;
+}
+
+void fragment()
+{
+    highp vec2 uv = UV * 3.8;
+    highp float t = TIME * 0.9;
+
+    highp float verticalDrift = valueNoise1(uv.y * 15.0 + t * 1.5) * 0.3;
+    highp float horizontalWave = sin(uv.y * 2.0 + t) * 0.1;
+
+    highp float stripeDensity = 22.0;
+    highp float stripePos = (uv.x + verticalDrift + horizontalWave) * stripeDensity;
+    highp float stripeId = floor(stripePos);
+    highp float stripeBlend = fract(stripePos);
+
+    highp float currentColor = customHash1(stripeId);
+    highp float nextColor = customHash1(stripeId + 1.0);
+
+    highp float animation = sin(t * 3.0 + stripeId * 0.7) * 0.5 + 0.5;
+    highp float dynamicBlend = mix(stripeBlend, 1.0 - stripeBlend, animation);
+    dynamicBlend = smoothstep(0.2, 0.8, dynamicBlend);
+
+    highp float finalHue = mix(currentColor, nextColor, dynamicBlend);
+    finalHue = valueNoise1(finalHue * 5.0 + uv.x * 2.0 - t) * 0.8 + 0.2;
+
+    highp float intensity = monochromeIntensity(finalHue);
+
+    highp vec3 col = vec3(intensity);
+
+    highp float scanlines = 0.7 + 0.3 * sin(uv.y * 650.0 + t);
+    col *= scanlines;
+
+    highp float interferenceX = valueNoise2(vec2(uv.x * 6.0, t * 0.7));
+    highp float interferenceY = valueNoise2(vec2(uv.y * 8.0 + t, uv.x * 3.0));
+    highp float interference = interferenceX * interferenceY;
+
+    col = mix(col, vec3(1.0), pow(interference, 3.0) * 0.2);
+
+    highp float distortion = valueNoise1(t * 0.5) * 0.4;
+    highp float cellSize = 45.0;
+    highp vec2 distortedUV = uv + distortion * 0.05;
+    highp vec2 quantizedUV = (floor(distortedUV * cellSize) + 0.5) / cellSize;
+    highp float blend = 0.7 + distortion * 0.3;
+    uv = mix(uv, quantizedUV, blend * 0.3);
+
+    col *= 0.8 + 0.2 * sin(uv.y * 550.0);
+
+    col *= 0.9;
+    col = pow(col, vec3(1.1));
+
+    COLOR = vec4(col, 1.0);
+}

@@ -18,8 +18,6 @@ public sealed partial class ReplayLoadingFailedControl : Control
     public ReplayLoadingFailedControl(IStylesheetManager stylesheet)
     {
         RobustXamlLoader.Load(this);
-
-        Stylesheet = stylesheet.SheetSpace;
         LayoutContainer.SetAnchorPreset(this, LayoutContainer.LayoutPreset.Wide);
     }
 

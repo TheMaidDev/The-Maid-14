@@ -150,7 +150,7 @@ namespace Content.Client.Lobby
                 : lobbyNameCvar;
 
             var width = _cfg.GetCVar(CCVars.ServerLobbyRightPanelWidth);
-            Lobby.RightSide.SetWidth = width;
+            //Lobby.RightSide.SetWidth = width;
 
             UpdateLobbyUi();
 
@@ -320,7 +320,7 @@ namespace Content.Client.Lobby
         {
             if (ev.SoundtrackFilename == null)
             {
-                Lobby!.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
+                //Lobby!.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
             }
             else if (
                 ev.SoundtrackFilename != null
@@ -341,7 +341,7 @@ namespace Content.Client.Lobby
                     ("songTitle", title),
                     ("songArtist", artist));
 
-                Lobby!.LobbySong.SetMarkup(markup);
+                //Lobby!.LobbySong.SetMarkup(markup);
             }
         }
 
@@ -365,14 +365,14 @@ namespace Content.Client.Lobby
                     ("backgroundName", name),
                     ("backgroundArtist", artist));
 
-                Lobby!.LobbyBackground.SetMarkup(markup);
+                //Lobby!.LobbyBackground.SetMarkup(markup);
 
                 return;
             }
 
             _sawmill.Warning("_gameTicker.LobbyBackground was null! No lobby background selected.");
             Lobby!.Background.Texture = null;
-            Lobby!.LobbyBackground.SetMarkup(Loc.GetString("lobby-state-background-no-background-text"));
+            //Lobby!.LobbyBackground.SetMarkup(Loc.GetString("lobby-state-background-no-background-text"));
         }
 
         private void SetReady(bool newReady)

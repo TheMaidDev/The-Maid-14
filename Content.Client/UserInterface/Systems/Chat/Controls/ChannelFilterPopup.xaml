@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 <PanelContainer>
                     <!-- Begin custom background for TextEdit -->
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#323446"/>
+                        <gfx:StyleBoxFlat BackgroundColor="#353535"/>
                     </PanelContainer.PanelOverride>
                     <!-- End custom background -->
                     <TextEdit Name="HighlightEdit" MinHeight="150" Margin="5 5"/>

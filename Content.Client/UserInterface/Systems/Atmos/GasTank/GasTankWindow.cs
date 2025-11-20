@@ -67,7 +67,7 @@ public sealed class GasTankWindow
         var back = new StyleBoxTexture
         {
             Texture = panelTex,
-            Modulate = Color.FromHex("#2d100b"),
+            Modulate = Color.FromHex("#25252A"),
         };
 
         back.SetPatchMargin(StyleBox.Margin.All, 10);
@@ -139,7 +139,7 @@ public sealed class GasTankWindow
 
         var middle = new PanelContainer
         {
-            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#2d100b") },
+            PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#202025") },
             Children =
             {
                 (contentContainer = new BoxContainer

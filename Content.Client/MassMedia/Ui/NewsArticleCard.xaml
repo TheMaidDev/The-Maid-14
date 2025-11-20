@@ -15,7 +15,7 @@ SPDX-License-Identifier: MIT
         <Control HorizontalExpand="True" SetHeight="27">
             <PanelContainer>
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BorderColor="#3B3E56" BorderThickness="0 0 0 1"/>
+                    <gfx:StyleBoxFlat BorderColor="#3f3f3f" BorderThickness="0 0 0 1"/>
                 </PanelContainer.PanelOverride>
             </PanelContainer>
             <Label Name="TitleLabel" Margin="12 0 6 0" HorizontalAlignment="Left"/>

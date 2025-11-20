@@ -30,7 +30,7 @@ public sealed partial class NetworkConfiguratorLinkMenu : FancyWindow
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
-    private const string PanelBgColor = "#202023";
+    private const string PanelBgColor = "#202020";
 
     private readonly LinksRender _links;
 

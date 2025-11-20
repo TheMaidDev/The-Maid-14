@@ -32,8 +32,6 @@ public sealed partial class AdminMessagePopupWindow : Control
     {
         RobustXamlLoader.Load(this);
 
-        Stylesheet = IoCManager.Resolve<IStylesheetManager>().SheetSpace;
-
         AcceptButton.OnPressed += OnAcceptButtonPressed;
         DismissButton.OnPressed += OnDismissButtonPressed;
     }
