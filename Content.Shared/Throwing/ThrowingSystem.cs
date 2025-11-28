@@ -116,7 +116,7 @@ public sealed class ThrowingSystem : EntitySystem
         float pushbackRatio = PushbackDefault,
         float? friction = null,
         bool compensateFriction = false,
-        bool recoil = true,
+        bool recoil = false, // Maid
         bool animated = true,
         bool playSound = true,
         bool doSpin = true,
