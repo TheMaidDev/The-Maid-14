@@ -222,7 +222,7 @@
       - id: BoxEvidenceMarkers
       - id: HandLabeler
       - id: BoxTapeRecorder # DeltaV
-      - id: Betty # Goobstation
+#      - id: Betty # Goobstation # Maid - ne rabotaet huinya
 
 - type: entity
   id: ClosetBombFilled
