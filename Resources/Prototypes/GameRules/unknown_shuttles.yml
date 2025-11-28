@@ -25,7 +25,7 @@
     - id: UnknownShuttleCargoLost
     - id: UnknownShuttleTravelingCuisine
     - id: UnknownShuttleDisasterEvacPod
-    - id: UnknownShuttleHonki
+  #  - id: UnknownShuttleHonki # Maid
     - id: UnknownShuttleFrontierProspector  #Goobstation - Salvage shuttle event
     - id: UnknownShuttleNTQuark
     - id: UnknownShuttleCruiser
@@ -39,7 +39,7 @@
     - id: UnknownShuttleMeatZone
     - id: UnknownShuttleMicroshuttle
     - id: UnknownShuttleSpacebus
-    - id: UnknownShuttleAlienTourist # Goobstation
+#    - id: UnknownShuttleAlienTourist # Maid
 
 - type: entityTable
   id: UnknownShuttlesFreelanceTable
@@ -66,7 +66,7 @@
     startAnnouncement: station-event-unknown-shuttle-incoming
     startAudio:
       path: /Audio/_Maid/Announcements/attention.ogg # Maid
-    weight: 4 #Common, but not every round
+    weight: 2 #More down # Maid
     reoccurrenceDelay: 30
     earliestStart: 20 # Goobstation
     duration: 1
