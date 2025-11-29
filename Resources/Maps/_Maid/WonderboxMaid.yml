@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/28/2025 21:55:02
-  entityCount: 26629
+  time: 11/29/2025 17:45:09
+  entityCount: 26628
 maps:
 - 1
 grids:
@@ -15499,7 +15499,7 @@ entities:
       pos: 7.5,-4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -6959.386
+      secondsUntilStateChange: -7484.8145
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -70914,6 +70914,13 @@ entities:
     - type: Transform
       pos: 0.5,59.5
       parent: 2
+- proto: ComputerFundingAllocation
+  entities:
+  - uid: 16932
+    components:
+    - type: Transform
+      pos: -3.5,12.5
+      parent: 2
 - proto: ComputerId
   entities:
   - uid: 9326
@@ -82888,7 +82895,7 @@ entities:
   - uid: 11141
     components:
     - type: Transform
-      pos: -3.5,12.5
+      pos: -4.616411,12.4390335
       parent: 2
   - uid: 11142
     components:
@@ -118600,7 +118607,7 @@ entities:
       pos: -35.5,38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -590.9848
+      secondsUntilStateChange: -1116.4132
       state: Opening
   - uid: 24140
     components:
@@ -121199,6 +121206,20 @@ entities:
     - type: Transform
       pos: 6.601639,5.314223
       parent: 2
+- proto: MaterialSilo
+  entities:
+  - uid: 19689
+    components:
+    - type: Transform
+      pos: -27.5,-18.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        16258:
+        - - MaterialSilo
+          - FillbotAnyItem
+        - - MaterialSilo
+          - MaterialSiloUtilizer
 - proto: MaterialWoodPlank
   entities:
   - uid: 16129
@@ -121782,7 +121803,7 @@ entities:
   - uid: 16217
     components:
     - type: Transform
-      pos: -3.9735243,12.480284
+      pos: -4.7369013,12.837181
       parent: 2
   - uid: 16218
     components:
@@ -122088,6 +122109,8 @@ entities:
     - type: Transform
       pos: -25.5,-22.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 19689
 - proto: OxygenCanister
   entities:
   - uid: 16259
@@ -123526,7 +123549,7 @@ entities:
   - uid: 16417
     components:
     - type: Transform
-      pos: -4.5,12.5
+      pos: -4.292016,12.790884
       parent: 2
   - uid: 16419
     components:
@@ -127729,11 +127752,6 @@ entities:
     components:
     - type: Transform
       pos: -22.5,-19.5
-      parent: 2
-  - uid: 16932
-    components:
-    - type: Transform
-      pos: -27.5,-18.5
       parent: 2
   - uid: 16933
     components:
@@ -146965,11 +146983,6 @@ entities:
     - type: Transform
       pos: -7.5,10.5
       parent: 2
-  - uid: 19689
-    components:
-    - type: Transform
-      pos: -3.5,12.5
-      parent: 2
   - uid: 19690
     components:
     - type: Transform
@@ -148374,11 +148387,6 @@ entities:
     - type: Transform
       pos: -45.491714,19.314034
       parent: 2
-  - uid: 19887
-    components:
-    - type: Transform
-      pos: -27.5,-18.5
-      parent: 2
   - uid: 19888
     components:
     - type: Transform
@@ -148618,7 +148626,7 @@ entities:
   - uid: 23760
     components:
     - type: Transform
-      pos: -3.2165167,12.696344
+      pos: -9.505606,2.5699062
       parent: 2
 - proto: ToyFigurineHeadOfPersonnel
   entities:
