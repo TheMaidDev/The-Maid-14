@@ -21,11 +21,13 @@ public enum VoiceMaskUIKey : byte
 public sealed class VoiceMaskBuiState : BoundUserInterfaceState
 {
     public readonly string Name;
+    public readonly string Voice; //Maid edit
     public readonly string? Verb;
 
-    public VoiceMaskBuiState(string name, string? verb)
+    public VoiceMaskBuiState(string name, string voice, string? verb)
     {
         Name = name;
+        Voice = voice; //Maid edit
         Verb = verb;
     }
 }
@@ -54,3 +56,11 @@ public sealed class VoiceMaskChangeVerbMessage : BoundUserInterfaceMessage
         Verb = verb;
     }
 }
+
+//Maid edit start
+[Serializable, NetSerializable]
+public sealed class VoiceMaskChangeVoiceMessage(string voice) : BoundUserInterfaceMessage
+{
+    public string Voice = voice;
+}
+//Maid edit end

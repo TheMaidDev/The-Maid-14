@@ -352,6 +352,14 @@ namespace Content.Client.Lobby.UI
 
             #endregion Sex
 
+            //Maid edit start
+            #region Voice
+
+            InitializeVoice();
+
+            #endregion
+            //Maid edit end
+
             #region Age
 
             AgeEdit.OnTextChanged += args =>
@@ -953,6 +961,7 @@ namespace Content.Client.Lobby.UI
             UpdateNameEdit();
             UpdateFlavorTextEdit();
             UpdateSexControls();
+            UpdateTTSVoicesControls(); //Maid edit
             UpdateGenderControls();
             UpdateSkinColor();
             UpdateSpawnPriorityControls();
@@ -1425,8 +1434,17 @@ namespace Content.Client.Lobby.UI
 
             UpdateGenderControls();
             Markings.SetSex(newSex);
+            UpdateTTSVoicesControls(); //Maid edit
             ReloadPreview();
         }
+
+        //Maid edit start
+        private void SetVoice(string newVoice)
+        {
+            Profile = Profile?.WithVoice(newVoice);
+            IsDirty = true;
+        }
+        //Maid edit end
 
         private void SetGender(Gender newGender)
         {

@@ -71,6 +71,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                 FlavorText = "The biggest boy around.",
                 Species = "Human",
                 Age = 21,
+                Voice = "Xrenoid", //Maid edit
                 Appearance = new(
                     "Afro",
                     Color.Aqua,
