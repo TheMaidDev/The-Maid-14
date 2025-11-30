@@ -64,7 +64,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             if (voice.RoundStart)
                 _voices.Add(voice);
 
-        _voices.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.Ordinal));
+        _voices.Sort((a, b) => string.Compare(Loc.GetString(a.Name), Loc.GetString(b.Name), StringComparison.Ordinal));
     }
 
     public void AddVoices()
