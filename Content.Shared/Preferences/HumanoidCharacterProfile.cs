@@ -847,6 +847,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(Width); // Goobstation: port EE height/width sliders
             hashCode.Add(Age);
             hashCode.Add((int) Sex);
+            hashCode.Add(Voice); //Maid edit
             hashCode.Add((int) Gender);
             hashCode.Add(Appearance);
             hashCode.Add((int) SpawnPriority);
