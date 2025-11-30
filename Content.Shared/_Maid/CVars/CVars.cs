@@ -8,7 +8,7 @@ public sealed class MaidCVars
     #region TTS
 
     /// <summary>
-    /// URL of the TTS server API.
+    /// Whether TTS is enabled on the server.
     /// </summary>
     public static readonly CVarDef<bool> TTSEnabled =
         CVarDef.Create("tts.enabled", false, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
