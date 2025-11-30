@@ -159,14 +159,23 @@ public sealed partial class TTSSystem
     private static readonly IReadOnlyDictionary<string, string> ReverseTranslit =
         new Dictionary<string, string>()
         {
+            {"je", "ё"},
+            {"zh", "ж"},
+            {"ch", "ч"},
+            {"hh", "ъ"},
+            {"sh", "ш"},
+            {"jsh", "щ"},
+            {"ih", "ы"},
+            {"jh", "ь"},
+            {"eh", "э"},
+            {"ju", "ю"},
+            {"ja", "я"},
             {"a", "а"},
             {"b", "б"},
             {"v", "в"},
             {"g", "г"},
             {"d", "д"},
             {"e", "е"},
-            {"je", "ё"},
-            {"zh", "ж"},
             {"z", "з"},
             {"i", "и"},
             {"y", "й"},
@@ -184,15 +193,6 @@ public sealed partial class TTSSystem
             {"h", "х"},
             {"c", "ц"},
             {"x", "кс"},
-            {"ch", "ч"},
-            {"sh", "ш"},
-            {"jsh", "щ"},
-            {"hh", "ъ"},
-            {"ih", "ы"},
-            {"jh", "ь"},
-            {"eh", "э"},
-            {"ju", "ю"},
-            {"ja", "я"},
         };
 }
 

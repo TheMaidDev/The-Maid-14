@@ -59,6 +59,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
     //Maid edit start
     public void ReloadVoices(IPrototypeManager proto)
     {
+        _voices.Clear();
         foreach (var voice in proto.EnumeratePrototypes<TTSVoicePrototype>())
             if (voice.RoundStart)
                 _voices.Add(voice);
