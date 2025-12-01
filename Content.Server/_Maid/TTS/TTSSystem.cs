@@ -176,8 +176,3 @@ public sealed partial class TTSSystem : EntitySystem
     }
 }
 
-public sealed class TransformSpeakerVoiceEvent(EntityUid sender, string voiceId) : EntityEventArgs
-{
-    public EntityUid Sender = sender;
-    public string VoiceId = voiceId;
-}

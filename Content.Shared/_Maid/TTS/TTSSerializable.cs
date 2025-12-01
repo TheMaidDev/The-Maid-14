@@ -1,3 +1,4 @@
+using Content.Shared.Inventory;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Maid.TTS;
@@ -30,4 +31,18 @@ public sealed class RequestGlobalTTSEvent(VoiceRequestType text, string voiceId)
 public sealed class RequestPreviewTTSEvent(string voiceId) : EntityEventArgs
 {
     public string VoiceId { get; } = voiceId;
+}
+
+public sealed class TransformSpeakerVoiceEvent : EntityEventArgs, IInventoryRelayEvent
+{
+    public EntityUid Sender;
+    public string VoiceId;
+
+    public SlotFlags TargetSlots { get; } = SlotFlags.MASK;
+
+    public TransformSpeakerVoiceEvent(EntityUid sender, string voiceId)
+    {
+        Sender = sender;
+        VoiceId = voiceId;
+    }
 }

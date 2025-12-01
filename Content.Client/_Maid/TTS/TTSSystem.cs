@@ -31,11 +31,6 @@ public sealed class TTSSystem : EntitySystem
     /// </summary>
     private const float WhisperVolumeReduction = 4f;
 
-    /// <summary>
-    /// Minimum volume threshold for TTS audio
-    /// </summary>
-    private const float MinimumVolumeThreshold = -10f;
-
     private float _volume = 0.0f;
     private ulong _fileIdx = 0;
     private static ulong _shareIdx = 0;
@@ -105,13 +100,8 @@ public sealed class TTSSystem : EntitySystem
     {
         var volume = SharedAudioSystem.GainToVolume(_volume);
 
-        if (volume <= MinimumVolumeThreshold)
-            return MinimumVolumeThreshold;
-
         if (isWhisper)
-        {
-            volume = Math.Max(MinimumVolumeThreshold, volume - SharedAudioSystem.GainToVolume(WhisperVolumeReduction));
-        }
+            volume -= SharedAudioSystem.GainToVolume(WhisperVolumeReduction);
 
         return volume;
     }

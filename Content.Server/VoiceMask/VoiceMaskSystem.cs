@@ -57,7 +57,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         SubscribeLocalEvent<VoiceMaskSetNameEvent>(OpenUI);
 
         //Maid edit start
-        SubscribeLocalEvent<VoiceMaskComponent, TransformSpeakerVoiceEvent>(OnSpeakerVoiceTransform);
+        SubscribeLocalEvent<VoiceMaskComponent, InventoryRelayedEvent<TransformSpeakerVoiceEvent>>(OnSpeakerVoiceTransform);
         SubscribeLocalEvent<VoiceMaskComponent, VoiceMaskChangeVoiceMessage>(OnChangeVoice);
         //Maid edit end
 
@@ -100,8 +100,8 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         UpdateUI(entity);
     }
     //Maid edit start
-    private void OnSpeakerVoiceTransform(EntityUid uid, VoiceMaskComponent component, TransformSpeakerVoiceEvent args) =>
-        args.VoiceId = component.VoiceId;
+    private void OnSpeakerVoiceTransform(EntityUid uid, VoiceMaskComponent component, ref InventoryRelayedEvent<TransformSpeakerVoiceEvent> args) =>
+        args.Args.VoiceId = component.VoiceId;
 
     private void OnChangeVoice(Entity<VoiceMaskComponent> entity, ref VoiceMaskChangeVoiceMessage msg)
     {
@@ -111,7 +111,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         entity.Comp.VoiceId = msg.Voice;
         _adminLogger.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(msg.Actor):player} set voice ID of {ToPrettyString(entity):mask}: {entity.Comp.VoiceId}");
 
-        _popupSystem.PopupEntity(Loc.GetString("voice-mask-voice-popup-success"), entity);
+        _popupSystem.PopupEntity(Loc.GetString("voice-mask-voice-popup-success"), entity, msg.Actor);
 
         UpdateUI(entity);
     }
