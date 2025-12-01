@@ -1,5 +1,5 @@
 - type: lobbyBackground
-  id: STRESSTESTING
-  background: /Textures/_Maid/LobbyScreens/background.webp
-  name: STRESS_TEST
-  artist: Uknown
+  id: Brig
+  background: /Textures/_Maid/LobbyScreens/brig.webp
+  name: Brig
+  artist: Waggier
