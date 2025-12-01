@@ -163,6 +163,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server._Goobstation.Antag;
+using Content.Server._Maid.TTS;
 using Content.Server._RMC14.LinkAccount; // RMC - Patreon
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -245,6 +246,7 @@ namespace Content.Server.IoC
             IoCManager.Register<CVarControlManager>();
             IoCManager.Register<LastRolledAntagManager>(); // Goobstation - antag pity
             IoCManager.Register<LinkAccountManager>(); // RMC - Patreon
+            IoCManager.Register<TTSManager>(); //Maid edit
         }
     }
 }

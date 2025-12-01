@@ -17,6 +17,8 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Server._Maid.TTS;
+using Content.Shared._Maid.TTS;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
@@ -53,6 +55,11 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         SubscribeLocalEvent<VoiceMaskComponent, VoiceMaskChangeVerbMessage>(OnChangeVerb);
         SubscribeLocalEvent<VoiceMaskComponent, ClothingGotEquippedEvent>(OnEquip);
         SubscribeLocalEvent<VoiceMaskSetNameEvent>(OpenUI);
+
+        //Maid edit start
+        SubscribeLocalEvent<VoiceMaskComponent, InventoryRelayedEvent<TransformSpeakerVoiceEvent>>(OnSpeakerVoiceTransform);
+        SubscribeLocalEvent<VoiceMaskComponent, VoiceMaskChangeVoiceMessage>(OnChangeVoice);
+        //Maid edit end
 
         Subs.CVar(_cfgManager, CCVars.MaxNameLength, value => _maxNameLength = value, true);
     }
@@ -92,6 +99,24 @@ public sealed partial class VoiceMaskSystem : EntitySystem
 
         UpdateUI(entity);
     }
+    //Maid edit start
+    private void OnSpeakerVoiceTransform(EntityUid uid, VoiceMaskComponent component, ref InventoryRelayedEvent<TransformSpeakerVoiceEvent> args) =>
+        args.Args.VoiceId = component.VoiceId;
+
+    private void OnChangeVoice(Entity<VoiceMaskComponent> entity, ref VoiceMaskChangeVoiceMessage msg)
+    {
+        if (msg.Voice is { } id && !_proto.HasIndex<TTSVoicePrototype>(id))
+            return;
+
+        entity.Comp.VoiceId = msg.Voice;
+        _adminLogger.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(msg.Actor):player} set voice ID of {ToPrettyString(entity):mask}: {entity.Comp.VoiceId}");
+
+        _popupSystem.PopupEntity(Loc.GetString("voice-mask-voice-popup-success"), entity, msg.Actor);
+
+        UpdateUI(entity);
+    }
+    //Maid edit end
+
     #endregion
 
     #region UI
@@ -118,7 +143,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
     private void UpdateUI(Entity<VoiceMaskComponent> entity)
     {
         if (_uiSystem.HasUi(entity, VoiceMaskUIKey.Key))
-            _uiSystem.SetUiState(entity.Owner, VoiceMaskUIKey.Key, new VoiceMaskBuiState(GetCurrentVoiceName(entity), entity.Comp.VoiceMaskSpeechVerb));
+            _uiSystem.SetUiState(entity.Owner, VoiceMaskUIKey.Key, new VoiceMaskBuiState(GetCurrentVoiceName(entity), entity.Comp.VoiceId, entity.Comp.VoiceMaskSpeechVerb));
     }
     #endregion
 

@@ -33,10 +33,13 @@ public sealed class VoiceMaskBoundUserInterface : BoundUserInterface
         base.Open();
 
         _window = this.CreateWindow<VoiceMaskNameChangeWindow>();
+        _window.ReloadVoices(_protomanager); //Maid edit
+        _window.AddVoices(); //Maid edit
         _window.ReloadVerbs(_protomanager);
         _window.AddVerbs();
 
         _window.OnNameChange += OnNameSelected;
+        _window.OnVoiceChange += voice => SendMessage(new VoiceMaskChangeVoiceMessage(voice)); //Maid edit
         _window.OnVerbChange += verb => SendMessage(new VoiceMaskChangeVerbMessage(verb));
     }
 
@@ -52,7 +55,7 @@ public sealed class VoiceMaskBoundUserInterface : BoundUserInterface
             return;
         }
 
-        _window.UpdateState(cast.Name, cast.Verb);
+        _window.UpdateState(cast.Name, cast.Voice, cast.Verb);
     }
 
     protected override void Dispose(bool disposing)

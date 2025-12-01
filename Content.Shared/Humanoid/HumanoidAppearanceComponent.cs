@@ -12,6 +12,7 @@
 //
 // SPDX-License-Identifier: MIT
 
+using Content.Shared._Maid.TTS;
 using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
@@ -143,6 +144,11 @@ public sealed partial class HumanoidAppearanceComponent : Component
     public float Width = 1f;
 
     // end Goobstation: port EE height/width sliders
+
+    //Maid edit start
+    [DataField, AutoNetworkedField]
+    public ProtoId<TTSVoicePrototype> Voice { get; set; } = SharedHumanoidAppearanceSystem.DefaultVoice;
+    //Maid edit end
 }
 
 [DataDefinition]

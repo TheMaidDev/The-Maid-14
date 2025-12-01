@@ -414,6 +414,8 @@ public sealed partial class ChatSystem : SharedChatSystem
             }
         }
 
+        message = FormattedMessage.EscapeText(message); //Maid edit
+
         // Otherwise, send whatever type.
         switch (desiredType)
         {
@@ -1115,6 +1117,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     private string SanitizeInGameICMessage(EntityUid source, string message, out string? emoteStr, bool capitalize = true, bool punctuate = false, bool capitalizeTheWordI = true)
     {
         var newMessage = SanitizeMessageReplaceWords(message.Trim());
+        newMessage = newMessage.Replace("/", ""); //Maid edit
 
         GetRadioKeycodePrefix(source, newMessage, out newMessage, out var prefix);
 

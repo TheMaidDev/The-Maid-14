@@ -30,7 +30,7 @@ GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-CHANGELOG_FILE = "Resources/Changelog/GoobChangelog.yml"
+CHANGELOG_FILE = "Resources/Changelog/MaidChangelog.yml"
 
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 
@@ -63,14 +63,23 @@ def main():
 def get_most_recent_workflow(
     sess: requests.Session, github_repository: str, github_run: str
 ) -> Any:
-    workflow_run = get_current_run(sess, github_repository, github_run)
-    past_runs = get_past_runs(sess, workflow_run)
-    for run in past_runs["workflow_runs"]:
-        # First past successful run that isn't our current run.
-        if run["id"] == workflow_run["id"]:
-            continue
+    try:
+        workflow_run = get_current_run(sess, github_repository, github_run)
+        past_runs = get_past_runs(sess, workflow_run)
+        
+        if "workflow_runs" not in past_runs or not past_runs["workflow_runs"]:
+            return None
+            
+        for run in past_runs["workflow_runs"]:
+            if run["id"] == workflow_run["id"]:
+                continue
 
-        return run
+            return run
+    except Exception as e:
+        print(f"Error getting previous workflow: {e}")
+        return None
+    
+    return None
 
 
 def get_current_run(
@@ -104,6 +113,11 @@ def get_last_changelog() -> str:
     session.headers["X-GitHub-Api-Version"] = "2022-11-28"
 
     most_recent = get_most_recent_workflow(session, github_repository, github_run)
+    
+    if not most_recent or not most_recent.get("head_commit"):
+        print("Warning: No previous successful workflow found with commit information")
+        return "Entries: []"
+    
     last_sha = most_recent["head_commit"]["id"]
     print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
     last_changelog_stream = get_last_changelog_by_sha(
@@ -111,7 +125,6 @@ def get_last_changelog() -> str:
     )
 
     return last_changelog_stream
-
 
 def get_last_changelog_by_sha(
     sess: requests.Session, sha: str, github_repository: str

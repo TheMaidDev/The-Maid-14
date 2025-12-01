@@ -41,6 +41,7 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
 using Content.Shared._EinsteinEngines.HeightAdjust;
+using Content.Shared._Maid.TTS;
 using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects.Components.Localization;
@@ -76,6 +77,17 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [ValidatePrototypeId<SpeciesPrototype>]
     public const string DefaultSpecies = "Human";
+
+    //Maid edit start
+    public const string DefaultVoice = "Xrenoid";
+
+    public static readonly Dictionary<Sex, string> DefaultSexVoice = new()
+    {
+        { Sex.Male, "Xrenoid" },
+        { Sex.Female, "Charlotte" },
+        { Sex.Unsexed, "Xrenoid" },
+    };
+    //Maid edit end
 
     public override void Initialize()
     {
@@ -405,6 +417,33 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
     }
 
+    //Maid edit start
+    /// <summary>
+    ///     Set a humanoid mob's voice type.
+    /// </summary>
+    /// <param name="uid">The humanoid mob's UID.</param>
+    /// <param name="voiceId">The tts voice to set the mob to.</param>
+    /// <param name="sync">Whether to immediately synchronize this to the humanoid mob, or not.</param>
+    /// <param name="humanoid">Humanoid component of the entity</param>
+    // ReSharper disable once InconsistentNaming
+    public void SetTTSVoice(
+        EntityUid uid,
+        ProtoId<TTSVoicePrototype> voiceId,
+        bool sync = true,
+        HumanoidAppearanceComponent? humanoid = null)
+    {
+        if (!TryComp<TTSComponent>(uid, out var comp)
+            || !Resolve(uid, ref humanoid))
+            return;
+
+        humanoid.Voice = voiceId;
+        comp.VoicePrototypeId = voiceId;
+
+        if (sync)
+            Dirty(uid, humanoid);
+    }
+    //Maid edit end
+
     // begin Goobstation: port EE height/width sliders
 
     /// <summary>
@@ -485,6 +524,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         SetSpecies(uid, profile.Species, false, humanoid);
         SetSex(uid, profile.Sex, false, humanoid);
+        SetTTSVoice(uid, profile.Voice, false, humanoid); //Maid edit
         humanoid.EyeColor = profile.Appearance.EyeColor;
 
         SetSkinColor(uid, profile.Appearance.SkinColor, false);

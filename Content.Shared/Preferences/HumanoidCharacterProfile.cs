@@ -51,6 +51,7 @@
 
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._Maid.TTS;
 using Content.Shared.CCVar;
 using Content.Shared.Dataset;
 using Content.Shared.GameTicking;
@@ -133,6 +134,12 @@ namespace Content.Shared.Preferences
         [DataField]
         public Sex Sex { get; private set; } = Sex.Male;
 
+        //Maid edit start
+        [DataField]
+        public string Voice { get; set; } = SharedHumanoidAppearanceSystem.DefaultVoice;
+        //Maid edit end
+
+
         [DataField]
         public Gender Gender { get; private set; } = Gender.Male;
 
@@ -190,6 +197,7 @@ namespace Content.Shared.Preferences
             float width, // Goobstation: port EE height/width sliders
             int age,
             Sex sex,
+            string voice, //Maid edit
             Gender gender,
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
@@ -207,6 +215,7 @@ namespace Content.Shared.Preferences
             Width = width; // Goobstation: port EE height/width sliders
             Age = age;
             Sex = sex;
+            Voice = voice; //Maid edit
             Gender = gender;
             Appearance = appearance;
             SpawnPriority = spawnPriority;
@@ -240,6 +249,7 @@ namespace Content.Shared.Preferences
                 other.Width, // Goobstation: port EE height/width sliders
                 other.Age,
                 other.Sex,
+                other.Voice, //Maid edit
                 other.Gender,
                 other.Appearance.Clone(),
                 other.SpawnPriority,
@@ -317,6 +327,12 @@ namespace Content.Shared.Preferences
                     break;
             }
 
+            //Maid edit start
+            var voiceId = random.Pick(prototypeManager
+                .EnumeratePrototypes<TTSVoicePrototype>()
+                .Where(o => CanHaveVoice(o, sex)).ToArray()
+            ).ID;
+            //Maid edit end
             var name = GetName(species, gender);
 
 
@@ -324,6 +340,7 @@ namespace Content.Shared.Preferences
             {
                 Name = name,
                 Sex = sex,
+                Voice = voiceId, //Maid edit
                 Age = age,
                 Gender = gender,
                 Species = species,
@@ -352,6 +369,13 @@ namespace Content.Shared.Preferences
         {
             return new(this) { Sex = sex };
         }
+
+        //Maid edit start
+        public HumanoidCharacterProfile WithVoice(string voice)
+        {
+            return new HumanoidCharacterProfile(this) { Voice = voice };
+        }
+        //Maid edit end
 
         public HumanoidCharacterProfile WithGender(Gender gender)
         {
@@ -541,6 +565,7 @@ namespace Content.Shared.Preferences
             if (Name != other.Name) return false;
             if (Age != other.Age) return false;
             if (Sex != other.Sex) return false;
+            if (Voice != other.Voice) return false; //Maid edit
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
             if (Height != other.Height) return false; // Goobstation: port EE height/width sliders
@@ -734,6 +759,12 @@ namespace Content.Shared.Preferences
             {
                 _loadouts.Remove(value);
             }
+
+            //Maid edit start
+            prototypeManager.TryIndex<TTSVoicePrototype>(Voice, out var voice);
+            if (voice is null || !CanHaveVoice(voice, Sex))
+                Voice = SharedHumanoidAppearanceSystem.DefaultSexVoice[sex];
+            //Maid edit end
         }
 
         /// <summary>
@@ -775,6 +806,13 @@ namespace Content.Shared.Preferences
             return result;
         }
 
+        //Maid edit start
+        public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex)
+        {
+            return voice.RoundStart && (sex == Sex.Unsexed || voice.Sex == sex || voice.Sex == Sex.Unsexed);
+        }
+        //Maid edit end
+
         public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection)
         {
             var profile = new HumanoidCharacterProfile(this);
@@ -809,6 +847,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(Width); // Goobstation: port EE height/width sliders
             hashCode.Add(Age);
             hashCode.Add((int) Sex);
+            hashCode.Add(Voice); //Maid edit
             hashCode.Add((int) Gender);
             hashCode.Add(Appearance);
             hashCode.Add((int) SpawnPriority);
