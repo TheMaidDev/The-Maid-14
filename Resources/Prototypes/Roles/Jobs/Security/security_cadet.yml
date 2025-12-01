@@ -100,8 +100,6 @@
   description: job-description-cadet
   playTimeTracker: JobSecurityCadet
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 9000 #2.5 hrs
     - !type:DepartmentTimeRequirement
       department: Security
       time: 18000 #5 hrs

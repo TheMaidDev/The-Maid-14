@@ -137,10 +137,10 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 18000 #5 hrs
+      time: 9000 #2.5 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 #10 hrs
+      time: 28800 #8 hrs
     - !type:SpeciesRequirement # Maid
       inverted: false
       species:
