@@ -68,7 +68,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 9000 #3 hrs
+      time: 9000 #2.5 hrs
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
