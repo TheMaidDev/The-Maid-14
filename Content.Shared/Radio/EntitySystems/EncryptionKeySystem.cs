@@ -244,7 +244,7 @@ public sealed partial class EncryptionKeySystem : EntitySystem
 
             var key = id == SharedChatSystem.CommonChannel
                 ? SharedChatSystem.RadioCommonPrefix.ToString()
-                : $"{SharedChatSystem.RadioChannelPrefix}{proto.KeyCode}";
+                : $":{string.Join(", :", proto.KeyCodes.ToArray())}"; //Maid edit
 
             // Goobstation - Start - Whitelisted radio channels
             var restictionText = string.Empty;

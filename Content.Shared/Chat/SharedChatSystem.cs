@@ -27,6 +27,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Frozen;
+using System.Linq;
 using Content.Shared._Starlight.CollectiveMind; // Goobstation - Starlight collective mind port
 using System.Text.RegularExpressions;
 using Content.Shared.Popups;
@@ -77,7 +78,7 @@ public abstract class SharedChatSystem : EntitySystem
     /// <summary>
     /// Cache of the keycodes for faster lookup.
     /// </summary>
-    private FrozenDictionary<char, RadioChannelPrototype> _keyCodes = default!;
+    private readonly Dictionary<char, RadioChannelPrototype> _keyCodes = new(); //Maid edit
 
     // Goobstation - Starlight collective mind port
     private FrozenDictionary<char, CollectiveMindPrototype> _mindKeyCodes = default!;
@@ -103,8 +104,17 @@ public abstract class SharedChatSystem : EntitySystem
 
     private void CacheRadios()
     {
-        _keyCodes = _prototypeManager.EnumeratePrototypes<RadioChannelPrototype>()
-            .ToFrozenDictionary(x => x.KeyCode);
+        //Maid edit start
+        _keyCodes.Clear();
+
+        foreach (var proto in _prototypeManager.EnumeratePrototypes<RadioChannelPrototype>())
+        {
+            foreach (var keycode in proto.KeyCodes.Where(keycode => !_keyCodes.ContainsKey(keycode)))
+            {
+                _keyCodes.Add(keycode, proto);
+            }
+        }
+        //Maid edit end
     }
 
     // Goobstation - Starlight collective mind port

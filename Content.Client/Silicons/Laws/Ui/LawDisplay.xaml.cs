@@ -8,6 +8,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using System.Linq;
 using Content.Client.Chat.Managers;
 using Content.Client.Message;
 using Content.Shared.Chat;
@@ -99,7 +100,7 @@ public sealed partial class LawDisplay : Control
                     case SharedChatSystem.CommonChannel:
                         _chatManager.SendMessage($"{SharedChatSystem.RadioCommonPrefix} {lawIdentifierPlaintext}: {lawDescriptionPlaintext}", ChatSelectChannel.Radio); break;
                     default:
-                        _chatManager.SendMessage($"{SharedChatSystem.RadioChannelPrefix}{radioChannelProto.KeyCode} {lawIdentifierPlaintext}: {lawDescriptionPlaintext}", ChatSelectChannel.Radio); break;
+                        _chatManager.SendMessage($"{SharedChatSystem.RadioChannelPrefix}{radioChannelProto.KeyCodes.First()} {lawIdentifierPlaintext}: {lawDescriptionPlaintext}", ChatSelectChannel.Radio); break; //Maid edit
                 }
                 _nextAllowedPress[radioChannelButton] = _timing.CurTime + PressCooldown;
             };
