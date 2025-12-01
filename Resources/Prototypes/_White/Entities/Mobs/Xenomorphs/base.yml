@@ -138,7 +138,7 @@
     defaultChannel: Xenomorphivemind
     channels:
     - Xenomorphivemind
-  - type: SSDIndicator
+#  - type: SSDIndicator # Maid
   - type: Emoting
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
