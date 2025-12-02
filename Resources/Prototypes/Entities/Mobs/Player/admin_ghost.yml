@@ -246,6 +246,10 @@
   - type: IgnoreUIRange
   - type: ShowAntagIcons
   - type: ShowContrabandDetails
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowHealthBars
+  - type: ShowHealthIcons
   - type: Inventory
     templateId: aghost
   - type: Loadout
