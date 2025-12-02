@@ -20,8 +20,8 @@ public sealed partial class CollectiveMindPrototype : IPrototype
     [ViewVariables(VVAccess.ReadOnly)]
     public string LocalizedName => Loc.GetString(Name);
 
-    [DataField("keycode")]
-    public char KeyCode { get; private set; } = '\0';
+    [DataField("keycodes")]
+    public List<char> KeyCodes { get; private set; } = new() {'\0'}; //Maid edit
 
     [DataField("color")]
     public Color Color { get; private set; } = Color.Lime;

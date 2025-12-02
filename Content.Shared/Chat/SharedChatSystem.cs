@@ -81,7 +81,7 @@ public abstract class SharedChatSystem : EntitySystem
     private readonly Dictionary<char, RadioChannelPrototype> _keyCodes = new(); //Maid edit
 
     // Goobstation - Starlight collective mind port
-    private FrozenDictionary<char, CollectiveMindPrototype> _mindKeyCodes = default!;
+    private readonly Dictionary<char, CollectiveMindPrototype> _mindKeyCodes = new(); //Maid edit
 
     public override void Initialize()
     {
@@ -121,8 +121,16 @@ public abstract class SharedChatSystem : EntitySystem
     private void CacheCollectiveMinds()
     {
         _prototypeManager.PrototypesReloaded -= OnPrototypeReload;
-        _mindKeyCodes = _prototypeManager.EnumeratePrototypes<CollectiveMindPrototype>()
-            .ToFrozenDictionary(x => x.KeyCode);
+        _mindKeyCodes.Clear();
+
+        foreach (var proto in _prototypeManager.EnumeratePrototypes<CollectiveMindPrototype>())
+        {
+            foreach (var keycode in proto.KeyCodes.Where(keycode => !_mindKeyCodes.ContainsKey(keycode)))
+            {
+                _mindKeyCodes.Add(keycode, proto);
+            }
+        }
+
     }
 
     /// <summary>

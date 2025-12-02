@@ -11,73 +11,97 @@
 - type: collectiveMind
   id: Dragonmind
   name: collective-mind-dragon
-  keycode: 'f'
+  keycodes: #Maid
+    - 'f'
+    - 'д'
   color: "#787878"
 
 - type: collectiveMind
   id: Lingmind
   name: collective-mind-lingmind
-  keycode: 'h'
+  keycodes: #Maid
+    - 'h'
+    - 'у'
   color: "#FFA000"
   showNames: false
 
 - type: collectiveMind
   id: Tidemind
   name: collective-mind-tidemind
-  keycode: 't'
+  keycodes: #Maid
+    - 't'
+    - 'т'
   color: "#8C8C8C"
   showNames: false
 
 - type: collectiveMind
   id: Blobmind
   name: collective-mind-blobmind
-  keycode: 'e'
+  keycodes: #Maid
+    - 'e'
+    - 'б'
   color: "#637b19"
 
 - type: collectiveMind
   id: MansusLink
   name: collective-mind-mansus-link
-  keycode: 'm'
+  keycodes: #Maid
+    - 'm'
+    - 'м'
   color: "#237500"
 
 - type: collectiveMind
   id: Abductormind
   name: collective-mind-abductormind
-  keycode: 'a'
+  keycodes: #Maid
+    - 'a'
+    - 'а'
   color: "#d600bd"
 
 - type: collectiveMind
   id: Binary
   name: collective-mind-binary
-  keycode: 'b'
+  keycodes: #Maid
+    - 'b'
+    - 'и'
   color: "#5ed7aa"
 
 - type: collectiveMind
   id: Dronemind
   name: collective-mind-dronemind
-  keycode: 'd'
+  keycodes: #Maid
+    - 'd'
+    - 'с'
   color: "#6e979a" # like binary but more gray
 
 - type: collectiveMind
   id: Mousemind
   name: collective-mind-mousemind
-  keycode: 'p'
+  keycodes: #Maid
+    - 'p'
+    - 'п'
   color: "#c18851"
 
 - type: collectiveMind
   id: Empathy
   name: collective-mind-empathy
-  keycode: 's'
+  keycodes: #Maid
+    - 's'
+    - 'е'
   color: "#7f32a8"
 
 - type: collectiveMind
   id: Binglemind
   name: collective-mind-bingle
-  keycode: 'w'
+  keycodes: #Maid
+    - 'w'
+    - 'в'
   color: "#386a9b"
 
 - type: collectiveMind
   id: Xenomorphivemind
   name: collective-mind-xeno
-  keycode: 'z'
+  keycodes: #Maid
+    - 'z'
+    - 'к'
   color: "#8c3986"
