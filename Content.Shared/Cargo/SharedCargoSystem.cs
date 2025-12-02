@@ -20,7 +20,6 @@ public abstract class SharedCargoSystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming Timing = default!;
 
-
     public override void Initialize()
     {
         base.Initialize();

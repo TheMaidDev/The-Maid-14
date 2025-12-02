@@ -218,7 +218,6 @@
     sprite: _Maid/Structures/Power/Cables/lv_cable.rsi # Maid
     state: lvcable_0
   - type: Icon
-    color: Green
     sprite: _Maid/Structures/Power/Cables/lv_cable.rsi # Maid
     state: lvcable_4
   - type: NodeContainer

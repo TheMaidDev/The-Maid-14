@@ -1,13 +1,16 @@
+using Content.Goobstation.Common.Devour;
 using Content.Shared.Actions;
 using Content.Shared.Item;
 using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Polymorph;
-using Content.Shared.Weapons.Ranged.Components;
-using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Network;
+using Robust.Shared.Player;
+using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 namespace Content.Goobstation.Shared.SlaughterDemon.Systems;
@@ -21,11 +24,20 @@ public abstract class SharedSlaughterDemonSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly INetManager _netManager = default!;
+
+    private EntityQuery<ActorComponent> _actorQuery;
+    private EntityQuery<MobStateComponent> _mobStateQuery;
 
     /// <inheritdoc/>
     public override void Initialize()
     {
         base.Initialize();
+
+        _actorQuery = GetEntityQuery<ActorComponent>();
+        _mobStateQuery = GetEntityQuery<MobStateComponent>();
 
         // movement speed
         SubscribeLocalEvent<SlaughterDemonComponent, RefreshMovementSpeedModifiersEvent>(RefreshMovement);
@@ -35,13 +47,13 @@ public abstract class SharedSlaughterDemonSystem : EntitySystem
         SubscribeLocalEvent<SlaughterDemonComponent, BloodCrawlAttemptEvent>(OnBloodCrawlAttempt);
 
         // devouring
-        SubscribeLocalEvent<SlaughterDemonComponent, SlaughterDevourEvent>(OnSlaughterDevour);
-
-        // death related
-        SubscribeLocalEvent<SlaughterDemonComponent, MobStateChangedEvent>(OnMobStateChanged);
+        SubscribeLocalEvent<SlaughterDevourEvent>(OnSlaughterDevour);
 
         // polymorph shittery
         SubscribeLocalEvent<SlaughterDemonComponent, PolymorphedEvent>(OnPolymorph);
+
+        // cant pickup items
+        SubscribeLocalEvent<SlaughterDemonComponent, PickupAttemptEvent>(OnPickup);
     }
 
     public override void Update(float frameTime)
@@ -55,59 +67,70 @@ public abstract class SharedSlaughterDemonSystem : EntitySystem
                 continue;
 
             comp.ExitedBloodCrawl = false;
+            Dirty(uid, comp);
             _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
         }
     }
 
     private void OnPolymorph(Entity<SlaughterDemonComponent> ent, ref PolymorphedEvent args)
     {
-        if (!TryComp<SlaughterDevourComponent>(args.NewEntity, out var component))
-            return;
-
-        foreach (var entity in ent.Comp.ConsumedMobs)
-        {
-            if (entity == null)
-                continue;
-
-            _container.Insert(entity.Value, component.Container);
-        }
-
         // Cooldown
         foreach (var action in _actions.GetActions(args.NewEntity))
+        {
             _actions.StartUseDelay(action.Owner);
+        }
     }
 
     private void OnBloodCrawlExit(Entity<SlaughterDemonComponent> ent, ref BloodCrawlExitEvent args)
     {
         ent.Comp.Accumulator = _timing.CurTime + ent.Comp.NextUpdate;
         ent.Comp.ExitedBloodCrawl = true;
+        Dirty(ent);
+
         _movementSpeedModifier.RefreshMovementSpeedModifiers(ent.Owner);
 
-        SpawnAtPosition(ent.Comp.JauntUpEffect, Transform(ent.Owner).Coordinates);
+        PlayMeatySound(ent);
+        PredictedSpawnAtPosition(ent.Comp.JauntUpEffect, Transform(ent.Owner).Coordinates);
     }
 
-    private void OnSlaughterDevour(Entity<SlaughterDemonComponent> ent, ref SlaughterDevourEvent args)
+    private void OnSlaughterDevour(ref SlaughterDevourEvent args)
     {
-        var demonUid = ent.Owner;
-        var demon = ent.Comp;
+        var uid = args.pullerEnt;
         var pullingEnt = args.pullingEnt;
 
-        demon.ConsumedMobs.Add(pullingEnt);
-        demon.Devoured++;
+        if (!TryComp<SlaughterDevourComponent>(uid, out var slaughterDevour)
+            || slaughterDevour.Container == null)
+            return;
 
-        if (!TryComp<SlaughterDevourComponent>(demonUid, out var slaughterDevour))
+        var evAttempt = new SlaughterDevourAttemptEvent(pullingEnt, uid);
+        RaiseLocalEvent(pullingEnt, ref evAttempt);
+
+        if (evAttempt.Cancelled)
             return;
 
         _container.Insert(pullingEnt, slaughterDevour.Container);
 
+        // Stop them from being able to self-revive
+        EnsureComp<PreventSelfRevivalComponent>(pullingEnt);
+
         // Kill them for sure, just in case
-        _mobState.ChangeMobState(pullingEnt, MobState.Dead);
-        RemoveBlood(pullingEnt); // todo: find better fix
+        if (_mobStateQuery.TryComp(pullingEnt, out var mobState))
+            _mobState.ChangeMobState(pullingEnt, MobState.Dead, mobState);
 
-        _audio.PlayPvs(slaughterDevour.FeastSound, args.PreviousCoordinates);
+        RemoveBlood(pullingEnt);
 
-        _slaughterDevour.HealAfterDevouring(pullingEnt, demonUid, slaughterDevour);
-        _slaughterDevour.IncrementObjective(demonUid,pullingEnt, demon);
+        _audio.PlayPredicted(slaughterDevour.FeastSound, Transform(uid).Coordinates, uid);
+
+        _slaughterDevour.HealAfterDevouring(pullingEnt, uid, slaughterDevour);
+        if (!TryComp(uid, out SlaughterDemonComponent? demon))
+            return;
+
+        _slaughterDevour.IncrementObjective(uid, pullingEnt, demon);
+        demon.ConsumedMobs.Add(pullingEnt);
+        demon.Devoured++;
+
+        Dirty(uid, demon);
+
     }
 
     private void RefreshMovement(EntityUid uid,
@@ -129,14 +152,35 @@ public abstract class SharedSlaughterDemonSystem : EntitySystem
         if (args.Cancelled)
             return;
 
-        SpawnAtPosition(ent.Comp.JauntEffect, Transform(ent.Owner).Coordinates);
+        PredictedSpawnAtPosition(ent.Comp.JauntEffect, Transform(ent.Owner).Coordinates);
     }
 
-    private void OnMobStateChanged(Entity<SlaughterDemonComponent> ent, ref MobStateChangedEvent args)
-    {
-        if (args.NewMobState == MobState.Dead)
-            _audio.PlayPvs(ent.Comp.DeathSound, ent.Owner, AudioParams.Default.WithVolume(-2f));
-    }
+    private void OnPickup(Entity<SlaughterDemonComponent> ent, ref PickupAttemptEvent args) =>
+        args.Cancel();
 
     protected virtual void RemoveBlood(EntityUid uid) {}
+
+    #region Helper
+
+    private void PlayMeatySound(Entity<SlaughterDemonComponent> ent)
+    {
+        if (_netManager.IsClient)
+            return;
+
+        if (!_random.Prob(ent.Comp.BloodCrawlSoundChance))
+          return;
+
+        var entities = _lookup.GetEntitiesInRange(ent.Owner, ent.Comp.BloodCrawlSoundLookup);
+        foreach (var entity in entities)
+        {
+            if (entity == ent.Owner
+                || !_actorQuery.HasComp(entity))
+                continue;
+
+            // ALEXA PLAY MEATY SOUND 🔊🔊
+            _audio.PlayEntity(ent.Comp.BloodCrawlSounds, entity, ent.Owner);
+        }
+    }
+
+    #endregion
 }

@@ -1,5 +1,8 @@
 using Content.Goobstation.Shared.SlaughterDemon.Objectives;
+using Content.Goobstation.Shared.SlaughterDemon.Other;
 using Content.Shared._EinsteinEngines.Silicon.Components;
+using Content.Shared._Shitmed.Damage;
+using Content.Shared._Shitmed.Targeting;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
@@ -41,6 +44,10 @@ public sealed class SlaughterDevourSystem : EntitySystem
         SubscribeLocalEvent<SlaughterDevourComponent, BloodCrawlAttemptEvent>(OnBloodCrawlAttempt);
 
         SubscribeLocalEvent<SlaughterDevourComponent, SlaughterDevourDoAfter>(OnDoAfter);
+
+        // Drink-related
+        SubscribeLocalEvent<DemonsBloodComponent, SlaughterDevourAttemptEvent>(OnAttemptDemonsBlood);
+        SubscribeLocalEvent<DemonsKissComponent, SlaughterDevourAttemptEvent>(OnAttemptDemonsKiss);
     }
 
     private void OnMapInit(Entity<SlaughterDevourComponent> ent, ref MapInitEvent args) =>
@@ -55,8 +62,8 @@ public sealed class SlaughterDevourSystem : EntitySystem
             || args.Cancelled)
             return;
 
-        var ev = new SlaughterDevourEvent(args.Target.Value, Transform(ent.Owner).Coordinates);
-        RaiseLocalEvent(ent.Owner, ref ev);
+        var ev = new SlaughterDevourEvent(args.Target.Value, ent.Owner);
+        RaiseLocalEvent(ent.Owner, ref ev, true);
     }
 
     /// <summary>
@@ -90,24 +97,55 @@ public sealed class SlaughterDevourSystem : EntitySystem
         _doAfter.TryStartDoAfter(doAfterArgs);
     }
 
+    #region Drink-related
+
+    private void OnAttemptDemonsBlood(Entity<DemonsBloodComponent> ent, ref SlaughterDevourAttemptEvent args)
+    {
+        if (args.Handled || args.Cancelled)
+            return;
+
+        _popup.PopupEntity(Loc.GetString("slaughter-demons-blood-devour"), args.Devourer, args.Devourer, PopupType.SmallCaution);
+        args.Cancelled = true;
+    }
+
+    private void OnAttemptDemonsKiss(Entity<DemonsKissComponent> ent, ref SlaughterDevourAttemptEvent args)
+    {
+        if (args.Handled || args.Cancelled)
+            return;
+
+        _damageable.TryChangeDamage(args.Devourer, ent.Comp.Damage, ignoreResistances: true);
+        _popup.PopupEntity(Loc.GetString("slaughter-demons-kiss-devour"), args.Devourer, args.Devourer, PopupType.MediumCaution);
+
+        if (ent.Comp.Eject)
+            args.Cancelled = true;
+    }
+    #endregion
+
     public void HealAfterDevouring(EntityUid target, EntityUid devourer, SlaughterDevourComponent component)
     {
         // I dont know how to refactor this into events so im leaving it like this
+        var toHeal = component.ToHeal;
         if (HasComp<HumanoidAppearanceComponent>(target) && !HasComp<SiliconComponent>(target))
         {
             _popup.PopupEntity(Loc.GetString("slaughter-devour-humanoid"), devourer);
-            _damageable.TryChangeDamage(devourer, component.ToHeal);
         }
         else if (HasComp<BorgChassisComponent>(target) || HasComp<SiliconComponent>(target))
         {
             _popup.PopupEntity(Loc.GetString("slaughter-devour-robot"), devourer);
-            _damageable.TryChangeDamage(devourer, component.ToHealNonCrew);
+            toHeal = component.ToHealNonCrew;
         }
         else
         {
             _popup.PopupEntity(Loc.GetString("slaughter-devour-other"), devourer);
-            _damageable.TryChangeDamage(devourer, component.ToHealAnythingElse);
+            toHeal = component.ToHealAnythingElse;
         }
+
+        _damageable.TryChangeDamage(devourer,
+            toHeal,
+            true,
+            false,
+            targetPart: TargetBodyPart.All,
+            splitDamage: SplitDamageBehavior.SplitEnsureAll);
     }
 
     /// <summary>

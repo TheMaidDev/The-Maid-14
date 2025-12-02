@@ -107,25 +107,14 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly OutfitSystem _outfit = default!;
 
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string DefaultTraitorRule = "Traitor";
+    private static readonly EntProtoId DefaultTraitorRule = "Traitor";
+    private static readonly EntProtoId DefaultInitialInfectedRule = "Zombie";
+    private static readonly EntProtoId DefaultNukeOpRule = "LoneOpsSpawn";
+    private static readonly EntProtoId DefaultRevsRule = "Revolutionary";
+    //private static readonly EntProtoId DefaultThiefRule = "Thief"; //Maid edit
+    private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string DefaultInitialInfectedRule = "Zombie";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string DefaultNukeOpRule = "LoneOpsSpawn";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string DefaultRevsRule = "Revolutionary";
-
-    // [ValidatePrototypeId<EntityPrototype>]
-    // private const string DefaultThiefRule = "Thief";
-
-    [ValidatePrototypeId<StartingGearPrototype>]
-    private const string PirateGearId = "PirateGear";
-
-    private readonly EntProtoId _paradoxCloneRuleId = "ParadoxCloneSpawn";
+    private static readonly EntProtoId ParadoxCloneRuleId = "ParadoxCloneSpawn";
 
     // All antag verbs have names so invokeverb works.
     private void AddAntagVerbs(GetVerbsEvent<Verb> args)
@@ -233,7 +222,7 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", headRevName, Loc.GetString("admin-verb-make-head-rev")),
         };
         args.Verbs.Add(headRev);
-
+        //Maid edit start
         // var thiefName = Loc.GetString("admin-verb-text-make-thief");
         // Verb thief = new()
         // {
@@ -248,7 +237,7 @@ public sealed partial class AdminVerbSystem
         //     Message = string.Join(": ", thiefName, Loc.GetString("admin-verb-make-thief")),
         // };
         // args.Verbs.Add(thief);
-
+        //Maid edit end
         var paradoxCloneName = Loc.GetString("admin-verb-text-make-paradox-clone");
         Verb paradox = new()
         {
@@ -257,7 +246,7 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "ParadoxClone"),
             Act = () =>
             {
-                var ruleEnt = _gameTicker.AddGameRule(_paradoxCloneRuleId);
+                var ruleEnt = _gameTicker.AddGameRule(ParadoxCloneRuleId);
 
                 if (!TryComp<ParadoxCloneRuleComponent>(ruleEnt, out var paradoxCloneRuleComp))
                     return;

@@ -36,11 +36,10 @@
       path: /Audio/Machines/airlock_deny.ogg
   - type: Sprite
     sprite: _Maid/Structures/Doors/Airlocks/Standard/external.rsi # Maid
-  - type: PaintableAirlock
-    group: External
-    department: null
   - type: Wires
     layoutId: AirlockExternal
+  - type: Paintable
+    group: null
 
 - type: entity
   parent: AirlockExternal
@@ -53,8 +52,6 @@
     enabled: false
   - type: Sprite
     sprite: _Maid/Structures/Doors/Airlocks/Glass/external.rsi # Maid
-  - type: PaintableAirlock
-    group: ExternalGlass
   - type: Fixtures
     fixtures:
       fix1:

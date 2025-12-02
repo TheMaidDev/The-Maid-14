@@ -786,6 +786,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("age");
 
+                    b.Property<string>("BarkVoice")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("bark_voice");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -1152,6 +1157,12 @@ namespace Content.Server.Database.Migrations.Sqlite
 
                     b.HasIndex("DiscordRole")
                         .IsUnique();
+
+                    b.HasIndex("LobbyMessage")
+                        .HasDatabaseName("IX_rmc_patron_tiers_lobby_message");
+
+                    b.HasIndex("RoundEndShoutout")
+                        .HasDatabaseName("IX_rmc_patron_tiers_round_end_shoutout");
 
                     b.ToTable("rmc_patron_tiers", (string)null);
                 });

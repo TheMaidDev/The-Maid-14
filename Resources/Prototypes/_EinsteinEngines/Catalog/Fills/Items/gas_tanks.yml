@@ -10,6 +10,10 @@
     sprite: _Maid/Objects/Tanks/emergency_red.rsi # Maid
   - type: Clothing
     sprite: _Maid/Objects/Tanks/emergency_red.rsi # Maid
+  - type: Tag
+    tags:
+    - GasTank
+    - EmergencyOxygenTank
 
 - type: entity
   id: EmergencyPlasmaTankFilled
@@ -31,7 +35,7 @@
 - type: entity
   parent: ExtendedEmergencyOxygenTank
   id: ExtendedEmergencyPlasmaTank
-  name: extended-capacity emergency plasma tank
+  name: extended capacity emergency plasma tank
   description: An emergency tank with extended capacity. Technically rated for prolonged use.
   components:
   - type: Sprite
@@ -40,6 +44,10 @@
     sprite: _Maid/Objects/Tanks/emergency_extended_red.rsi # Maid
   - type: Clothing
     sprite: _Maid/Objects/Tanks/emergency_extended_red.rsi # Maid
+  - type: Tag
+    tags:
+    - GasTank
+    - EmergencyOxygenTank
 
 - type: entity
   id: ExtendedEmergencyPlasmaTankFilled
@@ -65,11 +73,15 @@
   description: A tank of plasma designed to be internals for Plasmamen.
   components:
   - type: Sprite
-    sprite: _EinsteinEngines/Objects/Tanks/plasmaman.rsi
+    sprite: _EinsteinEngines/Objects/Tanks/double-emergency.rsi
   - type: Item
-    sprite: _EinsteinEngines/Objects/Tanks/plasmaman.rsi
+    sprite: _EinsteinEngines/Objects/Tanks/double-emergency.rsi
   - type: Clothing
-    sprite: _EinsteinEngines/Objects/Tanks/plasmaman.rsi
+    sprite: _EinsteinEngines/Objects/Tanks/double-emergency.rsi
+  - type: Tag
+    tags:
+    - GasTank
+    - EmergencyOxygenTank
 
 - type: entity
   id: DoubleEmergencyPlasmaTankFilled

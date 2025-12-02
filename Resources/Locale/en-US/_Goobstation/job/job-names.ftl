@@ -12,14 +12,15 @@ job-name-salvagediver = Salvage Diver
 job-name-ntr = Nanotrasen Representative
 job-name-bs = Blueshield
 job-name-overall = Overall
+job-name-tider = Tider
 
 job-name-exec = Executive Access
 
 # Navy Stuff
 
-job-name-navyofficer = Navy Officer
+job-name-navy-officer = Navy Officer
 job-name-navy-officer-undercover = Undercover Navy Officer
-job-name-navycaptain = Navy Captain
+job-name-navy-captain = Navy Captain
 job-name-diplomat = Diplomat
 job-name-inspector = Central Command Auditor
 job-name-nct = Nanotrasen Career Trainer
@@ -52,3 +53,4 @@ JobGovernmentMan = The G-Man
 JobConquest = Conquest
 JobInspector = Central Command Auditor
 JobMercenaryCaptain = Mercenary Captain
+JobRoboticist = Roboticist

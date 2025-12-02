@@ -39,6 +39,7 @@
     role: JobBorg
     time: 18000  # 5 hrs
   canBeAntag: false
+  weight: 10 # Goob Edit
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain

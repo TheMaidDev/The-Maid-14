@@ -14,9 +14,9 @@ SPDX-License-Identifier: MIT
   Сотрудники научного отдела имеют возможность создавать роботов различных типов под нужды станции. Для начала необходимо изучить технологию под названием [color=#a4885c]Робототехника[/color].
 
   ## Фабрикатор экзокостюмов
-<Box>
-<GuideEntityEmbed Entity="ExosuitFabricator" Caption="фабрикатор экзокостюмов"/>
-</Box>
+  <Box>
+    <GuideEntityEmbed Entity="ExosuitFabricator" Caption="фабрикатор экзокостюмов"/>
+  </Box>
   [color=#a4885c]Фабрикатор экзокостюмов[/color] это устройство, на котором вы можете распечатать большинство частей для своих творений, такие как:
   - [textlink="Кибернетические" link="Cyborgs"] конечности
   - Части и снаряжение мехов
@@ -29,34 +29,34 @@ SPDX-License-Identifier: MIT
   Обычно на всех станциях присутствует полный набор робототехнического оборудования по умолчанию, но при наличии технологии [color=#a4885c]Робототехника[/color] вы можете напечатать машинную плату, с которой вы сможете собрать новый фабрикатор.
 
   ## Боты
-<Box>
-<GuideEntityEmbed Entity="MobCleanBot" Caption="Чистобот"/>
-<GuideEntityEmbed Entity="MobMedibot" Caption="Медибот"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="MobHonkBot" Caption="Хонкбот"/>
-<GuideEntityEmbed Entity="MobMimeBot" Caption="Мимбот"/>
-</Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobCleanBot" Caption="Чистобот"/>
+    <GuideEntityEmbed Entity="MobMedibot" Caption="Медибот"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobHonkBot" Caption="Хонкбот"/>
+    <GuideEntityEmbed Entity="MobMimeBot" Caption="Мимбот"/>
+  </Box>
   [color=#a4885c]Боты[/color] это простые маленькие автоматы, способные выполнять простые задачи, например, уборку. Они не требуют энергетических батарей, но довольно хрупки. Для их создания потребуются детали, которые можно изготовить в фабрикаторе экзокостюмов.
 
   Чтобы создать бота, откройте [color=#a4885c]Меню строительства[/color] и перейдите в категорию "Утилиты" (или просто вбейте "bot" в поиске), и перед вами откроется список рецептов. Далее, убедитесь что детали, указанные в рецепте, имеются в наличии в руках или поблизости, и нажмите [color=#a4885c]Build[/color]. Через несколько секунд созданный вами кремниевый слуга появится у ваших ног!
 
   ## Мехи
-<Box>
-<GuideEntityEmbed Entity="MechRipley" Caption="Рипли АВП"/>
-<GuideEntityEmbed Entity="MechHonker" Caption="Х.О.Н.К."/>
-<GuideEntityEmbed Entity="MechHamtr" Caption="ХАМЯК"/>
-<GuideEntityEmbed Entity="MechVim" Caption="Вим"/>
-</Box>
+  <Box>
+    <GuideEntityEmbed Entity="MechRipley" Caption="Рипли АВП"/>
+    <GuideEntityEmbed Entity="MechHonker" Caption="Х.О.Н.К."/>
+    <GuideEntityEmbed Entity="MechHamtr" Caption="ХАМЯК"/>
+    <GuideEntityEmbed Entity="MechVim" Caption="Вим"/>
+  </Box>
   [color=#a4885c]Мехи[/color] — это металлические громадины, предназначенные для выполнения различных задач в зависимости от модели. Они управляются игроками и для нуждаются и энергетических ячейках для работы.
 
   Для создания каждого меха необходим отдельный уникальный набор конечностей и деталей. Их можно изготовить в фабрикаторе экзокостюмов, как и любые другие детали, за исключением требуемых [color=#a4885c]машинных плат[/color], которые изготавливаются в [color=#a4885c]Принтере схем[/color], обычно имеющемся в [textlink="научном" link="Science"] отделе.
-<Box>
-<GuideEntityEmbed Entity="RipleyCentralElectronics" Caption="центральный модуль управления Рипли"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="RipleyPeripheralsElectronics" Caption="модуль управления периферией Рипли"/>
-</Box>
+  <Box>
+    <GuideEntityEmbed Entity="RipleyCentralElectronics" Caption="центральный модуль управления Рипли"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="RipleyPeripheralsElectronics" Caption="модуль управления периферией Рипли"/>
+  </Box>
 
   Так, например, для создания автономного погрузчика Рипли необходимы обе приведенные выше машинные платы, для других мехов они бесполезны.
 
@@ -66,10 +66,10 @@ SPDX-License-Identifier: MIT
   - Для работы экзокостюма Вим требуется пара ног борга и шлем EVA, обычный или синдикатовский, затем голосовой триггер и батарея.
 
   ## Снаряжение
-    Меха без своего специального снаряжения - дорогостоящий кусок металла. Снаряжение может быть создано на фабрикаторе, как и любые другие детали.
-<Box>
-<GuideEntityEmbed Entity="MechEquipmentGrabber" Caption="Гидравлическая клешня, как пример"/>
-</Box>
+  Меха без своего специального снаряжения - дорогостоящий кусок металла. Снаряжение может быть создано на фабрикаторе, как и любые другие детали.
+  <Box>
+    <GuideEntityEmbed Entity="MechEquipmentGrabber" Caption="Гидравлическая клешня, как пример"/>
+  </Box>
   - Чтобы установить снаряжение, просто кликните рукой с снаряжением по меху.
   - Чтобы воспользоваться снаряжением, используйте кнопку "Переключить снаряжение", пока нужный его элемент не будет выбран.
 </Document>

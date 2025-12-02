@@ -154,6 +154,7 @@
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain
   canBeAntag: true # Maid
+  weight: 10 #Goob Edit
   access:
   - Medical
   - Command
