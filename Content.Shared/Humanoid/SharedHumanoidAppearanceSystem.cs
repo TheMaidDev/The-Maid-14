@@ -85,7 +85,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     {
         { Sex.Male, "Xrenoid" },
         { Sex.Female, "Charlotte" },
-        { Sex.Unsexed, "Xrenoid" },
+        { Sex.Unsexed, "SpaceCore" },
     };
     //Maid edit end
 

@@ -809,7 +809,7 @@ namespace Content.Shared.Preferences
         //Maid edit start
         public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex)
         {
-            return voice.RoundStart && (sex == Sex.Unsexed || voice.Sex == sex || voice.Sex == Sex.Unsexed);
+            return voice.RoundStart && voice.Sex == sex;
         }
         //Maid edit end
 
