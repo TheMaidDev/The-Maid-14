@@ -120,7 +120,7 @@ public abstract class SharedChatSystem : EntitySystem
     // Goobstation - Starlight collective mind port
     private void CacheCollectiveMinds()
     {
-        _prototypeManager.PrototypesReloaded -= OnPrototypeReload;
+        //Maid edit start
         _mindKeyCodes.Clear();
 
         foreach (var proto in _prototypeManager.EnumeratePrototypes<CollectiveMindPrototype>())
@@ -130,6 +130,7 @@ public abstract class SharedChatSystem : EntitySystem
                 _mindKeyCodes.Add(keycode, proto);
             }
         }
+        //Maid edit end
 
     }
 
