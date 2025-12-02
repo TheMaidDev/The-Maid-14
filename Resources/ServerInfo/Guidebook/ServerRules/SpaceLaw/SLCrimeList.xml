@@ -450,6 +450,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   [bold]Пожизненное заключение может быть вынесено и без применения 500-ых статей. Применимо к исключительно проблемным членам экипажа.[/bold]
 
   ## I Сотня
+  Понижение по усмотрению. Предупреждение или заключение на 5 минут
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -602,6 +603,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Table>
 
   ## II Сотня
+  Понижение по усмотрению. Заключение на 10 минут
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -743,6 +745,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Table>
 
   ## III Сотня
+  Понижение в должности. Увольнение с должности по усмотрению. Заключение на 15 минут
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -977,6 +980,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Table>
 
   ## IV Сотня
+  Увольнение с должности. Заключение на 30 минут.
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -1215,6 +1219,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Table>
 
   ## V Сотня
+  Увольнение с должности. Заключение в камерe бессрочного содержания или казнь.
   <Table Columns="4">
     <ColorBox>
       <Box>
