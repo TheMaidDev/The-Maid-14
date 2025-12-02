@@ -157,10 +157,10 @@
     requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 36000 # ten hours
+      time: 36000 # 10 hours
     - !type:DepartmentTimeRequirement
       department: Silicon
-      time: 18000 # five hours
+      time: 18000 # 5 hours
     makeSentient: true
     name: ghost-role-information-drone-name
     description: ghost-role-information-drone-description
