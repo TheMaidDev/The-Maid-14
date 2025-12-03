@@ -1,5 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Goobstation.Common.Traits;
 using Content.Server._EinsteinEngines.Language;
 using Content.Server.Chat.Systems;
 using Content.Shared._EinsteinEngines.Language;
@@ -78,6 +79,9 @@ public sealed partial class TTSSystem : EntitySystem
         foreach (var session in Filter.Pvs(uid).Recipients)
         {
             if (!session.AttachedEntity.HasValue)
+                continue;
+
+            if (EntityManager.HasComponent<DeafComponent>(session.AttachedEntity.Value))
                 continue;
 
             EntityManager.TryGetComponent(session.AttachedEntity.Value, out LanguageSpeakerComponent? lang);
