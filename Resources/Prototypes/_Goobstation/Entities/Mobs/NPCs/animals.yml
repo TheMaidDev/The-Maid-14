@@ -314,6 +314,7 @@
   - type: MobPrice
     price: 500
 
+
 - type: entity
   name: space carp
   id: MobCarpSentient
