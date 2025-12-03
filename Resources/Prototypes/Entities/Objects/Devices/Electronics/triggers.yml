@@ -142,7 +142,7 @@
       range: 200
     - type: DeviceLinkSink
     - type: OnUseTimerTrigger
-      delay: 0
+      delay: 3
       initialBeepDelay: 0
       beepSound:
         path: /Audio/Machines/Nuke/general_beep.ogg
