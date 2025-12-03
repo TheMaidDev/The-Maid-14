@@ -214,7 +214,7 @@
       color: "#808080"
       activateSound: null
       deactivateSound: null
-    - type: VentCrawler # Goobstation
+#    - type: VentCrawler # Goobstation #Maid
     - type: Fauna # Lavaland Change
 
 - type: entity
