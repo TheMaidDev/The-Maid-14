@@ -15,8 +15,3 @@
   - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
     species:
     - Plasmaman
-
-- type: loadout
-  id: QMSummerShirt
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitQMSummer
