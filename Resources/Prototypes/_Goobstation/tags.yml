@@ -145,9 +145,6 @@
   id: CombatMech
 
 - type: Tag
-  id: CorporateOverride
-
-- type: Tag
   id: ContrabandDetectorCircuitboard
 
 - type: Tag
