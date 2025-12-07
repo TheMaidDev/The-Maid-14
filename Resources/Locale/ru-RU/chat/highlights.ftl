@@ -28,7 +28,7 @@ highlights-medical-intern = Интерн, Доктор, "Док", Медбей, 
 highlights-paramedic = Парамедик, "Парамед", Доктор, "Док", "Медик", Медбей, "Мед", Медицинский
 # Science
 highlights-scientist = Ученый, Наука, "РНД", Робототехника, Робототехник, "Робо"
-highlights-research-assistant = Научный Ассистент, Ученый, Наука, "НИО", "РНД", Робототехника, Робототехник, "Робо"
+highlights-research-assistant = Научный Ассистент, Ученый, Наука, "РНД", Робототехника, Робототехник, "Робо"
 # Civilian
 highlights-bartender = Бармен, "Бар"
 highlights-botanist = Ботаник, Ботаника, Гидропоника
