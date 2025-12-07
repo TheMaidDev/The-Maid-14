@@ -600,7 +600,6 @@
     - ShuttleBoards
     # Goobstation Packs
     - SharedBoards
-    - ShuttleBoardsGoob
   - type: MaterialStorage
     whitelist:
       tags:
