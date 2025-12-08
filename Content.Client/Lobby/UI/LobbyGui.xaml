@@ -106,8 +106,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                                 <Label Name="StationTime" Access="Public"
                                        FontColorOverride="{x:Static maths:Color.LightGray}"
                                        Margin="3 3 3 10" HorizontalAlignment="Left" />
-                                <RichTextLabel Name="PlaytimeComment" Visible="False" Access="Public"
-                                               HorizontalAlignment="Center" Margin="0 5 0 0" />
                             </BoxContainer>
                     </PanelContainer>
                     <!-- Chat -->

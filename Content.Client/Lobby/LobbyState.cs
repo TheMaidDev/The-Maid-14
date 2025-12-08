@@ -295,7 +295,8 @@ namespace Content.Client.Lobby
                 Lobby!.ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
             }
 
-            var minutesToday = _playtimeTracking.PlaytimeMinutesToday;
+            //Maid edit start
+            /*var minutesToday = _playtimeTracking.PlaytimeMinutesToday;
             if (minutesToday > 60)
             {
                 Lobby!.PlaytimeComment.Visible = true;
@@ -313,7 +314,8 @@ namespace Content.Client.Lobby
                 Lobby.PlaytimeComment.SetMarkup(Loc.GetString(chosenString, ("hours", hoursToday)));
             }
             else
-                Lobby!.PlaytimeComment.Visible = false;
+                Lobby!.PlaytimeComment.Visible = false;*/
+            //Maid edit end
         }
 
         private void UpdateLobbySoundtrackInfo(LobbySoundtrackChangedEvent ev)
