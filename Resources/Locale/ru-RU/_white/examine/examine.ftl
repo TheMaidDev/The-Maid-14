@@ -45,8 +45,11 @@ gloves-examine-selfaware = - [bold]{ $item }[/bold] на ваших руках.
 belt-examine-selfaware = - [bold]{ $item }[/bold] на вашем поясе.
 shoes-examine-selfaware = - [bold]{ $item }[/bold] на ваших ногах.
 
+id-card-examine-full-selfaware = - Ваш ID: [bold]{$nameAndJob}[/bold].
+
 # Selfaware examine
 
 comp-hands-examine-empty-selfaware = Вы ничего не держите.
 comp-hands-examine-selfaware = Вы держите { $items }.
+
 humanoid-appearance-component-examine-selfaware = Вы - { $species } { $age }.

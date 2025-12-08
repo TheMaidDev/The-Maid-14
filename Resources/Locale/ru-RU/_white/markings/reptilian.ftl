@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # ГОЛОВА
-marking-LizardHeadGuilmon = Ящер, гилмон
+marking-LizardHeadGuilmon= Ящер, гилмон
 marking-LizardHeadGuilmon-guilmon = Основная часть
 marking-LizardShoutEasternDragon = Ящер, восточный дракон
 marking-LizardShoutEasternDragon-eastern_dragon = Внешняя часть
