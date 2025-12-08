@@ -529,7 +529,6 @@
     - MedicalMisc
     - MedicalVehiclesAdvanced
     - UpgradeKits
-    - ConstructionBagOfHolding
     # Einstein Engines Packs
     - Translators
   - type: EmagLatheRecipes
