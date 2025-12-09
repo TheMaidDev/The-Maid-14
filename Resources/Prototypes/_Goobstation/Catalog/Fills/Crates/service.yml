@@ -17,16 +17,6 @@
       - id: DrinkBeerBottleFull
 
 - type: entity
-  id: CrateSlotMachine
-  parent: CrateGenericSteel
-  name: slot machine crate
-  description: A crate with a slot machine inside, Everything you need to start your own gambling addiction!
-  components:
-  - type: StorageFill
-    contents:
-      - id: SlotMachineFlatpack
-
-- type: entity
   id: CrateCoinFlipper
   parent: CrateGenericSteel
   name: coin flipper crate
@@ -45,7 +35,7 @@
   - type: StorageFill
     contents:
     - id: ClawMachineFlatPack
-      
+
 - type: entity
   id: CrateCargoForklift
   parent: CrateLivestock
