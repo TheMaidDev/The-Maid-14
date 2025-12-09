@@ -941,7 +941,7 @@
         Blunt: 0
     soundHit:
       path: /Audio/Effects/adminhelp.ogg
-      
+
 - type: entity
   name: evil Xeve plush
   parent: PlushieXeve
