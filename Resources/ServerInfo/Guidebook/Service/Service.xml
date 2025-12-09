@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 [color=#9fed58]Сервисный отдел[/color] поддерживает станцию в чистоте, порядке и здравомыслии, чтобы все другие отделы могли работать эффективнее и поддерживать сотрудников в хорошем настроении. Также сотрудники службы выполняют большую часть бумажной работы на станции.
 
 ## Персонал
-[color=#9fed58]Сервисный отдел[/color] состоит из сервисных работников, поваров, ботаников, барменов, уборщиков, священников, клоунов, мимов, музыкантов, библиотекарей и пассажиров. Сервисным отделом руководит Глава Персонала.
+[color=#9fed58]Сервисный отдел[/color] состоит из сервисных работников, поваров, ботаников, барменов, уборщиков, священников, клоунов, мимов, музыкантов, библиотекарей и ассистентов. Сервисным отделом руководит Глава Персонала.
 
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineChef" Caption="Повар"/>
@@ -27,7 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineLawyer" Caption="Юрист"/>
     <GuideEntityEmbed Entity="ToyFigurineLibrarian" Caption="Библиотекарь"/>
-    <GuideEntityEmbed Entity="ToyFigurinePassenger" Caption="Пассажир"/>
+    <GuideEntityEmbed Entity="ToyFigurinePassenger" Caption="Ассистент"/>
     <GuideEntityEmbed Entity="ToyFigurineHeadOfPersonnel" Caption="Начальник персонала"/>
   </Box>
 
