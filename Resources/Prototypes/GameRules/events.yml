@@ -1020,7 +1020,7 @@
     weight: 5
     earliestStart: 15
     reoccurrenceDelay: 20
-    minimumPlayers: 4
+    minimumPlayers: 25 # Maid
     duration: null
     chaos: # Goobstation
       # can be both hostile and friendly

@@ -185,7 +185,7 @@
   - type: StationEvent
     weight: 5
     duration: 1
-    minimumPlayers: 15
+    minimumPlayers: 25 # Maid
     chaos:
       Hostile: 40
       Medical: 40

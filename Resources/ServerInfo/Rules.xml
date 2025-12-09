@@ -89,8 +89,4 @@
 
   [italic]Боже упаси.[/italic]
 
-  <Box HorizontalAlignment="Left">
-    <GuideEntityEmbed Entity="PosterLegitNoERP"/>
-  </Box>
-
 </Document>
