@@ -75,10 +75,6 @@ ghost-role-information-Gman-name = The G-Man
 ghost-role-information-Gman-description = The right man in the wrong place can make all the difference in the world.
 ghost-role-information-Gman-rules = You are beholden to no rules or boundaries. Death cannot hold you, and neither can Nanotrasen.
 
-# cargo bingle
-ghost-role-cargo-bingle-name = Cargo bingle
-ghost-role-cargo-bingle-desc = Serve the Nanotrasen Representative and their interests, do not injure crew members, help cargo and the station.
-
 # shuttle roles
 
 ghost-role-information-alien-tourist-name = Alien Tourist
