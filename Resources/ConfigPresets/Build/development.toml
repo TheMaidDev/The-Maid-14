@@ -24,7 +24,7 @@ role_timers = false
 enabled = false
 
 [ghost]
-role_time = 0.5
+role_time = 0.1
 quick_lottery = true
 
 [gateway]

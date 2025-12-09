@@ -6,7 +6,7 @@ ent-BaseSecurityPDA = { ent-BasePDA }
     .desc = { ent-BasePDA.desc }
 ent-BaseMedicalPDA = { ent-BasePDA }
     .desc = { ent-BasePDA.desc }
-ent-PassengerPDA = КПК пассажира
+ent-PassengerPDA = КПК ассистента
     .desc = Почему он не серый?
 ent-TechnicalAssistantPDA = КПК ассистента-техника
     .desc = Почему он не жёлтый?
@@ -154,7 +154,7 @@ ent-SyndiAgentPDA = медицинский кроваво-красный КПК
     .desc = Смотря на этот КПК, ваше сердцебиение учащается... словно его владелец проводил немыслимые и ужасные медицинские эксперименты.
     .suffix = КПК агента Синдиката
 # Corvax-HiddenDesc-End
-ent-ChameleonPDA = КПК пассажира
+ent-ChameleonPDA = КПК ассистента
     .desc = Почему он не серый?
     .suffix = Хамелеон
 ent-WizardPDA = КПК волшебника

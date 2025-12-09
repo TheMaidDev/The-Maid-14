@@ -145,3 +145,21 @@ Entries:
       message: Коллективные разумы работают с русскими ключами
   id: 13
   time: '2025-12-02T15:08:57.0000000+00:00'
+- author: RedBurningPhoenix
+  changes:
+    - type: Add
+      message: Космический закон.
+    - type: Tweak
+      message: Шаттл утилизаторов. - pahan_chiiiil
+    - type: Tweak
+      message: TTS в мир киборгов.
+  id: 14
+  time: '2025-12-02T16:54:21.0000000+00:00'
+- author: Warete
+  changes:
+    - type: Add
+      message: '[MAP] Atom is back.'
+    - type: Tweak
+      message: Вес некоторых игровых ивенты.
+  id: 15
+  time: '2025-12-09T21:16:42.0000000+00:00'

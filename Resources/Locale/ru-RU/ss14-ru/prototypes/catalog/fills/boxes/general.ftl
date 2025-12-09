@@ -17,7 +17,7 @@ ent-BoxPDA = коробка КПК
 ent-BoxID = коробка ID-карт
     .desc = Коробка запасных чистых ID-карт.
 ent-BoxHeadset = коробка гарнитур
-    .desc = Коробка запасных пассажирских гарнитур.
+    .desc = Коробка запасных ассистентских гарнитур.
 ent-BoxMesonScanners = коробка инженерных очков
     .desc = Коробка запасных инженерных очков.
 ent-BoxMRE = сухой паёк
@@ -33,7 +33,7 @@ ent-BoxFlare = коробка фальшфейеров
     .desc = Коробка фальшфейеров. Время зажигать.
 ent-BoxTrashbag = коробка мусорных пакетов
     .desc = Коробка мусорных пакетов. Звуки счастливого уборщика.
-ent-BoxEncryptionKeyPassenger = коробка ключей шифрования пассажиров
+ent-BoxEncryptionKeyPassenger = коробка ключей шифрования ассистентов
     .desc = Коробка запасных ключей шифрования.
 ent-BoxEncryptionKeyCargo = коробка ключей шифрования отдела снабжения
     .desc = { ent-BoxEncryptionKeyPassenger.desc }
@@ -52,7 +52,7 @@ ent-BoxEncryptionKeySecurity = коробка ключей шифрования 
 ent-BoxEncryptionKeyService = коробка ключей шифрования сервисного отдела
     .desc = { ent-BoxEncryptionKeyPassenger.desc }
 # Corvax-HiddenDesc-Start
-ent-BoxEncryptionKeySyndie = коробка ключей шифрования пассажиров
+ent-BoxEncryptionKeySyndie = коробка ключей шифрования ассистентов
     .desc = { ent-BoxEncryptionKeyPassenger.desc }
     .suffix = коробка ключей шифрования Синдиката
 # Corvax-HiddenDesc-End

@@ -125,7 +125,7 @@
           nameDataset: TradeStationNames
         mining: !type:GridSpawnGroup
           paths:
-          - /Maps/Shuttles/mining.yml # Maid
+          - /Maps/_Maid/Shuttles/mining.yml # Maid
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true

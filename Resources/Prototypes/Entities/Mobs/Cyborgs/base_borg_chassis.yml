@@ -542,6 +542,8 @@
   - type: InteractionPopup
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
+  - type: TTS
+    voice: AdventureCore
 
 - type: entity
   id: BaseBorgChassisSyndicate

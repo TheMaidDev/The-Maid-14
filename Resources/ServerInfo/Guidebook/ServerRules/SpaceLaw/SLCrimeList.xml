@@ -11,64 +11,63 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Space Law: Crime Listing
-  Crime codes are colored by linked crime groups, which are collections of non-stackable crimes. Suffixes are also included in the Quick Crime Guide to identify linked crimes.
+  # Космический Закон: Список статей
 
-  ## Quick Crime Guide
+  ## Краткий справочник
   <Table Columns="6">
     <ColorBox>
       <Box>
-        I Degree
+        I Сотня
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        II Degree
+        II Сотня
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        III Degree
+        III Сотня
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        IV Degree
+        IV Сотня
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        V Degree
+        V Сотня
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Code
+        Код статьи
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Disturbance
+        Побои
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Animal Cruelty
+        Легкие телесные повреждения
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Assault/Battery
+        Средние телесные повреждения
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted Murder
+        Покушение на убийство/Убийство сотрудника
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Murder
+        Массовые убийства
       </Box>
     </ColorBox>
     <ColorBox>
@@ -78,27 +77,26 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Petty Theft
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Damage/Destruction of Property
+        Незаконное хранение или употребление наркотиков
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Arrest
+        Незаконное распространение или производство наркотиков
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Unlawful Control/Kidnapping/Hostage Taking
+        Хранение или использование контрабанды
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Prevention of Revival
+        Враг корпорации
       </Box>
     </ColorBox>
     <ColorBox>
@@ -108,27 +106,27 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession/Use of Illegal Substances
+        Хулиганство
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Endangerment
+        Эксгибиционизм
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Grand Theft
+        Домогательство
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Murder
+        Похищение
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Refusal of Mental Shielding
+        Изнасилование
       </Box>
     </ColorBox>
     <ColorBox>
@@ -138,26 +136,26 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass
+        Сопротивление
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Failure to Comply
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Manslaughter
-      </Box>
-    </ColorBox>
-    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Terrorism
+        Забастовка
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Подстрекательство к мятежу
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Вооруженный мятеж
       </Box>
     </ColorBox>
     <ColorBox>
@@ -167,25 +165,25 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vandalism
       </Box>
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession of Restricted Gear
       </Box>
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Destruction
+        Незаконное владение или оборот холодного оружия
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Незаконное владение огнестрельным оружием
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Незаконный оборот огнестрельного оружия
       </Box>
     </ColorBox>
     <ColorBox>
@@ -193,25 +191,27 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         V
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Мелкая кража
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Rioting
+        Кража
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession of Restricted Weaponry
+        Кража в особо крупных масштабах или кража ценного имущества
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Кража особо ценного имущества
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
@@ -220,25 +220,28 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         VI
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#558f24">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Незаконное проникновение в отдел
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#558f24">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#558f24">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Проникновение со взломом
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#558f24">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure Trespass
+        Проникновение в защищенные отсеки
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#558f24">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Проникновение в оружейную
       </Box>
     </ColorBox>
     <ColorBox>
@@ -246,24 +249,27 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         VII
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#40110c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Неисполнение приказа
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#40110c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Халатность
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#40110c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Custody
+        Превышение должностных полномочий
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#40110c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Грубая халатность
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#40110c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
@@ -272,68 +278,214 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         VIII
       </Box>
     </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Саботаж, повреждение или попытка взлома боргов
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Теракт
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Попытка уничтожения станции
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IX
+      </Box>
+    </ColorBox>
   </Table>
 
-  # Sentencing
-
-  - All sentencing is to be handled by the Warden, if no Warden is available the HoS is to take over that duty, if there's no HoS it falls onto the highest ranking command member.
-
-  - Use common sense and humanity when issuing punishments. You should not always seek out the highest punishment you can; maximum time should be understood as the maximum time allowed to imprison somebody for the appropriate crime. If the warden believes the prisoner can serve less, they may allow it. You do not always need to demote someone. Always take into account the severity and only charge for what is needed for someone to learn their lesson.
-
-  - Accessory, Attempting, And Intention: If someone intentionally, knowingly and substantially assists someone in enacting a crime they can be charged with the relevant crimes, such as an engineer giving someone tools, who says they are going to break into an area. Same goes for a clear and solid attempt at a crime, or a person who shows clear intent to act out a crime, such as a syndicate nuclear operative arming a nuke but getting arrested before it goes off, they can still be charged with terrorism. Does not apply to crimes that have an attempted listing already, like attempted murder.
-
-  - Stackable Crimes: Crimes are to be considered 'stackable' in the sense that if you charge someone with two or more different crimes, you should combine the times you would give them for each crime.
-
-  [bold]Any total brig time that adds up to above 10 minutes will be shortened to meet this limit.[/bold]
-
-  [bold]Perma may be given to exceptionally problematic crewmembers within reason, even if the maximum crime does not allow for perma.[/bold]
-
-  ## I Degree
-  - For minor crimes, fix the issue then warn the person to not attempt the crime again, if they still proceed to do it at a later date, a brig time may be better.
-  <Table Columns="5">
-    <ColorBox>
+  ## Модификаторы и Особые ситуации
+  <Table Columns="3">
+    <ColorBox Color="#2f3832">
       <Box>
-        Offense
+        Ситуация
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#2f3832">
       <Box>
-        Max Time
+        Описание
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#2f3832">
       <Box>
-        Description
+        Модификатор
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#2e422e">
       <Box>
-        Notes
+        Самооборона
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#2e422e">
       <Box>
-        Code
+        В самооборону входит не только
+        защита себя, но и защита своих
+        коллег и своего рабочего места.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Немедленное освобождение.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Добровольная сдача
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Если преступник пришел в бриг,
+        готовый принять наказание.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+         минус 30% от срока
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Медицинские причины
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Заключенному требуется неотложная
+        медицинская помощь. Если сотрудник
+        сам довел себя до подобной ситуации,
+        то после первой помощи данный
+        модификатор не обязателен.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Заключенному должна быть
+        предоставлена неотложная
+        медицинская помощь.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Непосредственная
+        угроза заключенному
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Непосредственная угроза бригу
+        и жизни заключенных.      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Заключенного следует доставить
+        в безопасное место
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Disturbance
+        Побег
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Если заключенный покинет камеру
+        или бриг до окончания срока.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Сбросить срок заключения к исходному
+        значению. За попытку побегаиз ПермаБрига
+        можно провести казнь с разрешения
+        капитана.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Буйство
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Намеренное повреждение камеры
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Добавление от 1 до 5 минут к
+        текущему времени.
+      </Box>
+    </ColorBox>
+  </Table>
+
+  # Толкование
+
+  - Все приговоры выносит Смотритель. Если Смотрителя нет, эту обязанность берет на себя Глава Службы Безопасности. Если и ГСБ нет, то эта обязанность переходит к старшему по званию члену командования.
+
+  - При назначении наказаний руководствуйтесь здравым смыслом и человечностью. Не всегда следует стремиться к максимальному наказанию. Максимальный срок следует понимать как предельно допустимое время заключения за соответствующее преступление. Если Смотритель считает, что заключенный может отбыть меньший срок, он имеет право его установить. Вам не всегда необходимо понижать кого-либо в должности. Всегда учитывайте тяжесть проступка и назначайте наказание, достаточное для того, чтобы человек усвоил урок.
+
+  - Соучастие, попытка и умысел: Если кто-либо сознательно и активно помогает в преступлении, он может быть так же осуждён. Пример: члену экипажа, намеренно препятствующему задержанию агента, грозит ответственность по тем же статьям, что и агенту.
+
+  - Суммирование преступлений: Приговоры за разные преступления суммируются. Если вы предъявляете обвинение по двум или более различным статьям, следует сложить сроки заключения, которые вы бы назначили за каждое из них в отдельности.
+
+  - Пример 1: у подозреваемого 401 (покушение/убийство) и 401 (средние телесные). Эти преступления связаны — максимум 30 минут за 401.
+
+  - Пример 2: 307 (проникновение) и 206 (кража). Несвязанные — можно дать до 25 минут.
+
+  [bold]Пожизненное заключение может быть вынесено и без применения 500-ых статей. Применимо к исключительно проблемным членам экипажа.[/bold]
+
+  ## I Сотня
+  Понижение по усмотрению. Предупреждение или заключение на 5 минут
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Нарушение
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Описание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Примечание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Код статьи
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Побои
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        2:00
+        Нанесение минимальных
+        повреждений сотруднику.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To cause a public disturbance.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Sometimes referred to as hooliganism. The catch-all for obnoxious crewmates. Covers things such as public nudity, needless insults, obstructing authorities, threatening, and inciting crime or violence.
+        Повреждение: 5-24.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -343,47 +495,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Petty Theft
+        Хулиганство
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        3:00
+        Нарушение правил общественного порядка.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To take non-vital or inexpensive property of another individual, organization, or common property, without consent.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Petty theft refers to the replaceability and importance of the item stolen.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        I-II
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession/Use of Illegal Substances
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        3:00
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or abuse restricted drugs or chemicals.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        This is to be followed in accordance with Standard Operating Procedure. If anything questionable is not brought up in SOP the captain or highest standing command staff may publicly restrict it.
+        Сюда включаются действия, которые
+        вызывают недовольство у группы лиц.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -391,24 +514,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         I-III
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass
+        Сопротивление
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        2:00
+        Побег от службы безопасности во
+        время обыска или ареста.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To enter a non-secured area without permission.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        It's best to just remove them from the area unless this is a repeated crime.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -416,77 +534,112 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         I-IV
       </Box>
     </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Мелкая кража
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Кража личных, не ценных для станции,
+        вещей.      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Пища, одежда, гарнитура
+        и подобные мелочи.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        I-VI
+      </Box>
+    </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vandalism
+        Незаконное
+        проникновение в отдел
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        2:00
+        Проникновение в отсек, к которому
+        нет доступа по ID, или без
+        полученного разрешения.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To intentionally deface or superficially damage public or private property.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Painting graffiti, smashing bar glasses, and cracking internal windows is vandalism, breaking a window into space or secure areas is not.
+       I-VII
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Неисполнение приказа
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       I-V
+        Неисполнение приказа, отданного
+        руководителем или старшим по званию
+        сотрудником.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Исключение - приказ
+        нарушает космический закон.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        I-VIII
       </Box>
     </ColorBox>
   </Table>
 
-  ## II Degree
-  - Depending on the situation you may want to issue a warning instead of a detaining.
-  <Table Columns="5">
+  ## II Сотня
+  Понижение по усмотрению. Заключение на 10 минут
+  <Table Columns="4">
     <ColorBox>
       <Box>
-        Offense
-      </Box>
-    </ColorBox><ColorBox>
-      <Box>
-        Max Time
+        Нарушение
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Description
+        Описание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Notes
+        Примечание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Code
+        Код статьи
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Animal Cruelty
-      </Box>
-    </ColorBox><ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        3:00
+        Легкие
+        телесные повреждения
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To inflict unnecessary suffering or harm on a non-sapient being with malicious intent.
+        Нанесение легких повреждений
+        сотруднику.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        This doesn't include legitimate and authorized animal testing and usually doesn't extend to vermin or creatures that could pose a threat to the station.
+        Повреждение: 25-49
       </Box>
     </ColorBox>
     <ColorBox>
@@ -496,22 +649,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Damage/Destruction of Property
+        Незаконное хранение
+        или употребление наркотиков
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        4:00
+        Незаконное хранение наркотических средств
+        или их употребление.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To maliciously damage or deface public or private property or equipment
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Step up from vandalism but a step down from mass destruction.
+        Для хранения
+        наркотических средств требуется медицинский
+        рецепт. Стимуляторы попадают под
+        наркотические средства.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -521,22 +674,16 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Endangerment
+        Эксгибиционизм
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        4:00
+        Намеренное оголение в публичных местах.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To recklessly or maliciously put yourself or others in danger, either through direct action, or failure to act.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Covers industrial accidents, industrial negligence, industrial sabotage, self-experimentation, or even medical malpractice.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -546,72 +693,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Failure to Comply
+        Кража
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        2:00
+        Кража вещей из отделов или других
+        объектов, которые имеют какую-либо
+        ценность.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To resist reasonable orders given by an authority. This extends to warrants and authorized searches.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        The order has to be reasonable and the person has to receive a good amount of warning before the arrest is issued.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        II-IV
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession of Restricted Gear
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        4:00
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To hold or use non-lethal items or objects that are restricted or illegal.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        This is mostly for syndicate contraband; EMAGs, syndicate gas masks, bloodred hardsuits, hijacked PDAs, or implants, however can sometimes extend to things the individual shouldn't possess like kevlar vests and security gear.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        II-V
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Rioting
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        4:00
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To take part in a large group of personnel creating an unlawful public disturbance.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Crimes like damage of property or battery are expected to be thrown on top of this charge. Leaders of a riot can be charged with all crimes that happen under their lead.
+        Сюда входят, например,
+        инструменты, оборудование, транспорт, ПДА
+        и другие предметы, принадлежащие
+        определенным отделам.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -619,55 +716,72 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         II-VI
       </Box>
     </ColorBox>
+    <ColorBox Color="#59563a">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Халатность
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Неисполнение или ненадлежащее исполнение
+        должностным лицом своих обязанностей
+        вследствие недобросовестного или небрежного
+        отношения к работе.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Создание ситуаций,
+        потенциально опасных для экипажа или станции
+        из-за небрежных или безответственных,
+        но не умышленных действий.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        II-VIII
+      </Box>
+    </ColorBox>
   </Table>
 
-  ## III Degree
-  - Assault and Manslaughter are linked crimes, and cannot be stacked against a suspect.
-  - It is recommended to not use maximum sentences for those being compliant.
-  <Table Columns="5">
+  ## III Сотня
+  Понижение в должности. Увольнение с должности по усмотрению. Заключение на 15 минут
+  <Table Columns="4">
     <ColorBox>
       <Box>
-        Offense
+        Нарушение
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Max Time
+        Описание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Description
+        Примечание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Notes
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box>
-        Code
+        Код статьи
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Assault/Battery
+        Средние
+        телесные повреждения
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        6:00
+        Нанесение средних повреждений
+        сотруднику.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To threaten to or to use physical force against someone without the intent to kill.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted murder and battery are different.
+        Повреждение: 50-99
       </Box>
     </ColorBox>
     <ColorBox>
@@ -677,22 +791,21 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Arrest
+        Незаконное распространение
+        или производство наркотиков
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        4:00
+        Распространение и производство наркотиков.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To intentionally resist and flee arrest or detainment by an authorized staff.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        This only applies if the person is actively being physically arrested. Includes people uncuffing or assisting others out of an arrest. Breach of custody is a separate crime.
+        Даже если у вас есть разрешение на их
+        хранение и производство, вам не разрешено
+        распространять в отношении лиц, у которых
+        такого разрешения нет.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -702,22 +815,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Grand Theft
+        Домогательство
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        6:00
+        Домогательство к членам экипажа и
+        приставание к сотруднику, явно
+        выражающему своё нежелание подобных
+        действий.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To take critical or unreplaceable property of another individual or organization without consent.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        The theft of an irreplacable item. Examples of such items would be the Quarter Masters Digiboard, or the Chef Engineers advanced mag boots; however this may include the Captains ID.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -727,22 +837,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Manslaughter
+        Забастовка
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        10:00
+        Действия группы лиц,
+        направленные на прекращение
+        взаимодействия отдела и станции.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To incidentally kill a sapient being without intent.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Includes manslaughter in self-defense and negligent manslaughter.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -752,22 +858,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Destruction
+        Незаконное владение или
+        оборот холодного оружия
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        6:00
+        Владение холодным оружием без
+        соответствующего разрешения или вооружение
+        им других сотрудников станции.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To cause massive damage to an area or major station system.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Deadly bombings or massive damage to station departments and functions may fall under mass destruction.
+        Сюда
+        включаются холодное оружие, предназначенное
+        для нанесения серьезных увечий.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -777,22 +883,23 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession of Restricted Weaponry
+        Кража в особо крупных масштабах
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        6:00
+        Кража ценного имущества включает в себя
+        все, что при пропаже может повлиять на
+        работу отдела, или находится в закрытых
+        шкафах.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To hold or use a weapon that is unlawful or contraband.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Everything from guns without a permit, deadly blades, explosives, syndicate firearms to explosive implants.
+        Также в ценное имущество входят
+        ID карты глав и смотрителя. Кроме того,
+        кража в особо крупных масштабах означает
+        кражу 10 и более вещей.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -802,22 +909,20 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure Trespass
+        Проникновение со взломом
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        8:00
+        Намеренное проникновение в
+        отсеки, к которым подозреваемый
+        не имеет доступа, с
+        использованием инструментов или
+        других методов для проникновения.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        TTo enter a secured area without permission
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure trespass generally refers to all command areas; but may also include engineering, atmospherics, telecomms, vault, AI, security and armory.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -827,22 +932,20 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Custody
+        Превышение
+        должностных полномочий
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        4:00
+        Умышленные действия, совершаемые
+        должностным лицом или главой, которые явно
+        выходят за пределы его должностных
+        полномочий.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To break out of a cell or custody with the intention of escaping.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Additional time may be added to any escapee. While rare, this charge can be bumped to permanent brig if the suspect has repeatedly attempted to break out; Includes crew breaking others out.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -850,56 +953,72 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         III-VIII
       </Box>
     </ColorBox>
+  <ColorBox Color="#170301">
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      Саботаж, повреждение или
+      попытка взлома боргов
+    </Box>
+  </ColorBox>
+  <ColorBox>
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      Действия, которые повлияли на работу
+      отдела или части станции, а также
+      причинение значительного ущерба
+      имуществу корпорации, любые явные
+      повреждения борга или попытка его взлома.
+    </Box>
+  </ColorBox>
+  <ColorBox>
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+    </Box>
+  </ColorBox>
+  <ColorBox>
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      III-IX
+    </Box>
+  </ColorBox>
   </Table>
 
-  ## IV Degree
-  - Particularly violent offenders may be placed in perma. (Attacking officers in an attempt to escape prison)
-  - Attempted murder and murder are linked crimes and cannot be stacked together.
-  - Attempted murderers should be granted a more lenient sentence than a murderer.
-  <Table Columns="5">
+  ## IV Сотня
+  Увольнение с должности. Заключение на 30 минут.
+  <Table Columns="4">
     <ColorBox>
       <Box>
-        Offense
+        Нарушение
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Max Time
+        Описание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Description
+        Примечание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Notes
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box>
-        Code
+        Код статьи
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted Murder
+        Покушение на убийство/
+        Убийство сотрудника
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        5:00
+        Введение сотрудника
+        в критическое состояние или
+        использование любых методов,
+        которые довели до
+        смерти сотрудника.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make an attempt to use physical force against someone with the clear intent to kill.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Undeniable proof that there was an attempt on somebody elses life. Purposely causing a member of crew to fall into a critical state is attempted murder.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -909,22 +1028,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Unlawful Control/Kidnapping/Hostage Taking
+        Хранение или
+        использование контрабанды
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        10:00
+        Хранение, распространение или использование
+        вещей, включенных в список контрабанды.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To unlawfully restrain, transport, control or confine a sapient being against that individual’s will.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Usually refers to forced cuffing, or trapping of a crew member; Locking a person in a room or locker could fall under kidnapping.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -934,22 +1049,21 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Murder
+        Похищение
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        10:00
+        Похищение сотрудника с применением
+        средств ограничения свободы
+        (наручники, стяжки и т.д.).
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To kill a sapient being with malicious intent
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To purposely cause another member of crew to die.
+        В данную
+        статью можно включить попытку скрыть
+        похищенное лицо.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -957,54 +1071,193 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         IV-III
       </Box>
     </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Подстрекательство
+        к мятежу
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Подстрекательство членов
+        экипажа к действиям против
+        командования или порядка на
+        станции с использованием силы.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IV-IV
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#59563a">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Незаконное владение
+        огнестрельным оружием
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Владение любым огнестрельным и летальным
+        энергетическим оружием без соответствующего
+        разрешения.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Изначально лицензию на владение
+        имеют только сотрудники отдела СБ, Капитан,
+        Глава Персонала и Бармен в пределах бара.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IV-V
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Кража особо
+        ценного имущества
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Кража ключевых предметов глав, скафандры
+        глав, ID карта главы персонала и ID карта
+        капитана, а также вещи, которые
+        представляют особую ценность для
+        НаноТрайзен или самой станции.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IV-VI
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#558f24">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Проникновение в
+        защищенные отсеки
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Проникновение в комнаты глав или
+        места особой важности.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Локации: Мостик, Бриг, ПермаБриг, Атмос,
+        комната с ДАМом, сингулярность,
+        серверная, телекомы, хранилище,
+        генератор гравитации, а также
+        отсек с СуперМатерией.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IV-VII
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Превышение
+        должностных полномочий
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Умышленные действия, совершаемые
+        должностным лицом или главой, которые явно
+        выходят за пределы его должностных
+        полномочий.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IV-VIII
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#170301">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Саботаж, повреждение или
+        попытка взлома боргов
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Действия, которые повлияли на работу
+        отдела или части станции, а также
+        причинение значительного ущерба
+        имуществу корпорации, любые явные
+        повреждения борга или попытка его взлома.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        IV-IX
+      </Box>
+    </ColorBox>
   </Table>
 
-  ## V Degree
-  - [bold]All executions are to be confirmed and overseen by the Captain. A prisoner may request a specific execution method, if reasonable. Otherwise the most humane method is prefered. Refer to Standard Operating Procedure to further understand any guidelines applied to execution.[/bold]
-  <Table Columns="5">
+  ## V Сотня
+  Увольнение с должности. Заключение в камерe бессрочного содержания или казнь.
+  <Table Columns="4">
     <ColorBox>
       <Box>
-        Offense
+        Нарушение
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Max Time
+        Описание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Description
+        Примечание
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Notes
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box>
-        Code
+        Код статьи
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Murder
+        Массовые убийства
       </Box>
     </ColorBox>
-  <ColorBox>
-    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      Death
-    </Box>
-  </ColorBox>
     <ColorBox >
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To kill three or more sapient beings with malicious intent.
+        Убийство двух или более
+        сотрудников.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Applies if the suspect is excessively uncooperative or the implant fails to function due to the mental state of the prisoner already being too far gone. If the implant fails execution is heavily recommended.
+        Рекомендуется
+        устранить нарушителя на месте,
+        чтобы избежать дополнительных
+        смертей.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1014,22 +1267,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Prevention of Revival
+        Враг корпорации
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Death
+        Наличие стороннего ПО в ПДА, хранение
+        вражеского снаряжения или участие во
+        вражеских группировках подпадает под данную
+        статью.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To render a body unresurrectable.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Gibbing, hiding or disallowing medical to revive another member of crew may fall under prevention of revival.
+        Сюда включается вся амуниция, которая
+        считается вражеской, а также принадлежность к
+        корпорациям-врагам.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1039,22 +1292,16 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Refusal of Mental Shielding
+        Изнасилование
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Death
+        Изнасилование сотрудника
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To refuse to comply with a reasonable Mind Shielding procedure.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Applies if the suspect is excessively uncooperative or the implant fails to function due to the mental state of the prisoner already being too far gone. If the implant fails the maximum punishment is upped to Expedited Execution. Captains approval is not required.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1064,27 +1311,92 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Terrorism
+        Вооруженный мятеж
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Death
+        Действия группы вооруженных
+        лиц, направленные против
+        интересов командования станции,
+        корпорации NanoTrasen или
+        Центрального Командования.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To engage in maliciously destructive actions which threaten to destroy, or successfully destroy a vessel or habitat.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Multiple cases of extreme sabotage of station systems or setting off self-destruction systems. Plasma flooding or loosing may fall under this.
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         V-IV
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#59563a">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Незаконный оборот
+        огнестрельного оружия
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Вооружение других сотрудников огнестрельным
+        оружием. Разрешение на данное действие
+        имеет только Капитан и Глава Службы
+        Безопасности, либо сотрудник с разрешением
+        указанных ранее глав.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        V-V
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Проникновение в оружейную
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Проникновение в оружейную
+        комнату брига.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Данное действие
+        также может вызвать открытие огня
+        на поражение.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        V-VII
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#558f24">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Попытка уничтожения станции
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Действия, направленные на уничтожение
+        всей станции.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        V-IX
       </Box>
     </ColorBox>
   </Table>

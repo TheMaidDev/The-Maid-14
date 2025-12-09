@@ -237,7 +237,7 @@ ghost-role-information-pirate-irs-captain-name = Space Pirate Captain
 ghost-role-information-pirate-irs-captain-description = Direct the plundering process. Arrest the captain for tax evasion.
 ghost-role-information-pirate-irs-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with the other pirates.
 ghost-role-information-syndie-disaster-victim-name = Жертва катастрофы из Синдиката
-ghost-role-information-syndie-disaster-victim-description = Вы - обычный пассажир со станции Синдиката. К несчастью, спасательная капсула закинула вас во вражеский сектор...
+ghost-role-information-syndie-disaster-victim-description = Вы - обычный ассистент со станции Синдиката. К несчастью, спасательная капсула закинула вас во вражеский сектор...
 ghost-role-information-artifact-name = Разумный артефакт
 ghost-role-information-artifact-description = Осуществляйте свои инопланетные прихоти. Принудительно активируйте свои узлы во благо или во зло.
 ghost-role-information-tomatokiller-name = Томат-убийца
