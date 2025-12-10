@@ -5230,7 +5230,6 @@ entities:
     - type: BecomesStation
       id: Loop
     - type: ImplicitRoof
-    - type: FTLDrive
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 3

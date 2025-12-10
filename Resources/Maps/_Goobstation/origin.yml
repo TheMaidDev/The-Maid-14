@@ -10810,7 +10810,6 @@ entities:
     - type: SpreaderGrid
     - type: GridPathfinding
     - type: ImplicitRoof
-    - type: FTLDrive
 - proto: AccordionInstrument
   entities:
   - uid: 3
