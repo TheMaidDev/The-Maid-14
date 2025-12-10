@@ -1,5 +1,7 @@
 - type: collectiveMind
   id: Wraithmind
   name: collective-mind-wraith
-  keycode: 'y'
+  keycodes: # Maid
+    - 'g'
+    - 'г'
   color: "#7393B3"

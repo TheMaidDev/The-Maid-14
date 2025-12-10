@@ -101,7 +101,9 @@
 - type: collectiveMind
   id: Shadowmind
   name: collective-mind-shadow-mind
-  keycode: 'q'
+  keycodes: # Maid
+    - 'k'
+    - 'л'
   color: "#77698d"
 
 - type: collectiveMind
