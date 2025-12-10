@@ -26270,13 +26270,6 @@ entities:
     - type: Transform
       pos: -10.239562,6.6804953
       parent: 1668
-- proto: GunneryServerUltra
-  entities:
-  - uid: 975
-    components:
-    - type: Transform
-      pos: -1.5,-23.5
-      parent: 1668
 - proto: GunSafeLaserCarbine
   entities:
   - uid: 888

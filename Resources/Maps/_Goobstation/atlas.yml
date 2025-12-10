@@ -21250,13 +21250,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 8.5,-13.5
       parent: 2
-- proto: ComputerNTRTasks
-  entities:
-  - uid: 7928
-    components:
-    - type: Transform
-      pos: 37.5,4.5
-      parent: 2
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 3351
