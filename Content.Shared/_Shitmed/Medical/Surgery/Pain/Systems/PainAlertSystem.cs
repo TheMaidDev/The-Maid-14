@@ -102,8 +102,8 @@ private void UpdatePainAlert(EntityUid uid, NerveComponent? nerve = null)
         }
 
         // Show the appropriate pain alert
-        if (_prototypeManager.TryIndex<AlertPrototype>(PainAlerts[alertIndex], out _))
-            _alerts.ShowAlert(mobUid.Value, PainAlerts[alertIndex]);
+        // if (_prototypeManager.TryIndex<AlertPrototype>(PainAlerts[alertIndex], out _))
+        //     _alerts.ShowAlert(mobUid.Value, PainAlerts[alertIndex]);
     }
     else
     {
