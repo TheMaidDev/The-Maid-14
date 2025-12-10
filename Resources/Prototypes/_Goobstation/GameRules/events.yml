@@ -49,19 +49,19 @@
       pickPlayer: false
 
 #Evil fucking xenos out to eat you up
-- type: entity
-  id: AncientXenoVentsEasy
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-job-distribution-error-announcement
-    minimumPlayers: 25
-    weight: 3
-    duration: 1
-  - type: GameRule
-    chaosScore: 50
-  - type: JobDistributionErrorRule # Goobstation
-    jobs:
-    - SecurityClown
-    - PartyMaker
-    - CommandMaid
+#- type: entity // Tyt cho-to slomalosb!!! // Pohui - Maid
+#  id: AncientXenoVentsEasy
+#  parent: BaseGameRule
+#  components:
+#  - type: StationEvent
+#    startAnnouncement: station-event-job-distribution-error-announcement
+#    minimumPlayers: 25
+#    weight: 3
+#    duration: 1
+#  - type: GameRule
+#    chaosScore: 50
+#  - type: JobDistributionErrorRule # Goobstation
+#    jobs:
+#    - SecurityClown
+#    - PartyMaker
+#    - CommandMaid
