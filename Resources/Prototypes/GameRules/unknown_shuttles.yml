@@ -27,7 +27,7 @@
     - id: UnknownShuttleDisasterEvacPod
   #  - id: UnknownShuttleHonki # Maid
     - id: UnknownShuttleFrontierProspector  #Goobstation - Salvage shuttle event
-    - id: UnknownShuttleNTQuark
+  #  - id: UnknownShuttleNTQuark
     - id: UnknownShuttleCruiser
     - id: UnknownShuttleCryptid
     - id: UnknownShuttleEternal
