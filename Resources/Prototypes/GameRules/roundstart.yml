@@ -605,6 +605,8 @@
   id: RampingStationEventScheduler
   parent: BaseGameRule
   components:
+  - type: GameRule # Maid
+    minPlayers: 30
   - type: RampingStationEventScheduler
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable

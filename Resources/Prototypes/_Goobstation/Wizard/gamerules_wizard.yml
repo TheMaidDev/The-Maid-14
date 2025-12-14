@@ -203,6 +203,6 @@
     - Wizard
     - SleepersOnWizardDeath
     - BasicStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
     - BasicRoundstartVariation
     - SubGamemodesRule

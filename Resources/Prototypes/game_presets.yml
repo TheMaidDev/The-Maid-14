@@ -71,8 +71,8 @@
   rules:
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
+    # SpaceTrafficControlFriendlyEventScheduler # Maid
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -87,7 +87,7 @@
   rules:
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -110,7 +110,7 @@
     - Wizard
     - RampingStationEventScheduler
     - Changeling # Goobstation - changeling playtest
-    - SpaceTrafficControlEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -138,8 +138,8 @@
     - MeteorSwarmMildScheduler # Goob Edit
     - MeteorSwarmScheduler # Goob edit
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
+    # SpaceTrafficControlFriendlyEventScheduler # Maid
     - BasicRoundstartVariation
     - Changeling # Goobstation - changeling playtest
     - Shadowling # Einstein Engines - Shadowlings
@@ -155,7 +155,7 @@
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # SpaceTrafficControlEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -167,7 +167,7 @@
   showInVote: false #4boring4vote
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+  # SpaceTrafficControlFriendlyEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -180,7 +180,6 @@
   description: secret-description
   rules:
     - Secret
-    - BasicStationEventScheduler
 
 - type: gamePreset
   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
@@ -192,7 +191,7 @@
   rules:
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -203,7 +202,7 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+  # SpaceTrafficControlFriendlyEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -231,7 +230,7 @@
   - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # SpaceTrafficControlEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -260,7 +259,7 @@
   - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # SpaceTrafficControlEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -278,7 +277,7 @@
   - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # SpaceTrafficControlEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -296,7 +295,7 @@
   - Zombie
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # SpaceTrafficControlEventScheduler # Maid
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -312,5 +311,5 @@
   - Zombie
   - BasicStationEventScheduler
   - KesslerSyndromeScheduler
-  - SpaceTrafficControlEventScheduler
+  # SpaceTrafficControlEventScheduler # Maid
   - BasicRoundstartVariation

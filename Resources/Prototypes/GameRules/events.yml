@@ -465,9 +465,9 @@
   id: ParadoxCloneSpawn
   components:
   - type: StationEvent
-    weight: 5
+    weight: 1 # Maid 5 -> 1. It's not interesting
     duration: null
-    earliestStart: 20
+    earliestStart: 60 # Maid 20 -> 60
     reoccurrenceDelay: 20
     minimumPlayers: 15
     eventType: Chaotic # Goobstation
@@ -586,7 +586,7 @@
     startAudio:
       path: /Audio/_Maid/Announcements/attention.ogg # Maid
     endAnnouncement: station-event-gas-leak-end-announcement
-    weight: 8
+    weight: 4 # Maid 8 -> 4
     chaos:
       Atmos: 100
       Medical: 50
@@ -928,7 +928,7 @@
     chaosScore: 30
   - type: MassHallucinationsRule
     minTimeBetweenIncidents: 0.1
-    maxTimeBetweenIncidents: 300
+    maxTimeBetweenIncidents: 600 # Maid 300 -> 600 naser v ushi
     maxSoundDistance: 7
     sounds:
       collection: Paracusia
@@ -975,9 +975,10 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
+    earliestStart: 30 # Maid
     startAudio:
       path: /Audio/_Maid/Announcements/attention.ogg # Maid
-    weight: 5
+    weight: 1 # Maid 5 -> 1
     minimumPlayers: 25
     reoccurrenceDelay: 20
     chaos: # Goobstation

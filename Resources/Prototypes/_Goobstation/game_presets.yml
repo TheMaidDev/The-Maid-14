@@ -149,7 +149,7 @@
     - SubGamemodesRule
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
+    # SpaceTrafficControlEventScheduler # Maid
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -165,7 +165,7 @@
     - CalmDynamic
     - SubGamemodesRule
     - RareIonStormScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    # SpaceTrafficControlEventScheduler
 
 - type: gamePreset
   id: TheGuide
@@ -180,7 +180,7 @@
     - CombatDynamic
     - SubGamemodesRule
     - IonStormScheduler
-    - SpaceTrafficControlEventScheduler
+    # SpaceTrafficControlEventScheduler
 
 - type: gamePreset
   id: SecretPlusLow
