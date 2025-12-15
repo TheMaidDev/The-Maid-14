@@ -54,13 +54,13 @@
       path: /Audio/Weapons/bladeslice.ogg
     angle: 60
     animation: WeaponArcThrust
-  - type: GhostRole
-    name: justice-role-name
-    description: justice-role-description
-    rules: ghost-role-information-familiar-rules
-    mindRoles:
-    - MindRoleGhostRoleFamiliar
-  - type: GhostTakeoverAvailable
+#  - type: GhostRole # Maid - bredik
+#    name: justice-role-name
+#    description: justice-role-description
+#    rules: ghost-role-information-familiar-rules
+#    mindRoles:
+#    - MindRoleGhostRoleFamiliar
+#  - type: GhostTakeoverAvailable
   - type: TypingIndicator
     proto: robot
   - type: Speech
