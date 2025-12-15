@@ -1016,8 +1016,8 @@
   id: DerelictCyborgSpawn
   components:
   - type: StationEvent
-    weight: 5
-    earliestStart: 15
+    weight: 2 # Maid 5 -> 2
+    earliestStart: 30 # Maid 15 -> 30
     reoccurrenceDelay: 20
     minimumPlayers: 25 # Maid
     duration: null
