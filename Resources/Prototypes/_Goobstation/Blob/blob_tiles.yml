@@ -29,8 +29,8 @@
       raffle:
         settings: default
       requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 18000 #5 hours
+      - !type:OverallPlaytimeRequirement # Maid 5 -> 1
+        time: 3600 #1 hour
     - type: Sprite
       sprite: Markers/jobs.rsi
       layers:
@@ -118,8 +118,8 @@
     raffle:
       settings: default
     requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+    - !type:OverallPlaytimeRequirement # Maid 5 -> 1
+        time: 3600 #1 hour
   - type: GhostTakeoverAvailable
 
 - type: entity

@@ -21,8 +21,8 @@
     raffle:
       settings: default
     requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+    - !type:OverallPlaytimeRequirement # Maid 5 -> 1
+        time: 3600 #1 hour
   - type: GhostRoleMobSpawner
     prototype: MobMothSyndy
   - type: EmitSoundOnUse

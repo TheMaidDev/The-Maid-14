@@ -105,7 +105,7 @@
       settings: default
     requirements: # Goobstation - ghost roles requirements
     - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+      time: 7200 #2 hours # Maid 5 -> 2
   - type: GhostRoleMobSpawner
     prototype: MobHumanSyndicateAgentSpy
     selectablePrototypes: ["SyndicateAgentMedic", "SyndicateAgentSpy", "SyndicateAgentThief"]
@@ -128,7 +128,7 @@
       settings: default
     requirements: # Goobstation - ghost roles requirements
     - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+      time: 7200 #2 hours # Maid 5 -> 2
   - type: GhostRoleMobSpawner
     prototype: MobHumanSyndicateAgentNukeops
 
@@ -148,7 +148,7 @@
       settings: default
     requirements: # Goobstation - ghost roles requirements
     - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+      time: 7200 #2 hours # Maid 5 -> 2
   - type: GhostRoleMobSpawner
     prototype: MobMonkeySyndicateAgent
     selectablePrototypes: ["SyndicateMonkey", "SyndicateKobold"]
@@ -180,7 +180,7 @@
       settings: default
     requirements: # Goobstation - ghost roles requirements
     - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+      time: 10800 #3 hours # Maid 5 -> 3 cats must roleplay
   - type: GhostRoleMobSpawner
     prototype: MobCatSyndy
   - type: EmitSoundOnUse
@@ -203,6 +203,6 @@
         settings: default
       requirements: # Goobstation - ghost roles requirements
       - !type:OverallPlaytimeRequirement
-        time: 18000 #5 hours
+        time: 10800 #3 hours # Maid 5 -> 3
     - type: GhostRoleMobSpawner
       prototype: PlayerBorgSyndicateAssaultBattery

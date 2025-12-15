@@ -66,7 +66,7 @@
           settings: default
         requirements:
         - !type:OverallPlaytimeRequirement
-          time: 180000 #50 hours
+          time: 90000 #25 hours # Maid 50 -> 25
         - !type:DepartmentTimeRequirement
           department: Medical
           time: 7200 #2 hours
@@ -166,7 +166,7 @@
           settings: default
         requirements:
         - !type:OverallPlaytimeRequirement
-          time: 180000 #50 hours
+          time: 36000 #10 hours # Maid 50 -> 10, cuz duo is fun
         - !type:DepartmentTimeRequirement
           department: Medical
           time: 10800 #3 hours

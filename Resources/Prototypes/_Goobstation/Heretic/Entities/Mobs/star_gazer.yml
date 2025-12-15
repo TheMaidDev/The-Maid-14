@@ -64,8 +64,8 @@
     raffle:
       settings: short
     requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+    - !type:OverallPlaytimeRequirement # Maid 5 -> 1
+        time: 3600 #1 hour
   - type: CollectiveMind
     defaultChannel: MansusLink
     channels:
