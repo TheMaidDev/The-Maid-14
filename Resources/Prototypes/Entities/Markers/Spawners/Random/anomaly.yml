@@ -41,7 +41,7 @@
     - id: RandomRockAnomalySpawner
     - id: AnomalyLiquid
     - id: AnomalyFlora
-    - id: AnomalyShadow
+#    - id: AnomalyShadow # Maid cuz its boring.
     - id: AnomalyTech
     - id: AnomalySanta
       weight: 0.4 # Make more common in December
