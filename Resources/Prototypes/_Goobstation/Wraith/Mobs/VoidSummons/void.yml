@@ -283,8 +283,8 @@
     understands:
     - Dog
     - TauCetiBasic
-  - type: Sprinter
-    staminaDrainRate: 3
+#  - type: Sprinter # Maid true -> false
+#    staminaDrainRate: 3
   - type: MovementSpeedModifier
     baseWalkSpeed: 5
     baseSprintSpeed: 5

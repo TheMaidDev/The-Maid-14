@@ -8,8 +8,8 @@
   - type: CombatMode
   - type: InputMover
   - type: MobMover
-  - type: Sprinter
-    canSprint: false
+#  - type: Sprinter # Maid true -> false
+#    canSprint: false
   - type: HTN
     rootTask:
       task: XenoCompound

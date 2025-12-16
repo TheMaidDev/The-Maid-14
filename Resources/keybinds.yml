@@ -177,9 +177,9 @@ binds:
 - function: Walk
   type: State
   key: Shift
-- function: Sprint
-  type: State
-  key: C
+#- function: Sprint
+#  type: State
+#  key: C # Maid - no sprint
 - function: ToggleStanding
   type: State
   key: R
@@ -331,7 +331,7 @@ binds:
   mod1: Alt
 - function: OpenCharacterMenu
   type: State
-  mod1: Shift
+#  mod1: Shift # Maid
   key: C
 - function: OpenEmotesMenu
   type: State

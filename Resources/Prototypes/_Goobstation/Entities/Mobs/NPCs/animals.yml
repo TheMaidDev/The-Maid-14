@@ -815,8 +815,8 @@
     attributes:
       proper: true
       gender: male
-  - type: Sprinter
-    staminaDrainRate: 2
+#  - type: Sprinter # Maid true -> false
+#    staminaDrainRate: 2
   - type: TemperatureSpeed
     thresholds:
       293: 0.8
