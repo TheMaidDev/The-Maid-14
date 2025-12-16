@@ -335,9 +335,9 @@
     # Goobstation V
     - id: BaseHandheldStationMapPowerCe
     - id: EngineeringTechFabCircuitboard
-    - id: CartridgeRocketSingularityBuster
-    - id: CartridgeRocketSingularityBuster
-    - id: WeaponLauncherSingularityBuster
+#    - id: CartridgeRocketSingularityBuster # Maid
+#    - id: CartridgeRocketSingularityBuster # Maid
+#    - id: WeaponLauncherSingularityBuster # Maid
     - id: MachinePowerTransmissionLaserFlatpack
     - id: RCDRechargingCE
 
