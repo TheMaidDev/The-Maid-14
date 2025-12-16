@@ -191,7 +191,7 @@
     - id: SleeperAgents
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
-    - id: DerelictCyborgSpawn
+    #- id: DerelictCyborgSpawn # Maid true -> false
     - id: BlobSpawn # Goobstation - Blob
     - id: LoneAbductorSpawn # Shitmed - Starlight Abductors
     - id: DuoAbductorSpawn # Shitmed - Starlight Abductors
