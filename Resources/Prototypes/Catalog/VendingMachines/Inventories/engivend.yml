@@ -105,7 +105,7 @@
     ClothingEyesGlassesMeson: 4
     ClothingEyesHudDiagnostic: 8 # Goob - TODO; Give more engi usees for these - also we add more cause engi dont spawn with these
     ClothingHeadHatWelding: 6
-    CrowbarYellow: 8
+    Crowbar: 8 # Maid
     Multitool: 4
     NetworkConfigurator: 5
     PowerCellMedium: 5

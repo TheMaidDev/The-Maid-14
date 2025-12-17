@@ -125,7 +125,7 @@
   - type: StorageFill
     contents:
       - id: Screwdriver
-      - id: CrowbarOrange
+      - id: Crowbar # Maid
       - id: Wirecutter
       - id: CableApcStack10
       - id: CableMVStack10
@@ -146,7 +146,7 @@
   - type: StorageFill
     contents:
       - id: Screwdriver
-      - id: CrowbarOrange
+      - id: Crowbar # Maid
       - id: Wirecutter
       - id: CableApcStack10
       - id: CableMVStack10
@@ -187,7 +187,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: CrowbarOrange
+      - id: Crowbar # Maid
       - id: Wrench
       - id: Welder
       - id: Wirecutter
