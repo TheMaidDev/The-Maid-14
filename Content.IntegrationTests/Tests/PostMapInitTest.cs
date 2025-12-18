@@ -201,7 +201,7 @@ namespace Content.IntegrationTests.Tests
             // Goobstation edit:
             // order this list alphabetically, mark dev maps
             // if upstreaming take ours here and edit manually.
-              "Amber",
+              // "Amber",
               "Atlas",
               "Bagel",
               "Barratry",
@@ -239,14 +239,14 @@ namespace Content.IntegrationTests.Tests
               "Serpentcrest",
               "Submarine",
             // Goob end
-              "Wonderbox", // Maid
+              "WonderBox", // Maid
               "Atom" // Maid
         };
         // Goobstation edit start, yeah i know, but this is easier and less load than loading protoman or something.
         private static readonly string[] GameMapsInCurrentPool = // plus dev
         {
             // order this list alphabetically, mark dev maps
-              "Amber",
+              // "Amber",
               "Atlas",
               "Bagel",
               "Barratry",
@@ -283,7 +283,7 @@ namespace Content.IntegrationTests.Tests
               "Saltern",
               "Serpentcrest",
               "Submarine",
-              "Wonderbox", // Maid
+              "WonderBox", // Maid
               "Atom" // Maid
         };
         // Goobstation edit end
