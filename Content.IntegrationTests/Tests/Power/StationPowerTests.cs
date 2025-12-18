@@ -21,7 +21,7 @@ public sealed class StationPowerTests
     private static readonly string[] GameMaps =
     [ // Goobstation only maps in rotation
         "Atlas",
-        // "Amber",
+        "Amber",
         "Bagel",
         "Box",
         "Cluster",
