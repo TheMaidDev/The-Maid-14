@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/27/2025 16:03:45
-  entityCount: 6434
+  time: 12/27/2025 18:13:16
+  entityCount: 6435
 maps:
 - 1
 grids:
@@ -18866,15 +18866,17 @@ entities:
     - type: Transform
       pos: -9.5,37.5
       parent: 2
-  - uid: 653
-    components:
-    - type: Transform
-      pos: -10.5,37.5
-      parent: 2
   - uid: 658
     components:
     - type: Transform
       pos: -8.5,37.5
+      parent: 2
+- proto: CryogenicSleepUnitSpawnerLateJoin
+  entities:
+  - uid: 653
+    components:
+    - type: Transform
+      pos: -10.5,37.5
       parent: 2
 - proto: DefaultStationBeaconAICore
   entities:
@@ -35717,6 +35719,13 @@ entities:
     components:
     - type: Transform
       pos: -2.5,21.5
+      parent: 2
+- proto: SpawnPointLatejoin
+  entities:
+  - uid: 6435
+    components:
+    - type: Transform
+      pos: -5.5,44.5
       parent: 2
 - proto: SpawnPointLibrarian
   entities:
