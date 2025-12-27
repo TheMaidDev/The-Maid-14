@@ -1,7 +1,7 @@
 - type: gameMap
   id: WonderBox
   mapName: 'WonderBox Station'
-  mapPath: /Maps/_Maid/WonderboxMaid.yml
+  mapPath: /Maps/_Maid/WonderboxMaid_NY.yml
   minPlayers: 6
   stations:
     WonderBoxStation:
